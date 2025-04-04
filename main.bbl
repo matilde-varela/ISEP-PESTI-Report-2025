@@ -1,0 +1,1636 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Adams2022}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=f769698b56a0f32b4eefe7cd9173fec6}{%
+           family={Adams},
+           familyi={A\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5d5c82115bcc9b6b29ea44aabc201bf}{%
+           family={Alhamood},
+           familyi={A\bibinitperiod},
+           given={A\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3702f1c146e64a6c91fc47b81ea59fc7}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9a75ee293f2555f40976345739087998}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb22bcad2336a9051cbd4fc50959e28f}{%
+           family={Adams},
+           familyi={A\bibinitperiod},
+           given={Carol},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e8d3915eac57092506ecf7a2f91068d3}{%
+           family={Alhamood},
+           familyi={A\bibinitperiod},
+           given={Abdullah\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb60b8648d4996f5823246b60adbc05b}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56109949178c728c3a48011a065b4da2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Le},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=141a1e7404c5b53546fb09821c56717a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{570f89b355744929fd7a4e7fa9a175fc}
+      \strng{fullhash}{89a7b510f1a386f54098dc3a2c5c0355}
+      \strng{fullhashraw}{89a7b510f1a386f54098dc3a2c5c0355}
+      \strng{bibnamehash}{570f89b355744929fd7a4e7fa9a175fc}
+      \strng{authorbibnamehash}{570f89b355744929fd7a4e7fa9a175fc}
+      \strng{authornamehash}{570f89b355744929fd7a4e7fa9a175fc}
+      \strng{authorfullhash}{89a7b510f1a386f54098dc3a2c5c0355}
+      \strng{authorfullhashraw}{89a7b510f1a386f54098dc3a2c5c0355}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This is the authors version of a book chapter to be published later this year. Abstract This chapter discusses the development of GRI Standards and reviews recent research on practice and policy issues concerning their implementation. Six themes emerged in the literature published between 2010 and 2021: applicability of GRI Standards; nature of adoption of GRI Standards by report preparers; materiality assessment in GRI reporting; the level of understanding of GRI Standards; the voluntary status of GRI Standards and the need for mandatory reporting; and the quality of assurance. Research suggests that GRI Standards enhance: the comparability of sustainability reporting; the amount of information available on matters of concern to stakeholders; the identification of material issues; and the context relevance of information. However, the voluntary nature of GRI Standards means that firms tend to strategically disclose sustainability information to manage corporate reputation, therefore some firms fail to be accountable for material negative impacts. Researchers call for making GRI Standards mandatory and increasing the scope and uptake of external assurance. The chapter highlights areas for further research. This is the authors version of a book chapter to be published later this year.}
+      \field{issue}{3}
+      \field{journaltitle}{Handbook of Accounting and Sustainability}
+      \field{title}{The development and implementation of GRI Standards: practice and policy issues}
+      \field{year}{2022}
+      \field{pages}{3\bibrangedash 6}
+      \range{pages}{4}
+      \verb{urlraw}
+      \verb http://go.qub.ac.uk/oa-feedback
+      \endverb
+      \verb{url}
+      \verb http://go.qub.ac.uk/oa-feedback
+      \endverb
+      \keyw{Alhamood,Abdhullah,Citation: Adams,Carol A,Forthcoming 2022,Forthcoming 2022 Key words Global Reporting Initiative,GRI Standards,materiality assessment,mandatory reporting,assurance,sustainability reporting Citation: Adams,Carol A,He,Xinwu,Tian,Jie,Wang,Le,Wang,Yi}
+    \endentry
+    \entry{Antolin-Lopez2023}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=da42085e34458b5a2ca2c0c2d820067f}{%
+           family={Antolín-López},
+           familyi={A\bibinithyphendelim L\bibinitperiod},
+           given={Raquel.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af42a9bee8ed15c26710244694b683ac}{%
+           family={Ortiz-de-Mandojana},
+           familyi={O\bibinithyphendelim M\bibinitperiod},
+           given={Natalia.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {European Commision}%
+      }
+      \list{publisher}{1}{%
+        {Publications Office of the European Union}%
+      }
+      \strng{namehash}{cebf111a6d17126fbb22e1f0bd539a5c}
+      \strng{fullhash}{cebf111a6d17126fbb22e1f0bd539a5c}
+      \strng{fullhashraw}{cebf111a6d17126fbb22e1f0bd539a5c}
+      \strng{bibnamehash}{cebf111a6d17126fbb22e1f0bd539a5c}
+      \strng{authorbibnamehash}{cebf111a6d17126fbb22e1f0bd539a5c}
+      \strng{authornamehash}{cebf111a6d17126fbb22e1f0bd539a5c}
+      \strng{authorfullhash}{cebf111a6d17126fbb22e1f0bd539a5c}
+      \strng{authorfullhashraw}{cebf111a6d17126fbb22e1f0bd539a5c}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Although the need to measure and disclosure companies’ social and environmental information is not new, there has been a recent unprecedented interest growth regarding this subject among businesses, capital market participants, professional organisations, and regulators all over the world. This rapid growth in interest in social and environmental measurement and disclosure has led to a proliferation of different proposals by rating agencies and other organizations to measure the Environmental, Social, and Governance (ESG) performance of companies, which has contributed to also create confusion. This study aims to shed some light on the current state of ESG measurement and disclosure by examining the evolution of business-related sustainability terms and their connotations; taking stock of existing European Union (EU) regulations and international sustainability frameworks from non-governmental organisations; analysing the evolution of the ESG rating market and main players; identifying, clarifying, and comparing current ESG ratings, metrics, and indices; and finally, elaborating on the challenges and recommendations that can be considered in future developments of ESG measurement and disclosure.}
+      \field{isbn}{978-92-76-61587-3}
+      \field{issn}{1831-9424}
+      \field{title}{Measuring and disclosing Environmental, Social and Governance (ESG) information and performance}
+      \field{type}{techreport}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.2760/864272
+      \endverb
+      \verb{urlraw}
+      \verb https://publications.jrc.ec.europa.eu/repository/handle/JRC131932
+      \endverb
+      \verb{url}
+      \verb https://publications.jrc.ec.europa.eu/repository/handle/JRC131932
+      \endverb
+    \endentry
+    \entry{Apexcharts2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8cd8efe1eb5a08b1a36e8a0d1c67bf0c}{%
+           family={Apexcharts},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8cd8efe1eb5a08b1a36e8a0d1c67bf0c}
+      \strng{fullhash}{8cd8efe1eb5a08b1a36e8a0d1c67bf0c}
+      \strng{fullhashraw}{8cd8efe1eb5a08b1a36e8a0d1c67bf0c}
+      \strng{bibnamehash}{8cd8efe1eb5a08b1a36e8a0d1c67bf0c}
+      \strng{authorbibnamehash}{8cd8efe1eb5a08b1a36e8a0d1c67bf0c}
+      \strng{authornamehash}{8cd8efe1eb5a08b1a36e8a0d1c67bf0c}
+      \strng{authorfullhash}{8cd8efe1eb5a08b1a36e8a0d1c67bf0c}
+      \strng{authorfullhashraw}{8cd8efe1eb5a08b1a36e8a0d1c67bf0c}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ApexCharts.js - Open Source JavaScript Charts for your website}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://apexcharts.com/
+      \endverb
+      \verb{url}
+      \verb https://apexcharts.com/
+      \endverb
+    \endentry
+    \entry{Asif2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=68a6ee8d45c38eb65d4d574d0e783b38}{%
+           family={Asif},
+           familyi={A\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=98b04062d490a9ba5ac6850ed5340218}{%
+           family={Searcy},
+           familyi={S\bibinitperiod},
+           given={Cory},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b9dc2532e26e71fe52ff852fd851748}{%
+           family={Castka},
+           familyi={C\bibinitperiod},
+           given={Pavel},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{93e7bbaf3064293ba031ba93228fe664}
+      \strng{fullhash}{93e7bbaf3064293ba031ba93228fe664}
+      \strng{fullhashraw}{93e7bbaf3064293ba031ba93228fe664}
+      \strng{bibnamehash}{93e7bbaf3064293ba031ba93228fe664}
+      \strng{authorbibnamehash}{93e7bbaf3064293ba031ba93228fe664}
+      \strng{authornamehash}{93e7bbaf3064293ba031ba93228fe664}
+      \strng{authorfullhash}{93e7bbaf3064293ba031ba93228fe664}
+      \strng{authorfullhashraw}{93e7bbaf3064293ba031ba93228fe664}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Environmental, social, and governance (ESG) is increasingly being used to evaluate the performance of firms and pension funds, guide investment decision-making, and inform customer purchasing. Research on ESG is still evolving. Although a few studies have investigated the role of individual technologies (e.g., blockchain) in ESG, applying a broader set of emerging technologies in improving ESG disclosure and addressing its limitations is yet to be explored. Industry 5.0 offers a powerful framework for understanding the role of technologies in enhancing ESG disclosure. This conceptual paper explains ESG from the lens of management theories and views, including stakeholder theory, legitimacy theory, transaction cost economics theory, institutional theory, signaling theory, network economics theory, and the decoupling view. It then explores the application of I5.0 in enhancing ESG disclosure. The underlying values of I5.0 align with those of ESG, and I5.0 can support ESG functionalities. I5.0 is particularly useful in enhancing ESG disclosure authenticity, extending ESG disclosure from retrospective to prospective and real-time reporting, customizing ESG reports, extending the scope of reporting to multi-tier supply chains, reducing ESG cost, and enhancing the overall efficacy of ESG disclosure. The paper also sheds light on governance aspects, challenges, and risks of employing I5.0 to ESG.}
+      \field{issn}{0040-1625}
+      \field{issue}{23}
+      \field{journaltitle}{Technological Forecasting and Social Change}
+      \field{month}{10}
+      \field{title}{ESG and Industry 5.0: The role of technologies in enhancing ESG disclosure}
+      \field{volume}{195}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/J.TECHFORE.2023.122806
+      \endverb
+      \keyw{ESG,ESG governance,Industry 5.0,Reporting authenticity,Sustainability}
+    \endentry
+    \entry{Aydomu2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=88b889c0d619868556b5d3f61e5f4e83}{%
+           family={Aydoğmuş},
+           familyi={A\bibinitperiod},
+           given={Mahmut},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1f9dc0f5c21d34da2fc1a65bfd4384d1}{%
+           family={Gülay},
+           familyi={G\bibinitperiod},
+           given={Güzhan},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa6c34331f240b6d08bfa0cccae9bd2a}{%
+           family={Ergun},
+           familyi={E\bibinitperiod},
+           given={Korkmaz},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Borsa Istanbul Anonim Sirketi}%
+      }
+      \strng{namehash}{c75552a8ec17f733ccc2bd13cc29211e}
+      \strng{fullhash}{c75552a8ec17f733ccc2bd13cc29211e}
+      \strng{fullhashraw}{c75552a8ec17f733ccc2bd13cc29211e}
+      \strng{bibnamehash}{c75552a8ec17f733ccc2bd13cc29211e}
+      \strng{authorbibnamehash}{c75552a8ec17f733ccc2bd13cc29211e}
+      \strng{authornamehash}{c75552a8ec17f733ccc2bd13cc29211e}
+      \strng{authorfullhash}{c75552a8ec17f733ccc2bd13cc29211e}
+      \strng{authorfullhashraw}{c75552a8ec17f733ccc2bd13cc29211e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this study, we examine impact of Environment, Social, Governance (ESG) performance on firm value and profitability. Our large dataset gives us the chance to better conceptualize this impact. Our findings suggest that overall ESG combined score is positively and significantly associated with firm value. Individual Social and Governance scores have a positive and significant relationship while Environment score does not have a significant relationship with firm value. On the other hand, ESG combined score, Environment, Social, and Governance scores have positive and significant relationships with firm profitability. These findings suggest that investing in high ESG performance promises financial return for the firm in terms of both value and profitability.}
+      \field{issn}{2214-8450}
+      \field{journaltitle}{Borsa Istanbul Review}
+      \field{month}{12}
+      \field{title}{Impact of ESG performance on firm value and profitability}
+      \field{volume}{22}
+      \field{year}{2022}
+      \field{pages}{2\bibrangedash 8}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/J.BIR.2022.11.006
+      \endverb
+      \keyw{ESG,Environment,Firm value,Governance,ROA,Social,Tobin's Q}
+    \endentry
+    \entry{Berg2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f916aca97f72e0d20b10f51e8813100c}{%
+           family={Berg},
+           familyi={B\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db60bd070020e2a65ee596e3c54100e4}{%
+           family={Kölbel},
+           familyi={K\bibinitperiod},
+           given={Julian\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b740473a6551bdcef519ff2919ec27f}{%
+           family={Rigobon},
+           familyi={R\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford Academic}%
+      }
+      \strng{namehash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{fullhash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{fullhashraw}{4e5392938664d7ddd0368c3485d37325}
+      \strng{bibnamehash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{authorbibnamehash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{authornamehash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{authorfullhash}{4e5392938664d7ddd0368c3485d37325}
+      \strng{authorfullhashraw}{4e5392938664d7ddd0368c3485d37325}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper investigates the divergence of environmental, social, and governance (ESG) ratings based on data from six prominent ESG rating agencies: Kinder, Lydenberg, and Domini (KLD), Sustainalytics, Moody’s ESG (Vigeo-Eiris), S\&P Global (RobecoSAM), Refinitiv (Asset4), and MSCI. We document the rating divergence and map the different methodologies onto a common taxonomy of categories. Using this taxonomy, we decompose the divergence into contributions of scope, measurement, and weight. Measurement contributes 56\% of the divergence, scope 38\%, and weight 6\%. Further analyzing the reasons for measurement divergence, we detect a rater effect where a rater’s overall view of a firm influences the measurement of specific categories. The results call for greater attention to how the data underlying ESG ratings are generated.}
+      \field{issn}{1572-3097}
+      \field{issue}{6}
+      \field{journaltitle}{Review of Finance}
+      \field{month}{11}
+      \field{title}{Aggregate Confusion: The Divergence of ESG Ratings}
+      \field{volume}{26}
+      \field{year}{2022}
+      \field{pages}{1315\bibrangedash 1344}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1093/ROF/RFAC033
+      \endverb
+      \verb{urlraw}
+      \verb https://dx.doi.org/10.1093/rof/rfac033
+      \endverb
+      \verb{url}
+      \verb https://dx.doi.org/10.1093/rof/rfac033
+      \endverb
+      \keyw{Corporate social responsibility,Corporate sustainability,Divergence,ESG ratings,G24}
+    \endentry
+    \entry{Burnaev2023}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=2b0f7cb6d0f87166c23fc14ee306f97a}{%
+           family={Burnaev},
+           familyi={B\bibinitperiod},
+           given={Evgeny},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6bf49f16177b2717b597b4c02100b5a9}{%
+           family={Mironov},
+           familyi={M\bibinitperiod},
+           given={Evgeny},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5c85f5c44555bd997f67bba6ebbad95d}{%
+           family={Shpilman},
+           familyi={S\bibinitperiod},
+           given={Aleksei},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56c50768709d19039a642d0fc0f41554}{%
+           family={Mironenko},
+           familyi={M\bibinitperiod},
+           given={Maxim},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c29949f5d3f76f78b0a383508f0a5461}{%
+           family={Katalevsky},
+           familyi={K\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{6fcd6381f891d352741d7b3e2c1a609e}
+      \strng{fullhash}{0937e29868696c24d0ec168c91d11fec}
+      \strng{fullhashraw}{0937e29868696c24d0ec168c91d11fec}
+      \strng{bibnamehash}{6fcd6381f891d352741d7b3e2c1a609e}
+      \strng{authorbibnamehash}{6fcd6381f891d352741d7b3e2c1a609e}
+      \strng{authornamehash}{6fcd6381f891d352741d7b3e2c1a609e}
+      \strng{authorfullhash}{0937e29868696c24d0ec168c91d11fec}
+      \strng{authorfullhashraw}{0937e29868696c24d0ec168c91d11fec}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Artificial intelligence (AI) is a rapidly advancing area of research that encompasses numerical methods to solve various prediction, optimization, and classification/clustering problems. Recently, AI tools were proposed to address the environmental, social, and governance (ESG) challenges associated with sustainable business development. While many publications discuss the potential of AI, few focus on practical cases in the three ESG domains altogether, and even fewer highlight the challenges that AI may pose in terms of ESG. The current paper fills this gap by reviewing practical AI applications with a main focus on IT and engineering implementations. The considered cases are based on almost one hundred publicly available research manuscripts and reports obtained via online search engines. This review involves the study of typical business and production problems associated with each ESG domain, gives background details on several selected cases (such as carbon neutrality, land management, and ESG scoring), and lists challenges that the smart algorithms can pose (such as fake news generation and increased electricity consumption). Overall, it is concluded that, while many practical cases already exist, AI in ESG is still very far away from reaching its full potential; however, one should always remember that AI itself can lead to some ESG risks.}
+      \field{issn}{2071-1050}
+      \field{issue}{17}
+      \field{journaltitle}{Sustainability 2023, Vol. 15, Page 12731}
+      \field{month}{8}
+      \field{title}{Practical AI Cases for Solving ESG Challenges}
+      \field{volume}{15}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.3390/SU151712731
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2071-1050/15/17/12731/htm https://www.mdpi.com/2071-1050/15/17/12731
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2071-1050/15/17/12731/htm%20https://www.mdpi.com/2071-1050/15/17/12731
+      \endverb
+      \keyw{ESG,artificial intelligence,environment,governance,social,sustainability}
+    \endentry
+    \entry{Cohen2004}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=9aec753e2a52411648a8c416b435466b}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=229ef46459696c7d41ffefaf59225141}{%
+           family={Lindvall},
+           familyi={L\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54d516274fec58d53784eee3dc0a0f70}{%
+           family={Costa},
+           familyi={C\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d6f28bf4cee4e1ec708e892180f9e203}
+      \strng{fullhash}{d6f28bf4cee4e1ec708e892180f9e203}
+      \strng{fullhashraw}{d6f28bf4cee4e1ec708e892180f9e203}
+      \strng{bibnamehash}{d6f28bf4cee4e1ec708e892180f9e203}
+      \strng{authorbibnamehash}{d6f28bf4cee4e1ec708e892180f9e203}
+      \strng{authornamehash}{d6f28bf4cee4e1ec708e892180f9e203}
+      \strng{authorfullhash}{d6f28bf4cee4e1ec708e892180f9e203}
+      \strng{authorfullhashraw}{d6f28bf4cee4e1ec708e892180f9e203}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Agile Methods are creating a buzz in the software development community, drawing their fair share of advocates and opponents. While some people consider agile methods the best thing that has happened to software development in recent years, other people view them as a backlash to software engineering and compare them to hacking. The aim of this chapter is to introduce the reader to agile methods allowing him/her to judge whether or not agile methods could be useful in modern software development. The chapter discusses the history behind agile methods as well as the agile manifesto, a statement from the leaders of the agile movement. It looks at what it means to be agile, discusses the role of management, describes and compares some of the more popular agile methods, provides a guide for deciding where an agile approach is applicable, and lists common criticisms. It summarizes empirical studies, anecdotal reports, and lessons learned from applying agile methods and concludes with an analysis of various agile methods. The target audiences for this chapter include practitioners, who will be interested in the discussion of the different methods and their applications, researchers who may want to focus on the empirical studies and lessons learned, and educators looking to teach and learn more about agile methods.}
+      \field{journaltitle}{Advances in Computers}
+      \field{title}{An Introduction to Agile Methods}
+      \field{volume}{62}
+      \field{year}{2004}
+      \field{pages}{14\bibrangedash 16}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1016/S0065-2458(03)62001-2
+      \endverb
+    \endentry
+    \entry{Cohen2023}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=0c9265c211bc5161ce3bfdb24d36cc6a}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Gil},
+           giveni={G\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{0c9265c211bc5161ce3bfdb24d36cc6a}
+      \strng{fullhash}{0c9265c211bc5161ce3bfdb24d36cc6a}
+      \strng{fullhashraw}{0c9265c211bc5161ce3bfdb24d36cc6a}
+      \strng{bibnamehash}{0c9265c211bc5161ce3bfdb24d36cc6a}
+      \strng{authorbibnamehash}{0c9265c211bc5161ce3bfdb24d36cc6a}
+      \strng{authornamehash}{0c9265c211bc5161ce3bfdb24d36cc6a}
+      \strng{authorfullhash}{0c9265c211bc5161ce3bfdb24d36cc6a}
+      \strng{authorfullhashraw}{0c9265c211bc5161ce3bfdb24d36cc6a}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The following research has analyzed the linkage between ESG sustainability scores to the firm’s valuations. We provide evidence that the total ESG score is diminishing for the S \& P500 firms from 2019 till 2021 meaning that these risks factors take their rightful place in the global economy. We find that the impact of environmental risks on the firm’s valuation is not significant enough. Moreover, we found that while the “Beta” risk factor of the S \& P500 carries environmental risks, it does not hold such risks for Nasdaq100 stocks, and therefore, we recommend strengthening the environmental education to investors and other financial industry participants. This research also provides evidence that social risk impact negatively the simple excess return for both the S \& P500 and nasdaq100 stocks indicating that social issues must be mitigated in order to maximize a firm value. Moreover, we find that the traditional CAPM “Beta” carries environmental and corporate governance risks for the S \& P500 stocks. However, it totally neglects social risks and therefore it can not be used in modern ages where social risk are very important to all participants of the global economic environment.}
+      \field{isbn}{0123456789}
+      \field{journaltitle}{Review of Quantitative Finance and Accounting}
+      \field{title}{The impact of ESG risks on corporate value}
+      \field{volume}{60}
+      \field{year}{2023}
+      \field{pages}{1451\bibrangedash 1468}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/s11156-023-01135-6
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s11156-023-01135-6
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s11156-023-01135-6
+      \endverb
+      \keyw{Beta,ETF,NASDAQ,Solar energy,Systematic risk,Wind energy}
+    \endentry
+    \entry{Cruz2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e3d29bdef8ffb26a31a6b9be141accaa}{%
+           family={Cruz},
+           familyi={C\bibinitperiod},
+           given={Carolina\bibnamedelima Almeida},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f4ed02e3d3733531811071d529c549e7}{%
+           family={Matos},
+           familyi={M\bibinitperiod},
+           given={Florinda},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{10b2c13dc7452203062d3dad1f2ebef8}
+      \strng{fullhash}{10b2c13dc7452203062d3dad1f2ebef8}
+      \strng{fullhashraw}{10b2c13dc7452203062d3dad1f2ebef8}
+      \strng{bibnamehash}{10b2c13dc7452203062d3dad1f2ebef8}
+      \strng{authorbibnamehash}{10b2c13dc7452203062d3dad1f2ebef8}
+      \strng{authornamehash}{10b2c13dc7452203062d3dad1f2ebef8}
+      \strng{authorfullhash}{10b2c13dc7452203062d3dad1f2ebef8}
+      \strng{authorfullhashraw}{10b2c13dc7452203062d3dad1f2ebef8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Given the rising demand for more transparent, consistent, and comprehensive non-financial information in investment, there is a need to provide more reliable, meaningful, and measurable ESG metrics, in a way that most frameworks cannot. Most established frameworks face difficulties and challenges in providing sustainability information to investors in a significant way, lacking in areas such as transparency, reliability, consistency, materiality, and particularly, their focus on the “S” dimension of ESG. The present article purposes to review the challenges associated with several frameworks and to present a solution to overcome them, by giving an overview of a new and innovative software as a service framework, ESG Maturity. This software presents itself as a solution for both reporting companies and their respective investors, by providing both with an assessment of the ESG maturity index of the companies, and delivering a report containing relevant initiatives, strategies, and action plans tailored to each one of them, within different sectors, dimensions, and geographic areas and consequently, their financial and non-financial implementation impact. ESG Maturity is considered a possible answer to the challenges in ESG reporting, having the potential to revolutionize the way companies report their non-financial information and how investors receive it.}
+      \field{issn}{2071-1050}
+      \field{issue}{3}
+      \field{journaltitle}{Sustainability 2023, Vol. 15, Page 2610}
+      \field{month}{2}
+      \field{title}{ESG Maturity: A Software Framework for the Challenges of ESG Data in Investment}
+      \field{volume}{15}
+      \field{year}{2023}
+      \field{pages}{2\bibrangedash 10}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.3390/SU15032610
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2071-1050/15/3/2610/htm https://www.mdpi.com/2071-1050/15/3/2610
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2071-1050/15/3/2610/htm%20https://www.mdpi.com/2071-1050/15/3/2610
+      \endverb
+      \keyw{ESG Challenges,ESG Frameworks,ESG Software,investment}
+    \endentry
+    \entry{DevScopeSolutions}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e88e853d98d80a7dae77aff3b4bce31d}{%
+           family={DevScope},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{e88e853d98d80a7dae77aff3b4bce31d}
+      \strng{fullhash}{e88e853d98d80a7dae77aff3b4bce31d}
+      \strng{fullhashraw}{e88e853d98d80a7dae77aff3b4bce31d}
+      \strng{bibnamehash}{e88e853d98d80a7dae77aff3b4bce31d}
+      \strng{authorbibnamehash}{e88e853d98d80a7dae77aff3b4bce31d}
+      \strng{authornamehash}{e88e853d98d80a7dae77aff3b4bce31d}
+      \strng{authorfullhash}{e88e853d98d80a7dae77aff3b4bce31d}
+      \strng{authorfullhashraw}{e88e853d98d80a7dae77aff3b4bce31d}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Último acesso em 17/03/2025}
+      \field{title}{Solutions}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://devscope.net/solutions/
+      \endverb
+      \verb{url}
+      \verb https://devscope.net/solutions/
+      \endverb
+    \endentry
+    \entry{Fang2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c7b1d55408a621e8c1c34a43b97f74f8}{%
+           family={Fang},
+           familyi={F\bibinitperiod},
+           given={Mingyue},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac0a8c69a9668ca1ca76c02aed5eae31}{%
+           family={Nie},
+           familyi={N\bibinitperiod},
+           given={Huihua},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a099cca8a1915d47f3d0e7a731733fa}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Xinyi},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{a80280324c29d3d1a930057bb1b9c25e}
+      \strng{fullhash}{a80280324c29d3d1a930057bb1b9c25e}
+      \strng{fullhashraw}{a80280324c29d3d1a930057bb1b9c25e}
+      \strng{bibnamehash}{a80280324c29d3d1a930057bb1b9c25e}
+      \strng{authorbibnamehash}{a80280324c29d3d1a930057bb1b9c25e}
+      \strng{authornamehash}{a80280324c29d3d1a930057bb1b9c25e}
+      \strng{authorfullhash}{a80280324c29d3d1a930057bb1b9c25e}
+      \strng{authorfullhashraw}{a80280324c29d3d1a930057bb1b9c25e}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the era of digital economy, every enterprise has to face digitization, but there is limited literature to investigate the impact of enterprise digitization on ESG performance. This paper examines the impact of enterprise digitization on ESG performance using Chinese listed companies during 2012–2020. We find that the digitization of companies significantly improves ESG scores. Heterogeneity analysis shows that the positive effect is more pronounced for non-politically connected companies and companies located in regions with high quality institutions. We identify two channels through which digitization affects ESG performance. First, digitization enables companies to reduce agency costs and increase governance (G) scores. Second, digitization facilitates companies to improve goodwill and further increase social (S) scores. However, we do not find that digitization improves companies’ environmental (E) scores. The findings have important policy implications in motivating enterprises to engage more in ESG activities.}
+      \field{issn}{0264-9993}
+      \field{issue}{22}
+      \field{journaltitle}{Economic Modelling}
+      \field{month}{1}
+      \field{title}{Can enterprise digitization improve ESG performance?}
+      \field{volume}{118}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/J.ECONMOD.2022.106101
+      \endverb
+      \keyw{China,Digital economy,Digitization,ESG}
+    \endentry
+    \entry{Goswami2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8c99fc6cc20fccd272f2718faa2ef661}{%
+           family={Goswami},
+           familyi={G\bibinitperiod},
+           given={Kuntal},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cfd6212db94d94047d4aee3ba2c7d05}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Mohammed\bibnamedelimb Kazi\bibnamedelima Saidul},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=37b59fecb6d3ed81c6e3b68dd3da2439}{%
+           family={Evers},
+           familyi={E\bibinitperiod},
+           given={Winton},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Common Ground Research Networks}%
+      }
+      \strng{namehash}{1bbf52829c4ec8d8bea6203d1fd57eea}
+      \strng{fullhash}{1bbf52829c4ec8d8bea6203d1fd57eea}
+      \strng{fullhashraw}{1bbf52829c4ec8d8bea6203d1fd57eea}
+      \strng{bibnamehash}{1bbf52829c4ec8d8bea6203d1fd57eea}
+      \strng{authorbibnamehash}{1bbf52829c4ec8d8bea6203d1fd57eea}
+      \strng{authornamehash}{1bbf52829c4ec8d8bea6203d1fd57eea}
+      \strng{authorfullhash}{1bbf52829c4ec8d8bea6203d1fd57eea}
+      \strng{authorfullhashraw}{1bbf52829c4ec8d8bea6203d1fd57eea}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The article presents a comparative analysis of the sustainability disclosures of four companies, each of adopted different voluntary nonfinancial reporting frameworks and standards, as introduced by the Global Reporting Initiative (GRI), International Integrated Reporting Council (IIRC), Sustainability Accounting Standard Board (SASB), and Climate Disclosure Project (CDP). The case study highlights the way in which these frameworks and standards are applied by organizations from different sectors as well as underlining the multiplicity of overlapping voluntary nonfinancial or environmental, social, and governance (ESG) reporting frameworks. Thus, the article provides contextual reasons for alignment (with GRI, IIRC, SASB, and CDP) toward a proposed comprehensive corporate reporting standard as will be drafted by the International Sustainability Standards Board (ISSB). All these frameworks and standards are designed with distinctive characteristics to satisfy the ESG information needs of stakeholders, especially those in the financial sector. Each framework and standard tries to position itself for niche identity within the voluntary ESG reporting domain. As a result, organizations adopt all of the available contemporary nonfinancial sustainability or ESG reporting frameworks and standards, in a blended format. Thus, they present all nonfinancial information as a buffet to gain legitimacy and confidence from all stakeholders. This new trend can be termed as a blended reporting format phenomenon. However, the study finds that reporting based on GRI is the most comprehensive, as it is designed to address the information expectations of all stakeholders. The study also found that the Task Force on Climate-Related Financial Disclosure (TCFD) is an important normative institutional framework that is motivating companies to present sustainability information to cater to the decision-making information need of capital markets and investors, while the Sustainable Development Goals (SDGs) act as the most respected global moral sustainability compass. However, the question remains as to whether sustainability information should only be seen from the financially material perspective of capital markets or if it should be considered as economic, social, and ecological material information for all stakeholders.}
+      \field{issn}{23251182}
+      \field{issue}{2}
+      \field{journaltitle}{International Journal of Sustainability Policy and Practice}
+      \field{title}{A Case Study on the Blended Reporting Phenomenon: A Comparative Analysis of Voluntary Reporting Frameworks and Standards—GRI, IR, SASB, and CDP}
+      \field{volume}{19}
+      \field{year}{2023}
+      \field{pages}{35\bibrangedash 64}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.18848/2325-1166/CGP/V19I02/35-64
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/373122132_A_Case_Study_on_the_Blended_Reporting_Phenomenon_A_Comparative_Analysis_of_Voluntary_Reporting_Frameworks_and_Standards-GRI_IR_SASB_and_CDP
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/373122132_A_Case_Study_on_the_Blended_Reporting_Phenomenon_A_Comparative_Analysis_of_Voluntary_Reporting_Frameworks_and_Standards-GRI_IR_SASB_and_CDP
+      \endverb
+      \keyw{Climate Disclosure Project (CDP),Climate Disclosure Standard Board (CDSB),Global Reporting Initiative (GRI),Integrated Reporting (IR),International Sustainability Standards Board (ISSB),Sustainability Accounting Standard Board (SASB),Sustainable Development Goals (SDGs),Task Force on Climate-Related Financial Disclosure (TCFD)}
+    \endentry
+    \entry{GRI2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a4b9e2e4254793cfa8344e16bef237a}{%
+           family={GRI},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{fullhash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{fullhashraw}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{bibnamehash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{authorbibnamehash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{authornamehash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{authorfullhash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{authorfullhashraw}{2a4b9e2e4254793cfa8344e16bef237a}
+      \field{extraname}{1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GRI - GRI Standards English Language}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.globalreporting.org/how-to-use-the-gri-standards/gri-standards-english-language/
+      \endverb
+      \verb{url}
+      \verb https://www.globalreporting.org/how-to-use-the-gri-standards/gri-standards-english-language/
+      \endverb
+    \endentry
+    \entry{GRISector2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2a4b9e2e4254793cfa8344e16bef237a}{%
+           family={GRI},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{fullhash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{fullhashraw}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{bibnamehash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{authorbibnamehash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{authornamehash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{authorfullhash}{2a4b9e2e4254793cfa8344e16bef237a}
+      \strng{authorfullhashraw}{2a4b9e2e4254793cfa8344e16bef237a}
+      \field{extraname}{2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GRI - Sector Program}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.globalreporting.org/standards/sector-program/
+      \endverb
+      \verb{url}
+      \verb https://www.globalreporting.org/standards/sector-program/
+      \endverb
+    \endentry
+    \entry{GRISASB2021}{report}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2a4b9e2e4254793cfa8344e16bef237a}{%
+           family={GRI},
+           familyi={G\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=eb3ca5675573a3aa70dcd2d4b5a331da}{%
+           family={SASB},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {Global Reporting Initiative}%
+        {Sustainability Accounting Standards Board}%
+      }
+      \strng{namehash}{79ea2388bab777c1002915de85fe1227}
+      \strng{fullhash}{79ea2388bab777c1002915de85fe1227}
+      \strng{fullhashraw}{79ea2388bab777c1002915de85fe1227}
+      \strng{bibnamehash}{79ea2388bab777c1002915de85fe1227}
+      \strng{authorbibnamehash}{79ea2388bab777c1002915de85fe1227}
+      \strng{authornamehash}{79ea2388bab777c1002915de85fe1227}
+      \strng{authorfullhash}{79ea2388bab777c1002915de85fe1227}
+      \strng{authorfullhashraw}{79ea2388bab777c1002915de85fe1227}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Global Reporting Initiative (GRI) is the independent, international organization that helps businesses and other organizations take responsibility for their impacts, by providing them with the global common language to communicate those impacts. We provide the world's most widely used standards for sustainability reporting-the GRI Standards. Headquartered in Amsterdam, the Netherlands, we have a network of seven regional hubs ensuring we can support organizations and stake-holders worldwide. You can download the Standards and find supporting materials at globalreporting.org. The Sustainability Accounting Standards Board (SASB) connects businesses and investors on the financial impacts of sustainability. SASB Standards enable businesses around the world to identify, manage, and communicate financially material sustainability information to investors. SASB Standards are industry-specific and are designed to be decision-useful for investors and cost-effective for companies. They are developed using a process that is evidence based and market informed. To download any of the 77 industry-specific standards, or learn more about SASB, please visit SASB.org. THANK YOU GRI and SASB would like to thank the ClimateWorks Foundation for their generous support of this joint publication and PwC and the Impact Management project for their assistance. GRI and SASB would also like to thank the interviewees and survey respondents who contributed to this research.}
+      \field{title}{A Practical Guide to Sustainability Reporting Using GRI and SASB Standards PARTIES INVOLVED}
+      \field{type}{techreport}
+      \field{year}{2021}
+      \field{pages}{5\bibrangedash 37}
+      \range{pages}{33}
+    \endentry
+    \entry{IBM2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cbf44511d041dc6d1dd73cc0c033122c}{%
+           family={IBM},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{fullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{fullhashraw}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{bibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorbibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authornamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorfullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorfullhashraw}{cbf44511d041dc6d1dd73cc0c033122c}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Environmental Intelligence | IBM}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.ibm.com/products/environmental-intelligence
+      \endverb
+      \verb{url}
+      \verb https://www.ibm.com/products/environmental-intelligence
+      \endverb
+    \endentry
+    \entry{Kim2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=59203d9916cf3638f43a07c480dce051}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Soohun},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ed2ecfc7fc404f8dc76ef0133100d7cc}{%
+           family={Yoon},
+           familyi={Y\bibinitperiod},
+           given={Aaron\bibnamedelima S},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{736ccb2790dfdfe0fad6866ab4d9ba2c}
+      \strng{fullhash}{736ccb2790dfdfe0fad6866ab4d9ba2c}
+      \strng{fullhashraw}{736ccb2790dfdfe0fad6866ab4d9ba2c}
+      \strng{bibnamehash}{736ccb2790dfdfe0fad6866ab4d9ba2c}
+      \strng{authorbibnamehash}{736ccb2790dfdfe0fad6866ab4d9ba2c}
+      \strng{authornamehash}{736ccb2790dfdfe0fad6866ab4d9ba2c}
+      \strng{authorfullhash}{736ccb2790dfdfe0fad6866ab4d9ba2c}
+      \strng{authorfullhashraw}{736ccb2790dfdfe0fad6866ab4d9ba2c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The United Nations Principles for Responsible Investment (PRI) is the largest global ESG initiative in the asset management industry to date. We analyze what happens after active US mutual funds sign the PRI, to assess whether they exhibit ESG implementation. We find that PRI signatories attract a large fund inflow but we do not observe improvements in fund-level ESG scores or fund returns. We consider a battery of ways to proxy for funds' ESG incorporation (e.g., entry/exit, screening, engagement, voting for pro-ESG proposals), but fail to observe evidence of meaningful follow-through, on average. Next, we explore cross-sectional fund characteristics and find that only quant-funds exhibit small improvement in ESG performance versus other funds, mainly through buying high-ESG-performing stocks. Furthermore, we note that PRI signatories are not superior performers in ESG issues prior to signing, relative to non-PRI funds, but PRI affiliation tends to be widely advertised on company websites, marketing materials, and fund documents. Overall, a reasonable reader may perceive our findings as consistent with PRI funds' greenwashing. We note, however, that what we uncover is based only on outcome-based measures and may miss some actual efforts of signatories. JEL classification codes: G20}
+      \field{issn}{1526-5501}
+      \field{issue}{2}
+      \field{journaltitle}{Management Science}
+      \field{month}{4}
+      \field{title}{Analyzing Active Fund Managers' Commitment to ESG: Evidence from the United Nations Principles for Responsible Investment}
+      \field{volume}{69}
+      \field{year}{2022}
+      \field{pages}{7\bibrangedash 9}
+      \range{pages}{3}
+      \verb{urlraw}
+      \verb https://doi.org/10.1287/mnsc.2022.4394
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1287/mnsc.2022.4394
+      \endverb
+      \keyw{Asset Manager,ESG,Greenwashing,Mutual Funds,SRI,UN PRI}
+    \endentry
+    \entry{Krueger2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=085ccb64f1d7991802b64ca4f5bf3525}{%
+           family={Krueger},
+           familyi={K\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e7e814ca68ae9121ddd7e1a0319b86f}{%
+           family={Sautner},
+           familyi={S\bibinitperiod},
+           given={Zacharias},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3c93f88bddfc7a8d937cec82bd1fdf16}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Dragon\bibnamedelima Yongju},
+           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b0238c3cd2ed7ec4716a79f8c424af9}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Rui},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Ltd}%
+      }
+      \strng{namehash}{5ca90e14ae9bbdc5c597e7d543d2916e}
+      \strng{fullhash}{78e4ae418fb3ee6fea50b8126deff4e8}
+      \strng{fullhashraw}{78e4ae418fb3ee6fea50b8126deff4e8}
+      \strng{bibnamehash}{5ca90e14ae9bbdc5c597e7d543d2916e}
+      \strng{authorbibnamehash}{5ca90e14ae9bbdc5c597e7d543d2916e}
+      \strng{authornamehash}{5ca90e14ae9bbdc5c597e7d543d2916e}
+      \strng{authorfullhash}{78e4ae418fb3ee6fea50b8126deff4e8}
+      \strng{authorfullhashraw}{78e4ae418fb3ee6fea50b8126deff4e8}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We compile a novel data set on mandatory environmental, social, and governance (ESG) disclosure around the world to analyze the stock liquidity effects of such disclosure mandates. We document a positive effect of ESG disclosure mandates on firm-level stock liquidity. The effects are strongest if the disclosure requirements are implemented by government institutions, not on a comply-or-explain basis, and coupled with strong enforcement by informal institutions. Firms with weaker information environments benefit more from ESG disclosure mandates. Our results support the view that ESG disclosure regulation improves the information environment and has beneficial capital market effects.}
+      \field{issn}{1475-679X}
+      \field{issue}{5}
+      \field{journaltitle}{Journal of Accounting Research}
+      \field{month}{12}
+      \field{title}{The Effects of Mandatory ESG Disclosure Around the World}
+      \field{volume}{62}
+      \field{year}{2024}
+      \field{pages}{1795\bibrangedash 1847}
+      \range{pages}{53}
+      \verb{doi}
+      \verb 10.1111/1475-679X.12548
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/full/10.1111/1475-679X.12548 https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-679X.12548 https://onlinelibrary.wiley.com/doi/10.1111/1475-679X.12548
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/full/10.1111/1475-679X.12548%20https://onlinelibrary.wiley.com/doi/abs/10.1111/1475-679X.12548%20https://onlinelibrary.wiley.com/doi/10.1111/1475-679X.12548
+      \endverb
+      \keyw{ESG reporting,nonfinancial information,stock liquidity,sustainability reporting}
+    \endentry
+    \entry{Luque-Vlchez2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=680118fa3f8a565428dffeb077438f8b}{%
+           family={Luque-Vílchez},
+           familyi={L\bibinithyphendelim V\bibinitperiod},
+           given={Mercedes},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b746e6c5b5cae5da47914d81d49ad934}{%
+           family={Cordazzo},
+           familyi={C\bibinitperiod},
+           given={Michela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8050f847411116a3937b780e3f7a2e0c}{%
+           family={Rimmel},
+           familyi={R\bibinitperiod},
+           given={Gunnar},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c663090c224e629e946d5204c37e366}{%
+           family={Tilt},
+           familyi={T\bibinitperiod},
+           given={Carol\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Emerald Publishing}%
+      }
+      \strng{namehash}{e5a904696629afc26bc8fe5926e8febd}
+      \strng{fullhash}{f035770043280de293fbd8f1831d82c3}
+      \strng{fullhashraw}{f035770043280de293fbd8f1831d82c3}
+      \strng{bibnamehash}{e5a904696629afc26bc8fe5926e8febd}
+      \strng{authorbibnamehash}{e5a904696629afc26bc8fe5926e8febd}
+      \strng{authornamehash}{e5a904696629afc26bc8fe5926e8febd}
+      \strng{authorfullhash}{f035770043280de293fbd8f1831d82c3}
+      \strng{authorfullhashraw}{f035770043280de293fbd8f1831d82c3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Purpose: This paper aims to investigate the current state of knowledge in key reporting aspects in relation to sustainability reporting in general and to reflect on their relevance to Global Reporting Initiative (GRI) in particular. In doing so, the major gaps in that knowledge are identified, and the paper proceeds to suggest further research avenues. Design/methodology/approach: The authors conduct a review of papers published in leading journals concerning sustainability reporting to analyse the progress in the literature regarding three important reporting topics: materiality, comparability and assurance. Findings: The review conducted in this study shows that there is still work to be done to ensure high-quality and consistent sustainability reporting. Key takeaways from the review of the extant literature are as follows: there is ongoing debate about the nature of sustainability reporting materiality, and single versus double materiality. Clearer guidance and better contextualisation are seen as essential for comparability, and, as GRI suggests, there is an important link to materiality that needs to be considered. Finally, assurance has not been mandatory under the GRI, but the current development at EU level might lead to the GRI principles being incorporated in the primary assurance standards. Practical implications: In this paper, the authors review and synthesise the previous literature on GRI reporting dealing with three key reporting aspects. Social implications: The authors extract some takeaways from the literature on materiality, comparability and assurance that will all be key challenges for GRI in the future. Originality/value: This paper provides an updated review of the literature on GRI reporting dealing with three key reporting aspects.}
+      \field{issn}{2040803X}
+      \field{issue}{4}
+      \field{journaltitle}{Sustainability Accounting, Management and Policy Journal}
+      \field{month}{7}
+      \field{title}{Key aspects of sustainability reporting quality and the future of GRI}
+      \field{volume}{14}
+      \field{year}{2023}
+      \field{pages}{637\bibrangedash 659}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1108/SAMPJ-03-2023-0127/FULL/PDF
+      \endverb
+      \keyw{Assurance,Comparability,GRI,Materiality,Sustainability reporting}
+    \endentry
+    \entry{ONUGC2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ed07de2f45d373cf018bc040bb099af9}{%
+           family={ONU},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed07de2f45d373cf018bc040bb099af9}
+      \strng{fullhash}{ed07de2f45d373cf018bc040bb099af9}
+      \strng{fullhashraw}{ed07de2f45d373cf018bc040bb099af9}
+      \strng{bibnamehash}{ed07de2f45d373cf018bc040bb099af9}
+      \strng{authorbibnamehash}{ed07de2f45d373cf018bc040bb099af9}
+      \strng{authornamehash}{ed07de2f45d373cf018bc040bb099af9}
+      \strng{authorfullhash}{ed07de2f45d373cf018bc040bb099af9}
+      \strng{authorfullhashraw}{ed07de2f45d373cf018bc040bb099af9}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is the UN Global Compact | UN Global Compact}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://unglobalcompact.org/what-is-gc
+      \endverb
+      \verb{url}
+      \verb https://unglobalcompact.org/what-is-gc
+      \endverb
+    \endentry
+    \entry{onValues2005}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=01e7e108a03a7802ae5a860a84e394c1}{%
+           family={onValues},
+           familyi={o\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {International Finance Corporation}%
+      }
+      \strng{namehash}{01e7e108a03a7802ae5a860a84e394c1}
+      \strng{fullhash}{01e7e108a03a7802ae5a860a84e394c1}
+      \strng{fullhashraw}{01e7e108a03a7802ae5a860a84e394c1}
+      \strng{bibnamehash}{01e7e108a03a7802ae5a860a84e394c1}
+      \strng{authorbibnamehash}{01e7e108a03a7802ae5a860a84e394c1}
+      \strng{authornamehash}{01e7e108a03a7802ae5a860a84e394c1}
+      \strng{authorfullhash}{01e7e108a03a7802ae5a860a84e394c1}
+      \strng{authorfullhashraw}{01e7e108a03a7802ae5a860a84e394c1}
+      \field{sortinit}{o}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Investing for Long-Term Value Integrating environmental, social and governance value drivers in asset management and financial research-A state-of-the-art assessment}
+      \field{type}{techreport}
+      \field{year}{2005}
+      \field{pages}{8\bibrangedash 10}
+      \range{pages}{3}
+    \endentry
+    \entry{Patel2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=993085477d4181f579e77271900f4d7e}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{993085477d4181f579e77271900f4d7e}
+      \strng{fullhash}{993085477d4181f579e77271900f4d7e}
+      \strng{fullhashraw}{993085477d4181f579e77271900f4d7e}
+      \strng{bibnamehash}{993085477d4181f579e77271900f4d7e}
+      \strng{authorbibnamehash}{993085477d4181f579e77271900f4d7e}
+      \strng{authornamehash}{993085477d4181f579e77271900f4d7e}
+      \strng{authorfullhash}{993085477d4181f579e77271900f4d7e}
+      \strng{authorfullhashraw}{993085477d4181f579e77271900f4d7e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Último acesso em 21/03/2025}
+      \field{title}{Metodologia ágil: O que é, ferramentas e como aplicar}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://neilpatel.com/br/blog/metodologia-agil/
+      \endverb
+      \verb{url}
+      \verb https://neilpatel.com/br/blog/metodologia-agil/
+      \endverb
+    \endentry
+    \entry{Pizzi2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=54460408650761134980afd8efd0e9c4}{%
+           family={Pizzi},
+           familyi={P\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97d5431737a3ec730616909158251df2}{%
+           family={Principale},
+           familyi={P\bibinitperiod},
+           given={Salvatore},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b78aa5ad2b1b7722c0178b3ed81c0cc9}{%
+           family={Nuccio},
+           familyi={N\bibinitperiod},
+           given={Elbano},
+           giveni={E\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Emerald Publishing}%
+      }
+      \strng{namehash}{71adfd0cd00a85c2e71a78bd0a52509d}
+      \strng{fullhash}{71adfd0cd00a85c2e71a78bd0a52509d}
+      \strng{fullhashraw}{71adfd0cd00a85c2e71a78bd0a52509d}
+      \strng{bibnamehash}{71adfd0cd00a85c2e71a78bd0a52509d}
+      \strng{authorbibnamehash}{71adfd0cd00a85c2e71a78bd0a52509d}
+      \strng{authornamehash}{71adfd0cd00a85c2e71a78bd0a52509d}
+      \strng{authorfullhash}{71adfd0cd00a85c2e71a78bd0a52509d}
+      \strng{authorfullhashraw}{71adfd0cd00a85c2e71a78bd0a52509d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Purpose: This paper aims to contribute to the emerging debate on materiality with novel and original insights about the managerial and theoretical implications related to the adoption of the Global Reporting Initiative (GRI) and the Sustainability Accounting Standards Board (SASB) as reporting standards. Furthermore, the paper will evaluate the main drivers that favor the combination of the two standards by companies to develop new knowledge about the hierarchical relationship between financial and sustainability materiality. Design/methodology/approach: Building on a sample of 2,046 US listed companies observed during the period 2017–2020, the research is conducted using quantitative methods. Multinomial logistic regressions are used to evaluate the differences between GRI and SASB’s adoption. Findings: The analysis highlights that financial and sustainability materiality are driven by different purposes. In detail, SASB’s adoption is driven by factors directly related to financial dynamics, while GRI’s adoption is influenced by the existence of corporate governance mechanisms inspired by sustainable and ethical principles. Furthermore, the last analysis reveals that the combination of the two standards is characterized by the predominance of sustainability materiality. Originality/value: To the best of the authors’ knowledge, this is the first empirical study on the relationship between financial and sustainability materiality.}
+      \field{issn}{20493738}
+      \field{issue}{6}
+      \field{journaltitle}{Meditari Accountancy Research}
+      \field{month}{11}
+      \field{title}{Material sustainability information and reporting standards. Exploring the differences between GRI and SASB}
+      \field{volume}{31}
+      \field{year}{2023}
+      \field{pages}{1654\bibrangedash 1674}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1108/MEDAR-11-2021-1486/FULL/XML
+      \endverb
+      \keyw{Corporate governance,Double materiality,Global reporting initiative,SASB}
+    \endentry
+    \entry{Pollman2024}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=23d35e12b413929e2392694650bb7a78}{%
+           family={Pollman},
+           familyi={P\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Harvard University}%
+      }
+      \strng{namehash}{23d35e12b413929e2392694650bb7a78}
+      \strng{fullhash}{23d35e12b413929e2392694650bb7a78}
+      \strng{fullhashraw}{23d35e12b413929e2392694650bb7a78}
+      \strng{bibnamehash}{23d35e12b413929e2392694650bb7a78}
+      \strng{authorbibnamehash}{23d35e12b413929e2392694650bb7a78}
+      \strng{authornamehash}{23d35e12b413929e2392694650bb7a78}
+      \strng{authorfullhash}{23d35e12b413929e2392694650bb7a78}
+      \strng{authorfullhashraw}{23d35e12b413929e2392694650bb7a78}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ESG is one of the most notable trends in corporate governance, management, and investment of the past two decades. It is at the center of the largest and most contentious debates in contemporary corporate and securities law. Yet few observers know where the term comes from, who coined it, and what it was originally aimed to mean and achieve. As trillions of dollars have flowed into ESG-labeled investment products, and companies and regulators have grappled with ESG policies , a variety of usages of the term have developed that range from seemingly neutral concepts of integrating "environmental, social, and governance" issues into investment analysis to value-laden notions of corporate social responsibility or preferences for what some have characterized as "conscious" or "woke" capitalism. This Article makes three contributions. First, it provides a history of the term ESG that was coined without precise definition in a collaboration between the United Nations and major players in the financial industry. Understanding this history reveals that key normative choices between promoting shareholder value, limiting corporate externalities, or creating some other social good were not definitively determined in creating the term ESG. Second, the Article identifies and examines the main usages of the term ESG that have developed since its origins. ESG takes on dramatically different meanings varying from factors for integrating in investment analysis or risk management to a synonym for corporate social responsibility, sustainability, or even an ideological preference or political stance provoking backlash. Third, the Article offers an analytical critique of the term ESG and its consequences. It argues that the combination of E, S, and G into one term has provided a highly flexible moniker that can vary widely by context, evolve over time, and collectively appeal to a broad range of investors and stakeholders. These features both help to account for global spread of the term ESG, but also challenges related to the term such as the difficulty of empirically showing a causal relationship between ESG and financial performance, a proliferation of ratings that can seem at odds with understood purposes of ESG, and "sustainability arbitrage." These challenges fuel critics who assert that ESG engenders confusion and fosters unrealistic expectations and greenwashing that could inhibit corporate accountability or crowd out other solutions to pressing environmental and social issues. These critiques are intertwined with the characteristic flexibility and unfixed definition of ESG that were present from the beginning and ultimately shed light on obstacles for the future of the ESG movement and regulatory reform.}
+      \field{issue}{2}
+      \field{journaltitle}{Harvard Business Law Review}
+      \field{title}{THE MAKING AND MEANING OF ESG}
+      \field{volume}{14}
+      \field{year}{2024}
+      \field{pages}{404\bibrangedash 418}
+      \range{pages}{15}
+      \verb{urlraw}
+      \verb https://journals.law.harvard.edu/hblr/wp-content/uploads/sites/87/2024/10/04_HLB_14_2_Elizabeth-Pollman.pdf
+      \endverb
+      \verb{url}
+      \verb https://journals.law.harvard.edu/hblr/wp-content/uploads/sites/87/2024/10/04_HLB_14_2_Elizabeth-Pollman.pdf
+      \endverb
+    \endentry
+    \entry{PRIBlueprint2017}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=def22f97e7999ac36bc4a1c2ee27027b}{%
+           family={PRI},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{def22f97e7999ac36bc4a1c2ee27027b}
+      \strng{fullhash}{def22f97e7999ac36bc4a1c2ee27027b}
+      \strng{fullhashraw}{def22f97e7999ac36bc4a1c2ee27027b}
+      \strng{bibnamehash}{def22f97e7999ac36bc4a1c2ee27027b}
+      \strng{authorbibnamehash}{def22f97e7999ac36bc4a1c2ee27027b}
+      \strng{authornamehash}{def22f97e7999ac36bc4a1c2ee27027b}
+      \strng{authorfullhash}{def22f97e7999ac36bc4a1c2ee27027b}
+      \strng{authorfullhashraw}{def22f97e7999ac36bc4a1c2ee27027b}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A BLUEPRINT FOR RESPONSIBLE INVESTMENT RESPONSIBLE INVESTORS SUSTAINABLE MARKETS A PROSPEROUS WORLD FOR ALL}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb www.blueprint.unpri.org@PRI_News-#PRIBlueprint
+      \endverb
+      \verb{url}
+      \verb www.blueprint.unpri.org@PRI_News-#PRIBlueprint
+      \endverb
+    \endentry
+    \entry{Rau2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=52a5d041e7b5d7ee0d7a3bd57cb39f29}{%
+           family={Rau},
+           familyi={R\bibinitperiod},
+           given={P.\bibnamedelimi Raghavendra},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b43de9b4785a4dba33a815e35aece8d}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Ting},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Emerald Publishing}%
+      }
+      \strng{namehash}{a7b54c870d1b04a27305a84f22025e47}
+      \strng{fullhash}{a7b54c870d1b04a27305a84f22025e47}
+      \strng{fullhashraw}{a7b54c870d1b04a27305a84f22025e47}
+      \strng{bibnamehash}{a7b54c870d1b04a27305a84f22025e47}
+      \strng{authorbibnamehash}{a7b54c870d1b04a27305a84f22025e47}
+      \strng{authornamehash}{a7b54c870d1b04a27305a84f22025e47}
+      \strng{authorfullhash}{a7b54c870d1b04a27305a84f22025e47}
+      \strng{authorfullhashraw}{a7b54c870d1b04a27305a84f22025e47}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Purpose: Over the past two decades, the topics of Environmental, Social and Corporate Governance (ESG) and Corporate Social Responsibility (CSR) have attracted an increasing amount of interest, reflecting a growing sensitivity of investors and corporations towards environmental, social and governance issues. Design/methodology/approach: This survey offers an overview of the academic literature on ESG/CSR through the lens of investors, institutions and firms. We first discuss the definitions of ESG and CSR and their relationship to each other. Findings: We next describe how ESG is measured and note problems with the measurement of and quality of ESG data and discrepancies between different measures of ESG. We then turn our attention to investors, examining what types of investors invest in ESG and the role of institutional investors in ESG. From the firm's perspective, we discuss why firms themselves conduct ESG. We also summarize the literature on the impact of ESG on firms: how ESG affects firms' financing, disclosure and reporting activities and firm performance. Finally, we describe other consequences of the focus of ESG and CSR on firms and investors. Originality/value: This survey offers an overview of the academic literature on ESG/CSR through the lens of investors, institutions and firms.}
+      \field{issn}{20441401}
+      \field{issue}{1}
+      \field{journaltitle}{China Finance Review International}
+      \field{month}{3}
+      \field{title}{A survey on ESG: investors, institutions and firms}
+      \field{volume}{14}
+      \field{year}{2024}
+      \field{pages}{3\bibrangedash 33}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1108/CFRI-12-2022-0260
+      \endverb
+      \keyw{CSR,ESG,Firm performance,Firm value,SRI}
+    \endentry
+    \entry{React2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=50ce2da63bea6a618e7578fa50690040}{%
+           family={React},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{fullhash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{fullhashraw}{50ce2da63bea6a618e7578fa50690040}
+      \strng{bibnamehash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{authorbibnamehash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{authornamehash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{authorfullhash}{50ce2da63bea6a618e7578fa50690040}
+      \strng{authorfullhashraw}{50ce2da63bea6a618e7578fa50690040}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{React}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://react.dev/
+      \endverb
+      \verb{url}
+      \verb https://react.dev/
+      \endverb
+    \endentry
+    \entry{SAP2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=999bc6b18351bbe817d26f559ba408ae}{%
+           family={SAP},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{fullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{fullhashraw}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{bibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorbibnamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authornamehash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorfullhash}{999bc6b18351bbe817d26f559ba408ae}
+      \strng{authorfullhashraw}{999bc6b18351bbe817d26f559ba408ae}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Características do SAP Sustainability Control Tower}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sap.com/portugal/products/scm/sustainability-control-tower/features.html
+      \endverb
+      \verb{url}
+      \verb https://www.sap.com/portugal/products/scm/sustainability-control-tower/features.html
+      \endverb
+    \endentry
+    \entry{SASB2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=eb3ca5675573a3aa70dcd2d4b5a331da}{%
+           family={SASB},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb3ca5675573a3aa70dcd2d4b5a331da}
+      \strng{fullhash}{eb3ca5675573a3aa70dcd2d4b5a331da}
+      \strng{fullhashraw}{eb3ca5675573a3aa70dcd2d4b5a331da}
+      \strng{bibnamehash}{eb3ca5675573a3aa70dcd2d4b5a331da}
+      \strng{authorbibnamehash}{eb3ca5675573a3aa70dcd2d4b5a331da}
+      \strng{authornamehash}{eb3ca5675573a3aa70dcd2d4b5a331da}
+      \strng{authorfullhash}{eb3ca5675573a3aa70dcd2d4b5a331da}
+      \strng{authorfullhashraw}{eb3ca5675573a3aa70dcd2d4b5a331da}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{About us - SASB}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://sasb.ifrs.org/about/
+      \endverb
+      \verb{url}
+      \verb https://sasb.ifrs.org/about/
+      \endverb
+    \endentry
+    \entry{Schiemann2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=38adc077fb715cd3ef33f442dec9fafc}{%
+           family={Schiemann},
+           familyi={S\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65cef2d097cb38a7e4c692cdcd31dcc6}{%
+           family={Tietmeyer},
+           familyi={T\bibinitperiod},
+           given={Raphael},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {North-Holland}%
+      }
+      \strng{namehash}{7d633eb65528d4c5c9858b8f1948cf93}
+      \strng{fullhash}{7d633eb65528d4c5c9858b8f1948cf93}
+      \strng{fullhashraw}{7d633eb65528d4c5c9858b8f1948cf93}
+      \strng{bibnamehash}{7d633eb65528d4c5c9858b8f1948cf93}
+      \strng{authorbibnamehash}{7d633eb65528d4c5c9858b8f1948cf93}
+      \strng{authornamehash}{7d633eb65528d4c5c9858b8f1948cf93}
+      \strng{authorfullhash}{7d633eb65528d4c5c9858b8f1948cf93}
+      \strng{authorfullhashraw}{7d633eb65528d4c5c9858b8f1948cf93}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We investigate whether an environmental social governance (ESG) disclosure moderates the relation between ESG controversies and analyst forecast accuracy. The previous literature has shown that ESG controversies increase uncertainty about a firm's future prospects, while ESG disclosure decreases this uncertainty. We therefore take the next step and integrate ESG controversies, ESG disclosure and uncertainty into one model. Our study is based on 8,369 firm-year observations across 51 countries from 2008 to 2017, containing data from RepRisk, Bloomberg and the Institutional Brokers' Estimate System. We find that analyst forecast errors are generally higher for firms with higher exposure to ESG controversies. More importantly, we establish ESG disclosure as a moderator that mitigates the strength of the relation between ESG controversies and analyst forecast errors. Additionally, we identify that the most important pillar for the relation derives from social controversies and disclosure.}
+      \field{issn}{1057-5219}
+      \field{issue}{37}
+      \field{journaltitle}{International Review of Financial Analysis}
+      \field{month}{11}
+      \field{title}{ESG Controversies, ESG Disclosure and Analyst Forecast Accuracy}
+      \field{volume}{84}
+      \field{year}{2022}
+      \field{pages}{102\bibrangedash 373}
+      \range{pages}{272}
+      \verb{doi}
+      \verb 10.1016/J.IRFA.2022.102373
+      \endverb
+      \keyw{ESG controversies,ESG disclosure,Forecast accuracy,Information asymmetry}
+    \endentry
+    \entry{Schwarzmuller2022}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e855c3524a0150baf88f4a9cad0075cd}{%
+           family={Schwarzmuller},
+           familyi={S\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing Ltd}%
+      }
+      \strng{namehash}{e855c3524a0150baf88f4a9cad0075cd}
+      \strng{fullhash}{e855c3524a0150baf88f4a9cad0075cd}
+      \strng{fullhashraw}{e855c3524a0150baf88f4a9cad0075cd}
+      \strng{bibnamehash}{e855c3524a0150baf88f4a9cad0075cd}
+      \strng{authorbibnamehash}{e855c3524a0150baf88f4a9cad0075cd}
+      \strng{authornamehash}{e855c3524a0150baf88f4a9cad0075cd}
+      \strng{authorfullhash}{e855c3524a0150baf88f4a9cad0075cd}
+      \strng{authorfullhashraw}{e855c3524a0150baf88f4a9cad0075cd}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781803240480}
+      \field{month}{12}
+      \field{title}{React Key Concepts: Consolidate your knowledge of React's core features}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 49}
+      \range{pages}{49}
+    \endentry
+    \entry{Wakode2021Kanban}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a3a9f33e7d647d8054a941cffd4e2eb0}{%
+           family={Wakode},
+           familyi={W\bibinitperiod},
+           given={R.\bibnamedelimi B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f3b82291bd14606d023b07b8b737837}{%
+           family={Raut},
+           familyi={R\bibinitperiod},
+           given={L.\bibnamedelimi P.},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=db1eb030aec1a292b3abf8955754a999}{%
+           family={Talmale},
+           familyi={T\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b830a252497dc4550b2b92de676b84f6}
+      \strng{fullhash}{b830a252497dc4550b2b92de676b84f6}
+      \strng{fullhashraw}{b830a252497dc4550b2b92de676b84f6}
+      \strng{bibnamehash}{b830a252497dc4550b2b92de676b84f6}
+      \strng{authorbibnamehash}{b830a252497dc4550b2b92de676b84f6}
+      \strng{authornamehash}{b830a252497dc4550b2b92de676b84f6}
+      \strng{authorfullhash}{b830a252497dc4550b2b92de676b84f6}
+      \strng{authorfullhashraw}{b830a252497dc4550b2b92de676b84f6}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Kanban methodology is a very significant philosophy which plays an important role in many production units. In this paper, Kanban methodology has been reviewed and has been implemented on ‘Swing Lever Assembly’ of the Bajaj Steels Pvt. Ltd Nagpur. The Kanban system involves the selection of two important parameters, i.e., the lot size and the number of Kanbans used in the process. The main objective of the Kanban system is to maximize the productivity of a unit, and this is done by reducing the idle time of the process. The Kanban system is a very cost-efficient process if applied in a proper manner.}
+      \field{journaltitle}{International Journal of Engineering Research and Technology}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Overview on Kanban Methodology and its Implementation}
+      \field{volume}{3}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+      \keyw{Kanban System,Just in Time,Lean Manufacturing,Total Quality Control}
+    \endentry
+    \entry{Wang2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=ca3595b34a34d0bba1bf86568715c3f7}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ni},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecb4b1ee5387027fbb48b2ee5d100849}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Haiying},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71289ca5d38d2fd6756a14d3e3b775c1}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Yuze},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=28ae0c9219dbe7952941b5d09051c06f}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Sixuan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Emerald Publishing}%
+      }
+      \strng{namehash}{7d4acd704b6ced285bfabc93813a3a69}
+      \strng{fullhash}{edb8b166398303c76d6dc61642b6f0e0}
+      \strng{fullhashraw}{edb8b166398303c76d6dc61642b6f0e0}
+      \strng{bibnamehash}{7d4acd704b6ced285bfabc93813a3a69}
+      \strng{authorbibnamehash}{7d4acd704b6ced285bfabc93813a3a69}
+      \strng{authornamehash}{7d4acd704b6ced285bfabc93813a3a69}
+      \strng{authorfullhash}{edb8b166398303c76d6dc61642b6f0e0}
+      \strng{authorfullhashraw}{edb8b166398303c76d6dc61642b6f0e0}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Purpose: The purpose of this paper is to clarify the impact mechanisms and weighting factors of environmental, social and governance (ESG) practices on corporate value through bibliometric analysis and core interpretation of existing literature, further explore whether and under what conditions ESG practices contribute to the corporate value creation, and provide an outlook on future research directions. Design/methodology/approach: Bibliometric method is used to analyze literature co-citation, burst detection and keyword co-occurrence, and literature review method is used to condense important ideas from the existing literature. Findings: Through the review, analysis and summary of the existing literature, this paper finds that the perspectives of risk, information and strategy reflect the key pathways through which ESG practices play a role in avoiding harm and creating value for companies directly or indirectly. Macro, meso and micro factors moderate the direction and extent of the impact. Moreover, considering the relationship between ESG performance and ESG disclosure is key to understanding some contradictory findings. Research limitations/implications: The search terms limit the articles considered, and therefore, the research framework may be incomplete. Moreover, this article is primarily aimed at the research field and lacks guidance at the practical level. Practical implications: This paper helps the academic community to deepen its understanding of ESG, moving beyond the question of whether ESG is linked to corporate value to further understand why and under what conditions ESG practices create value for firms. Social implications: This paper has great practical significance in motivating companies to actively participate in ESG practices. Originality/value: The theoretical framework in this paper reveals the black box between enterprise ESG practices and value creation, and clarifies the research boundary of “the relationship between ESG practices and value creation,” contributing to the future research in this field.}
+      \field{issn}{2040-8021}
+      \field{issue}{5}
+      \field{journaltitle}{Sustainability Accounting, Management and Policy Journal}
+      \field{month}{10}
+      \field{title}{How do ESG practices create value for businesses? Research review and prospects}
+      \field{volume}{15}
+      \field{year}{2023}
+      \field{pages}{1155\bibrangedash 1177}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1108/SAMPJ-12-2021-0515
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1108/SAMPJ-12-2021-0515
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1108/SAMPJ-12-2021-0515
+      \endverb
+      \keyw{Corporate value creation,ESG practices,Prospects,Research review}
+    \endentry
+    \entry{Whelan2021}{report}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=bd5e36b25016e7d432936e3e1602185f}{%
+           family={Whelan},
+           familyi={W\bibinitperiod},
+           given={Tensie},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bf861035eb945b1b15b8a4a5d03e01d9}{%
+           family={Atz},
+           familyi={A\bibinitperiod},
+           given={Ulrich},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a4857aee75e71ecfe6d2cad7656d5316}{%
+           family={Holt},
+           familyi={H\bibinitperiod},
+           given={Tracy\bibnamedelima Van},
+           giveni={T\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=823fb5622331a710e865a802da91de63}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Casey},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{2}{%
+        {NYU Stern Center for Sustainable Business}%
+        {Rockefeller Asset Management}%
+      }
+      \strng{namehash}{01551544e6afd533bc963098e342c052}
+      \strng{fullhash}{df2c9db017bcc85b972cd61090a20a0a}
+      \strng{fullhashraw}{df2c9db017bcc85b972cd61090a20a0a}
+      \strng{bibnamehash}{01551544e6afd533bc963098e342c052}
+      \strng{authorbibnamehash}{01551544e6afd533bc963098e342c052}
+      \strng{authornamehash}{01551544e6afd533bc963098e342c052}
+      \strng{authorfullhash}{df2c9db017bcc85b972cd61090a20a0a}
+      \strng{authorfullhashraw}{df2c9db017bcc85b972cd61090a20a0a}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ESG and Financial Performance: Uncovering the Relationship by Aggregating Evidence from 1,000 Plus Studies Published between 2015–2020}}
+      \field{type}{techreport}
+      \field{year}{2021}
+      \field{pages}{3\bibrangedash 4}
+      \range{pages}{2}
+      \verb{urlraw}
+      \verb https://www.stern.nyu.edu/sites/default/files/assets/documents/NYU-RAM_ESG-Paper_2021.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.stern.nyu.edu/sites/default/files/assets/documents/NYU-RAM_ESG-Paper_2021.pdf
+      \endverb
+    \endentry
+    \entry{Workiva2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=30fe928b4f4d716df2a62d15d519370d}{%
+           family={Workiva},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{30fe928b4f4d716df2a62d15d519370d}
+      \strng{fullhash}{30fe928b4f4d716df2a62d15d519370d}
+      \strng{fullhashraw}{30fe928b4f4d716df2a62d15d519370d}
+      \strng{bibnamehash}{30fe928b4f4d716df2a62d15d519370d}
+      \strng{authorbibnamehash}{30fe928b4f4d716df2a62d15d519370d}
+      \strng{authornamehash}{30fe928b4f4d716df2a62d15d519370d}
+      \strng{authorfullhash}{30fe928b4f4d716df2a62d15d519370d}
+      \strng{authorfullhashraw}{30fe928b4f4d716df2a62d15d519370d}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Workiva Platform | Integrated GRC, ESG \& Financial Reporting}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.workiva.com/en-nl/platform
+      \endverb
+      \verb{url}
+      \verb https://www.workiva.com/en-nl/platform
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
