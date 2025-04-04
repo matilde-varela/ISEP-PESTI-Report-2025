@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1743807532.71701 "main.bcf" "main.bbl" "main" 1743807556.56723 0
+["biber main"] 1743808431.67303 "main.bcf" "main.bbl" "main" 1743808438.32405 0
   "main.bcf" 1743807555 112136 f2de5b337871aa79298be1934a2ff8ae "pdflatex"
-  "mainbibliography.bib" 1743805353 44028 117e234fd44321ecc23e79c8bdcedf33 ""
+  "mainbibliography.bib" 1743808430 43752 504479a1528fe2f3d6f86e9ad587e63b ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1743807547.35537 "c:/Users/hp15d/OneDrive/Documentos/UNIVERSIDADE/Licenciatura_LEI_ISEP/3_ANO/6_SEMESTRE/PESTI/ISEP-PESTI-Report-2025/main.tex" "main.pdf" "main" 1743807556.56888 0
+["pdflatex"] 1743807547.35537 "c:/Users/hp15d/OneDrive/Documentos/UNIVERSIDADE/Licenciatura_LEI_ISEP/3_ANO/6_SEMESTRE/PESTI/ISEP-PESTI-Report-2025/main.tex" "main.pdf" "main" 1743808438.32468 0
   "C:/Users/hp15d/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1743790452 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/hp15d/AppData/Local/MiKTeX/fonts/pk/ljfour/public/cmbright/dpi1244/ebbx10.pk" 1743790689 47908 3ce1d33b53017dc6ace92484436f4470 ""
   "C:/Users/hp15d/AppData/Local/MiKTeX/fonts/pk/ljfour/public/cmbright/dpi1493/ebbx10.pk" 1743790687 59612 ce4940c215bdb06153cb352071992db4 ""
@@ -303,7 +303,7 @@
   "frontmatter/glossary.tex" 1743786694 512 97b23a8affb386389863dc4e3213d5ce ""
   "main.acr" 0 -1 0 ""
   "main.aux" 1743807555 15840 7925cf4ae5ba993647c426f1c882a3d4 "pdflatex"
-  "main.bbl" 1743807538 97349 88aa2bd1ac358db5383f09bc9faf2d38 "biber main"
+  "main.bbl" 1743808438 97349 88aa2bd1ac358db5383f09bc9faf2d38 "biber main"
   "main.glsdefs" 1743807555 4915 c11bcca1babe654d15c6e351dae69868 "pdflatex"
   "main.lof" 1743807555 451 415a8f6758c6df87f3cac173745e610f "pdflatex"
   "main.lot" 1743807555 202 ae70645c8dd93772147eddcf1c42eb60 "pdflatex"
