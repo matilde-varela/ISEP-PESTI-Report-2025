@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1743808431.67303 "main.bcf" "main.bbl" "main" 1743808438.32405 0
-  "main.bcf" 1743807555 112136 f2de5b337871aa79298be1934a2ff8ae "pdflatex"
-  "mainbibliography.bib" 1743808430 43752 504479a1528fe2f3d6f86e9ad587e63b ""
+["biber main"] 1743815735.71036 "main.bcf" "main.bbl" "main" 1743815760.46674 0
+  "main.bcf" 1743815759 112136 f2de5b337871aa79298be1934a2ff8ae "pdflatex"
+  "mainbibliography.bib" 1743815700 43785 764b512abe50781d037cfee04ebb2d3c ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1743807547.35537 "c:/Users/hp15d/OneDrive/Documentos/UNIVERSIDADE/Licenciatura_LEI_ISEP/3_ANO/6_SEMESTRE/PESTI/ISEP-PESTI-Report-2025/main.tex" "main.pdf" "main" 1743808438.32468 0
+["pdflatex"] 1743815751.12595 "c:/Users/hp15d/OneDrive/Documentos/UNIVERSIDADE/Licenciatura_LEI_ISEP/3_ANO/6_SEMESTRE/PESTI/ISEP-PESTI-Report-2025/main.tex" "main.pdf" "main" 1743815760.46862 0
   "C:/Users/hp15d/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1743790452 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/hp15d/AppData/Local/MiKTeX/fonts/pk/ljfour/public/cmbright/dpi1244/ebbx10.pk" 1743790689 47908 3ce1d33b53017dc6ace92484436f4470 ""
   "C:/Users/hp15d/AppData/Local/MiKTeX/fonts/pk/ljfour/public/cmbright/dpi1493/ebbx10.pk" 1743790687 59612 ce4940c215bdb06153cb352071992db4 ""
@@ -296,21 +296,22 @@
   "PESTI-style.cls" 1743786693 25099 231515b0f3dc9f98f6ab82c1cf86f149 ""
   "appendices/appendixA.tex" 1743807054 408 29f080d5aa9582f5748168105b99cfb9 ""
   "c:/Users/hp15d/OneDrive/Documentos/UNIVERSIDADE/Licenciatura_LEI_ISEP/3_ANO/6_SEMESTRE/PESTI/ISEP-PESTI-Report-2025/main.tex" 1743806121 7293 29ecc15d1db43b72335855972427c522 ""
-  "chapters/EA.tex" 1743805976 33954 17d8897537be1a455685d68fb9ad93d8 ""
+  "chapters/EA.tex" 1743815672 32639 3c9fa3b4b15e9b89c4d0b3e543b03006 ""
   "chapters/Introdução.tex" 1743786693 12267 d7f116c51b8b2fd690711fa662b715e5 ""
+  "frontmatter/assets/SAP.png" 1743815482 452220 48a8ad06ef522280ab5a3b009bfb7600 ""
   "frontmatter/assets/agentes-chave-esg-wcw.png" 1743786694 140637 52dee4b21d5303c7d3a8faf222c6406c ""
   "frontmatter/frontmatter.tex" 1743807514 7876 10ab0c62d55fbdf73d6b566038f04fba ""
   "frontmatter/glossary.tex" 1743786694 512 97b23a8affb386389863dc4e3213d5ce ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1743807555 15840 7925cf4ae5ba993647c426f1c882a3d4 "pdflatex"
-  "main.bbl" 1743808438 97349 88aa2bd1ac358db5383f09bc9faf2d38 "biber main"
-  "main.glsdefs" 1743807555 4915 c11bcca1babe654d15c6e351dae69868 "pdflatex"
-  "main.lof" 1743807555 451 415a8f6758c6df87f3cac173745e610f "pdflatex"
-  "main.lot" 1743807555 202 ae70645c8dd93772147eddcf1c42eb60 "pdflatex"
-  "main.out" 1743807555 6650 cd51526ef61387236ebd6af6e314b0f2 "pdflatex"
-  "main.run.xml" 1743807555 2364 fd5016b83ee669c9a41fec1f7cb597cb "pdflatex"
+  "main.aux" 1743815759 16169 40c93f0de2b49a215a7f17b4db202d84 "pdflatex"
+  "main.bbl" 1743815740 97413 b3bbcd469379e47381376473b3b60bc7 "biber main"
+  "main.glsdefs" 1743815759 4915 c11bcca1babe654d15c6e351dae69868 "pdflatex"
+  "main.lof" 1743815759 597 12b5fee216c4481b23860ab3fb026359 "pdflatex"
+  "main.lot" 1743815759 202 ae70645c8dd93772147eddcf1c42eb60 "pdflatex"
+  "main.out" 1743815759 6642 92630ff7a8d49bfeb1dd3e75347ad525 "pdflatex"
+  "main.run.xml" 1743815759 2364 fd5016b83ee669c9a41fec1f7cb597cb "pdflatex"
   "main.tex" 1743806121 7293 29ecc15d1db43b72335855972427c522 ""
-  "main.toc" 1743807555 2941 e7a9191482ad7696beb4bdc06820d52c "pdflatex"
+  "main.toc" 1743815759 2939 2f803ef319d0e443163acc848c571501 "pdflatex"
   (generated)
   "main.acn"
   "main.aux"

@@ -18,19 +18,19 @@
 \contentsline {subsection}{\numberline {2.1.2}PRI: Princípios de Investimento Responsável}{7}{subsection.37}%
 \contentsline {section}{\numberline {2.2}Trabalhos relacionados}{7}{section.41}%
 \contentsline {subsection}{\numberline {2.2.1}Práticas e Riscos ESG: Impacto no Valor e Rentabilidade das Empresas}{8}{subsection.42}%
-\contentsline {subsection}{\numberline {2.2.2}Métodos e abordagens para reporte e análise ESG}{9}{subsection.43}%
+\contentsline {subsection}{\numberline {2.2.2}Desafios e Abordagens no Reporte e Análise ESG}{9}{subsection.43}%
 \contentsline {subsection}{\numberline {2.2.3}Tendências atuais em ESG e tecnologia}{10}{subsection.46}%
 \contentsline {section}{\numberline {2.3}Tecnologias existentes}{11}{section.51}%
-\contentsline {subsection}{\numberline {2.3.1}Frameworks de Relato ESG}{12}{subsection.52}%
-\contentsline {subsubsection}{GRI (Global Reporting Initiative)}{12}{section*.53}%
+\contentsline {subsection}{\numberline {2.3.1}Frameworks de Relato ESG}{11}{subsection.52}%
+\contentsline {subsubsection}{GRI (Global Reporting Initiative)}{11}{section*.53}%
 \contentsline {subsubsection}{SASB (Sustainability Accounting Standards Board)}{12}{section*.56}%
-\contentsline {subsubsection}{GRI e SASB: Diferenças-Chave e Complementaridade}{13}{section*.59}%
-\contentsline {subsection}{\numberline {2.3.2}Softwares ESG e Soluções no Mercado}{14}{subsection.61}%
-\contentsline {subsubsection}{Workiva}{14}{section*.62}%
-\contentsline {subsubsection}{SAP Sustainability Control Tower}{14}{section*.63}%
-\contentsline {subsubsection}{IBM Environmental Intelligence Suite}{14}{section*.65}%
-\contentsline {subsection}{\numberline {2.3.3}Bibliotecas e Ferramentas de Desenvolvimento}{14}{subsection.67}%
-\contentsline {subsubsection}{React.js}{14}{section*.68}%
-\contentsline {subsubsection}{ApexCharts.js}{14}{section*.70}%
-\contentsline {chapter}{Bibliografia}{15}{chapter*.71}%
-\contentsline {chapter}{\numberline {A}Cronograma do Projeto de Estágio}{19}{appendix.72}%
+\contentsline {subsubsection}{GRI e SASB: Diferenças-Chave e Complementaridade}{12}{section*.59}%
+\contentsline {subsection}{\numberline {2.3.2}Softwares ESG e Soluções no Mercado}{13}{subsection.61}%
+\contentsline {subsubsection}{Workiva}{13}{section*.62}%
+\contentsline {subsubsection}{SAP Sustainability Control Tower}{13}{section*.63}%
+\contentsline {subsubsection}{IBM Environmental Intelligence Suite}{14}{section*.66}%
+\contentsline {subsection}{\numberline {2.3.3}Bibliotecas e Ferramentas de Desenvolvimento}{14}{subsection.68}%
+\contentsline {subsubsection}{React.js}{14}{section*.69}%
+\contentsline {subsubsection}{ApexCharts.js}{14}{section*.71}%
+\contentsline {chapter}{Bibliografia}{15}{chapter*.72}%
+\contentsline {chapter}{\numberline {A}Cronograma do Projeto de Estágio}{19}{appendix.73}%
