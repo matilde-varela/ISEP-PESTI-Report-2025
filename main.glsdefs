@@ -250,3 +250,59 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{ODS}%
+{%
+name={\acronymfont {\glsentryshort {ODS}}},%
+sort={ODS},%
+type={acronym},%
+first={ODS},%
+firstplural={ODSs},%
+text={ODS},%
+plural={ODSs},%
+description={Objetivos de Desenvolvimento Sustentável},%
+descriptionplural={Objetivos de Desenvolvimento Sustentável},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Objetivos de Desenvolvimento Sustentável},%
+longplural={Objetivos de Desenvolvimento Sustentávels},%
+short={ODS},%
+shortplural={ODSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{UNEP FI}%
+{%
+name={\acronymfont {\glsentryshort {UNEP FI}}},%
+sort={UNEP FI},%
+type={acronym},%
+first={UNEP FI},%
+firstplural={UNEP FIs},%
+text={UNEP FI},%
+plural={UNEP FIs},%
+description={UNEP Finance Initiative},%
+descriptionplural={UNEP Finance Initiative},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={UNEP Finance Initiative},%
+longplural={UNEP Finance Initiatives},%
+short={UNEP FI},%
+shortplural={UNEP FIs},%
+counter={page},%
+parent={},%
+%
+}%
+

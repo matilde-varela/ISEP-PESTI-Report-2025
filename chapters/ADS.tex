@@ -1,44 +1,184 @@
-% 
-\chapter{Análise e desenho da solução} % Main chapter title
-\label{chap:ADS} % For referencing the chapter elsewhere, use Chapter~\ref{ADS}
 
-O estudante deve questionar se o relatório descreve o trabalho de forma suficientemente detalhada para que possa ser compreendido e reproduzido, se necessário, no futuro por outras pessoas da organização. 
+%-------------------------------------------------------------------------------
+\chapter{Análise do Problema}
+\label{sec:AP}
 
-Todas as boas práticas abordadas no curso deverão ser utilizadas neste capítulo e no relatório em geral. 
+Neste próximo capitulo aborda-se a análise do problema em questão. Inicia-se com a descriçao do dominio do problema, através do glossario de termos usados, do modelo de dominio e do mapa de materialidade da Devscope de acordo com as metricas indicadas pela \gls{SASB} para o setor de \textit{software} e serviços IT. Por fim, serao delineados os requisitos funcionais e nao funcionais do sistema.
 
-Note-se que este capítulo não deve conter exclusivamente a explicação da forma como métodos, técnicas, algoritmos, tecnologias, etc. foram usados, mas também o processo de compreensão do problema, a análise nos seus vários níveis, a identificação e especificação de requisitos, a modelação, a descrição dos componentes da solução, etc. 
+\section{Contexto}
+\label{sec:Context}
 
-Recomenda-se que a descrição técnica siga uma abordagem que parta do “geral” (descrição inicial do problema) para o “particular” (descrição técnica completa e coerente da solução), sem saltar etapas.
+A fase de análise é uma das mais importantes no ciclo de vida do desenvolvimento de software, pois é nela que ocorre a recolha dos requisitos, funcionalidades e necessidades do cliente, bem como das especificações do sistema. O objetivo final é definir de forma clara os recursos e funcionalidades que compõem a solução a ser desenvolvida.
+
+Qualquer informação incorreta ou não obtida pode comprometer o desenvolvimento do produto, tanto em termos de qualidade como de cumprimento dos prazos.
+
+A proposta de desenvolvimento de uma plataforma ESG surgiu da necessidade identificada pela Devscope em centralizar e otimizar o controlo de diversas métricas relacionadas com os pilares ambiental, social e de governança (ESG). Esta necessidade prende-se com a crescente importância de monitorizar e reportar práticas sustentáveis, promovendo uma gestão mais transparente, eficiente e alinhada com os objetivos de responsabilidade corporativa da empresa. Ao centralizar estes dados numa única plataforma, a Devscope pretende não só melhorar a sua capacidade de análise e tomada de decisões, como também reforçar o seu compromisso com a sustentabilidade e o impacto positivo na sociedade.
+
+\section{Domínio do problema}
+\label{sec:DP} 
+% Devem ser especificados os conceitos de domínio do problema através de artefactos adequados (e.g. glossário, modelo de domínio). 
+
+A presente secção visa descrever o domínio do problema através de vários artefactos de variadas complexidades, nomeadamente conceitos e diagramas.
+
+A Tabela \ref{tab:glossario_dominio} apresenta os conceitos introduzidos no dominio do problema e que serão usados ao longo do desenvolvimento.
+
+%- Glossario da soluçao (termos usados ao longo do desenvolvimento e o que são)
+\begin{table}[H]
+    \rowcolors{2}{purple!10}{white}
+    \renewcommand{\arraystretch}{1.2}
+    \setlength{\tabcolsep}{10pt}
+    \centering
+    \begin{tabular}{>{\bfseries}p{3.5cm} >{\bfseries}p{4cm} p{7cm}}
+        \rowcolor{purple!40}
+        Conceito (EN) & Conceito (PT) & \textbf{Descrição} \\
+        ESG & ESG (Ambiente, Social, Governança) & Conjunto de critérios que avaliam o desempenho ambiental, social e de governança de uma organização, com foco na sustentabilidade e responsabilidade corporativa. \\
+        Dashboard & Painel & Resumo gráfico de várias informações importantes, normalmente utilizado para dar uma visão geral de um negócio. \\
+        Materiality Map & Mapa de Materialidade & Ferramenta que destaca as métricas ESG mais relevantes para cada setor, segundo as normas da SASB. \\
+        % Podes adicionar mais linhas abaixo
+    \end{tabular}
+    \caption{Glossário do domínio do problema}
+    \label{tab:glossario_dominio}
+\end{table}
+
+A Figura \ref{fig:domain_model} ilustra o modelo de dominio e relaciona os diferentes conceitos da soluçao.
+
+% - Modelo de dominio (diagrama)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{frontmatter/assets/apexchart.png}
+    \caption{Modelo de Dominio}
+    \label{fig:domain_model}
+\end{figure}
+
+O \textit{dashboard} apresenta a pontuação ESG da empresa com base na consolidação de todas as métricas contabilizadas, permitindo uma visão geral do desempenho. Além disso, destaca o desempenho das principais métricas, bem como aquelas que melhoraram ou pioraram ao longo da semana, com a possibilidade de visualizar também o histórico mensal e anual dessas métricas.
+
+Outra secção da plataforma disponibiliza uma visão detalhada de todas as métricas existentes: métricas alinhadas com os \gls{ODS}, métricas personalizadas (criadas pelos próprios utilizadores) e métricas orientadas pelos padrões definidos pela \gls{SASB}.
+
+Cada métrica possui atributos específicos, incluindo o pilar e subárea ESG a que pertence, o seu nível de influência na pontuação ESG, unidade de medida, código identificador e os dados importados que lhe estão associados.
+
+De acordo com o referencial \gls{SASB}, adotado pela Devscope, existem normas específicas para cada setor — como é o caso do setor de Software e Serviços de TI — que determinam quais métricas devem ser reportadas. É com base nessas diretrizes que se constrói o Mapa de Materialidade, como indicado na Figura \ref{fig:materiality_map}.
+
+Este mapa, um dos elementos centrais da plataforma, reflete as métricas ativas não só definidas pela \gls{SASB}, consoante o setor da empresa, bem como as métricas personalizadas. Este mapa organiza as métricas segundo os pilares ESG e respetivas subáreas, proporcionando uma visão estruturada das prioridades de sustentabilidade da organização.
+
+% - mapa de materialidade da DevScope (Software e IT sector - SASB)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{frontmatter/assets/mapa-materialidade.png}
+    \caption{Mapa de Materialidade segundo o setor SASB da Devscope}
+    \label{fig:materiality_map}
+\end{figure}
+
+Por fim, outra página da plataforma é dedicada à gestão de objetivos, permitindo acompanhar os objetivos definidos, as métricas a eles associadas, o progresso na sua concretização e, semanalmente, se se encontram dentro ou fora do plano estabelecido.
+
+\section{Requisitos funcionais e nao funcionais}
+
+A seguinte secção compila os requisitos obtidos com o cliente e categoriza-os entre funcionais e não funcionais.
+
+\subsection{Requisitos Funcionais}
+
+Os requisitos funcionais correspondem a funcionalidades presentes no software a ser desenvolvido, normalmente representadas por casos de uso e acompanhados por diagramas. Os requisitos funcionais deste projeto estão organizados na Tabela \ref{tab:use_cases}, onde cada requisitos é considerado um caso de uso e identificado por um código alfa-numérico.
+
+%- Use Cases list
+\begin{table}[H]
+    \rowcolors{2}{orange!20}{white}
+    \renewcommand{\arraystretch}{1.2}
+    \setlength{\tabcolsep}{10pt}
+    \centering
+    \begin{tabular}{>{\bfseries}p{3.5cm} p{4cm} p{7cm}}
+        \rowcolor{orange!50}
+        Código & \textbf{Descrição Curta} & \textbf{Descrição} \\
+        UC-01 & Visualização de KPI's & Como analista ESG, quero visualizar rapidamente os principais KPIs ambientais, sociais e de governação, para poder avaliar o desempenho da organização. \\
+        UC-02 & Filtragem de Métricas & Como stakeholder, quero poder filtrar os dados por setor e ano, para analisar tendências específicas ao longo do tempo. \\
+        UC-03 & Mapa de Materialidade & Como colaborador da área de sustentabilidade, quero ver a mapa de materialidade para priorizar temas relevantes com base no setor. \\
+        UC-04 & Pontuação ESG & Como gestor, quero aceder a uma pontuação ESG agregada, para ter uma visão geral do desempenho da empresa em responsabilidade social e ambiental. \\
+        UC-05 & Detalhes de Métricas & Como utilizador curioso, quero clicar num KPI e ver mais detalhes históricos e explicações, para compreender o que influencia cada indicador. \\
+        UC-06 & Mapa de Materialidade Detalhada & Como utilizador analítico, quero visualizar a matriz de materialidade dividida por categorias ESG com um sistema de cores intuitivo, para identificar rapidamente os temas mais críticos e, ao clicar em cada indicador, aceder a detalhes explicativos que me ajudem a compreender o seu impacto e evolução. \\
+        UC-07 & Métricas Customizáveis & Como gestor de sustentabilidade, quero poder criar métricas ESG específicas à realidade da empresa e definir a sua fonte de dados, para garantir que o painel reflete os indicadores mais relevantes para a nossa estratégia. \\
+        UC-08 & Importe de Dados & Como gestor de sustentabilidade, quero poder importar dados para associar às métricas. \\
+        UC-09 & Modo Noturno & Como utilizador, quero poder alternar entre modo noturno e modo claro \\        
+    \end{tabular}
+    \caption{Lista de Casos de Uso}
+    \label{tab:use_cases}
+\end{table}
+
+% (SSD de cada US) - ainda estou a pensar em que nivel é que devo pôr, probavelmente os 3 nivels de vista de processo
+
+\subsubsection{UC-01 | Visualização de KPI's}
+
+% 1. Como analista ESG, quero visualizar rapidamente os principais KPIs ambientais, sociais e de governação, para poder avaliar o desempenho da organização.
+% %     ○ Visualização rápida de métricas chave (emissões, diversidade, etc.)
+% %     ○ Divididos por categorias: Ambiental, Social e Governança
+
+\subsubsection{UC-02 | Filtragem de Métricas}
+
+% % 2. Como analista ESG, quero poder filtrar os dados por setor e ano, para analisar tendências específicas ao longo do tempo.
+% %     ○ Ano / intervalo temporal
+% %     ○ Categoria ESG (filtrar por E, S ou G)
+
+\subsubsection{UC-03 | Mapa de Materialidade}
+
+% % 5. Como analista ESG, quero ver a matriz de materialidade para priorizar temas relevantes com base no setor.
+% %     ○ Representação visual dos temas ESG mais relevantes para o setor
+% %     ○ Com base no modelo SASB (Software & IT)
+% %     ○ Permite identificar prioridades estratégicas (talvez com recomendações ??)
+
+\subsubsection{UC-04 | Pontuação ESG}
+
+% % 4. Como analista ESG, quero aceder a uma pontuação ESG agregada, para ter uma visão geral do desempenho da empresa em responsabilidade social e ambiental.
+% %     ○ Atribuição de uma "pontuação ESG" global (ex: 0–100, A–F, etc.) - depois explorar isto
+% %     ○ Visualização por medidores ou cores
+
+\subsubsection{UC-05 | Detalhes de Métricas}
+
+% % 3. Como analista ESG, quero clicar num KPI e ver mais detalhes históricos e explicações, para compreender o que influencia cada indicador.
+% %     ○ Permitir clicar nos KPIs ou gráficos para ver mais detalhes
+% %     ○ Informação histórica, iniciativas associadas, notas explicativas
+
+\subsubsection{UC-06 | Mapa de Materialidade Detalhada}
+
+% 6. Como analista ESG, quero visualizar a matriz de materialidade dividida por categorias ESG com um sistema de cores intuitivo, para identificar rapidamente os temas mais críticos e, ao clicar em cada indicador, aceder a detalhes explicativos que me ajudem a compreender o seu impacto e evolução.
+
+\subsubsection{UC-07 | Métricas Customizáveis}
+
+% 7. Como analista ESG, quero poder criar métricas ESG específicas à realidade da empresa e definir a sua fonte de dados, para garantir que o painel reflete os indicadores mais relevantes para a nossa estratégia.
+
+\subsubsection{UC-08 | Importe de Dados}
+
+\subsubsection{UC-09 | Modo Noturno}
 
 
-\textbf{Nota}: Pode justificar-se este capítulo ser divido em dois (Análise do Problema e Desenho da Solução).
+\subsection{Requisitos Não Funcionais}
 
-\textbf{Atenção}: A proposta de estrutura das subsecções seguintes adequa-se a projetos/estágios de desenvolvimento de produto ou sistema. O estudante deve, conjuntamente com o orientador, definir a estrutura de secções mais adequada ao seu projeto.
+Requisitos nao funcionais correspondem a todas as outras propriedades que nao constituiem funcionalidades, como performance, usabilidade, uso de tecnologias ou processos especificos, entre outras restriçoes/limitaçoes na solução desenvolvida.
+
+Uma forma de categorizar os requisitos nao funcionais  é através de FURPS+.
+(Explicar o que cada letra quer dizer)
+
+- explicar conceito de FURPS+
+- apresentar e categorizar os requisitos nao funcionais conforme FURPS+
+
+- Modo escuro e modo claro
+- Fonte de dados simulada
+- SASB
 
 %-------------------------------------------------------------------------------
 
-\section{Domínio do problema} 
-\label{sec:DP} 
-Devem ser especificados os conceitos de domínio do problema através de artefactos adequados (e.g. glossário, modelo de domínio). 
+\chapter{Desenho da solução}
+Breve introduçao sobre o capitulo
 
-\section{Requisitos funcionais e não funcionais} 
-\label{sec:Req} 
-Especificar os principais requisitos funcionais e não funcionais do sistema. 
-
-O levantamento de requisitos pode ser obtido dialogando com o cliente, de forma a identificar as funcionalidades de alto nível pretendidas no sistema para cada perfil de utilizador, recorrendo a diagramas de casos de utilização e/ou diagramas de domínio. 
-
-De um modo geral, pretende-se a documentação final dos requisitos (e não a sua evolução no tempo).
-
-\section{Desenho} 
-\label{sec:Des} 
-Dependendo do volume, o desenho da solução pode ser incluída neste capítulo (uma secção) ou pode constituir um capítulo separado.
-
-O estudante deve especificar a arquitetura global da solução (diagramas de componentes e outros se necessário, como por exemplo, diagramas de implantação caso existam instalações) e deve apresentar uma justificação para a arquitetura que faça referência aos requisitos. 
-Se foram estudadas alternativas arquiteturais, estas devem ser apresentadas.
-
-Apresentar uma especificação global do sistema com base em um ou mais diagramas de Classes e apresentar especificações adicionais em casos que o justifiquem (e.g. diagramas de estados para classes com comportamento relativamente complexo).
-
-Especificar o modelo de dados, caso a solução contemple esse aspeto, e justificar o modelo de dados com base nos artefactos anteriores (particularmente o diagrama de classes).
-A aplicação de padrões e boas práticas é recomendada.
+//indicate whats supposed to do in the design phase of design
 
 
+\section{Modelo de arquitetura} 
+- 4+1 model
+- C4 model
+- clean arquitecture
+- model-view-controller
+
+\section{Design Arquitetural} 
+- views (system, container maybe component if necessary)
+    - scenario view
+    - logical (1-3 levels)
+    (process views of each US are together with its analysis to be easier to understand and flesh out previous chapter)
+    - implementation (2 e 3 level)
+    - physical
