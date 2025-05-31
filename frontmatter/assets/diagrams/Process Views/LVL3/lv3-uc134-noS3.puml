@@ -1,0 +1,57 @@
+ @startuml
+
+actor User as USER
+participant "<<Component>>\nView" as VIEW
+participant "<<Component>>\nController / API Route" as COMP
+participant "<<Component>>\nService" as SERV
+participant "<<Component>>\nMapper" as MAP
+participant "<<Component>>\nRepository" as REPO
+database "<<External System>>\nESG Database" as DATA
+
+USER -> VIEW : onLoad
+activate VIEW
+
+
+VIEW -> COMP : GET method {resources}
+activate COMP
+
+COMP -> SERV : request {resources} data
+activate SERV
+
+SERV -> REPO : request {resources} data
+activate REPO
+
+REPO -> DATA : query to get {resources} data
+activate DATA
+
+DATA --> REPO : results
+deactivate DATA
+
+REPO --> SERV : {resources} data
+deactivate REPO
+
+
+SERV -> MAP : convert {resources} data to frontend format
+activate MAP
+
+MAP --> SERV : converted {resources} data
+deactivate MAP
+
+SERV --> COMP : converted {resources} data
+deactivate SERV
+
+COMP --> VIEW : HTTP response
+deactivate COMP
+
+alt Resources were retrieved
+
+    VIEW --> USER : displays the {resources} data
+    
+    else Unsuccessful retrieval
+    
+    VIEW --> USER : displays error message
+    deactivate VIEW
+
+end alt
+
+@enduml

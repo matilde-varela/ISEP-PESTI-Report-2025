@@ -1,0 +1,48 @@
+@startuml
+
+actor User as USER
+participant Frontend as FE
+database "ESG Database" as DATA
+participant  "Cloud Storage" as CLOUD
+
+
+USER -> FE : wants to import/create new {resource}
+activate FE
+
+
+FE --> USER : asks for the information needed
+deactivate FE
+activate USER
+
+USER -> FE : provides information necessary to import/create {resource}
+deactivate USER
+activate FE
+
+
+FE -> DATA : create(data provided)
+activate DATA
+
+DATA --> FE : resource created
+deactivate DATA
+
+alt Creating Metrics
+    FE -> CLOUD : upload({metric image})
+    activate CLOUD
+
+    CLOUD --> FE : public image url
+    deactivate CLOUD
+end alt
+
+
+alt Resource was created/imported
+
+    FE --> USER : operation was a success
+    
+    else Unsuccessful operation
+    
+    FE --> USER : displays error in operation
+    deactivate FE
+
+end alt
+
+@enduml

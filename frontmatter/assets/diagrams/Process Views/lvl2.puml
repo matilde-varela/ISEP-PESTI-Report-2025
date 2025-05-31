@@ -1,0 +1,41 @@
+@startuml
+
+actor User as USER
+participant Frontend as FE
+database "ESG Database" as DATA
+participant  "Cloud Storage" as CLOUD
+
+
+USER -> FE : wants to see page with information
+activate FE
+
+
+alt filtered
+    FE --> USER : asks for the information needed
+    deactivate FE
+    activate USER
+
+    USER -> FE : provides information asked
+    deactivate USER
+    activate FE
+end alt
+
+
+FE -> DATA : find(with or without filter)
+activate DATA
+
+DATA --> FE : results
+deactivate DATA
+
+alt Finding Metrics
+    FE -> CLOUD : find(with or without filter)
+    activate CLOUD
+
+    CLOUD --> FE : results
+    deactivate CLOUD
+end alt
+
+
+FE --> USER : displays page with the information
+deactivate FE 
+@enduml

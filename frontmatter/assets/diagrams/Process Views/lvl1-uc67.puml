@@ -1,0 +1,31 @@
+@startuml
+actor       User       as USER
+participant "<<System (C4)>>\nESG Platform" as ESG
+
+
+USER -> ESG : wants to import/create new {resource}
+activate ESG
+
+
+ESG --> USER : asks for the information needed
+deactivate ESG
+activate USER
+
+USER -> ESG : provides information asked
+deactivate USER
+activate ESG
+
+alt Successful Operation 
+
+ESG --> USER : displays success message
+
+ESG --> USER : updates page with new {resource}
+
+else Error in Operation
+
+ESG --> USER : displays error message
+deactivate ESG
+
+end alt
+
+@enduml

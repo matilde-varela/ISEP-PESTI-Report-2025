@@ -1,0 +1,75 @@
+ @startuml
+
+actor User as USER
+participant "<<Component>>\nView" as VIEW
+participant "<<Component>>\nController / API Route" as COMP
+participant "<<Component>>\nService" as SERV
+participant "<<Component>>\nMapper" as MAP
+participant "<<Component>>\nRepository" as REPO
+database "<<External System>>\nESG Database" as DATA
+participant "<<External System>>\nCloud Storage" as CLOUD
+
+
+USER -> VIEW : wants to create new metric
+activate VIEW
+
+
+VIEW --> USER : asks for the information needed
+deactivate VIEW
+activate USER
+
+USER -> VIEW : fills and submits the {metric}
+deactivate USER
+activate VIEW
+
+
+VIEW -> COMP : POST method {metric}
+activate COMP
+
+COMP -> SERV : request the creation of the {metric}
+activate SERV
+
+SERV -> CLOUD : uploads {metric} image
+activate CLOUD
+
+CLOUD --> SERV : {metric} image url
+deactivate CLOUD
+
+SERV -> REPO : request the creation of the {metric}
+activate REPO
+
+REPO -> DATA : inserts new {metric} with image url
+activate DATA
+
+DATA --> REPO : {metric} data
+deactivate DATA
+
+
+REPO --> SERV : {metric} data
+deactivate REPO
+
+
+SERV -> MAP : convert {metric} data to frontend format
+activate MAP
+
+MAP --> SERV : converted {metric} data
+deactivate MAP
+
+SERV --> COMP : converted {metric} data
+deactivate SERV
+
+COMP --> VIEW : HTTP response
+deactivate COMP
+
+alt Metric was created
+
+    VIEW --> USER : displays the {metric} data
+    
+    else Unsuccessful operation
+    
+    VIEW --> USER : displays error message
+    deactivate VIEW
+
+end alt
+
+@enduml

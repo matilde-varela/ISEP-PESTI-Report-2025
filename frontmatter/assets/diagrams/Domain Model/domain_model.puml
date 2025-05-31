@@ -1,0 +1,142 @@
+@startuml
+' Layout direction
+left to right direction
+
+skinparam classAttributeIconSize 0
+hide empty attributes
+skinparam classBackgroundColor beige
+skinparam ArrowColor #222222
+
+' ==== Value Objects (Generic) ====
+class Name <<(V,#FF8B40)value object>>
+class Weight <<(V,#FF8B40)value object>>
+class Description <<(V,#FF8B40)value object>>
+
+' ==== ESGPillar Aggregate ====
+package "<<aggregate ESGPillar>>" {
+    entity ESGPillar <<entity>> <<root>>
+    class PillarID <<(V,#FF8B40)value object>> <<identifier>>
+    class PillarName <<(V,#FF8B40)value object>>
+}
+
+ESGPillar --> PillarID
+ESGPillar --> PillarName
+ESGPillar --> Weight
+
+' ==== Company Aggregate ====
+package "<<aggregate Company>>" {
+    entity Company <<entity>> <<root>>
+    class CompanyID <<(V,#FF8B40)value object>> <<identifier>>
+    class NumberEmployees <<(V,#FF8B40)value object>>
+}
+
+Company --> CompanyID
+Company --> Name
+Company --> "*" NumberEmployees
+
+' ==== Sector Aggregate ====
+package "<<aggregate Sector>>" {
+    entity Sector <<entity>> <<root>>
+    class SetorID <<(V,#FF8B40)value object>> <<identifier>>
+}
+
+Sector --> SetorID
+Sector --> Name
+
+Company --> "1" Sector
+
+' ==== Subarea Aggregate ====
+package "<<aggregate Subarea>>" {
+    entity Subarea <<entity>> <<root>>
+    class SubareaID <<(V,#FF8B40)value object>> <<identifier>>
+}
+
+Subarea --> SubareaID
+Subarea --> Name
+Subarea --> Weight
+Subarea --> "1" ESGPillar
+
+Sector --> "*" Subarea
+
+
+
+' ==== Dataset Aggregate ====
+package "<<aggregate Dataset>>" {
+    entity Dataset <<entity>> <<root>>
+    class DatasetID <<(V,#FF8B40)value object>> <<identifier>>
+    class DataContent <<(V,#FF8B40)value object>>
+    class DatasetType <<(V,#FF8B40)value object>>
+}
+
+Dataset --> DatasetID
+Dataset --> DataContent
+Dataset --> DatasetType
+Dataset --> Name
+Dataset --> Description
+
+' ==== Metric Aggregate ====
+package "<<aggregate Metric>>" {
+    entity Metric <<entity>> <<root>>
+    class MetricID <<(V,#FF8B40)value object>> <<identifier>>
+    class ImageURL <<(V,#FF8B40)value object>>
+    class IsCustom <<(V,#FF8B40)value object>>
+    class IsKPI <<(V,#FF8B40)value object>>
+    class GoalIsToDecrease <<(V,#FF8B40)value object>>
+    class ActivationStatus <<(V,#FF8B40)value object>>
+}
+
+Metric --> MetricID
+Metric --> Name
+Metric --> Description
+Metric --> Dataset
+Metric --> ActivationStatus
+Metric --> ImageURL
+Metric --> IsCustom
+Metric --> GoalIsToDecrease
+Metric --> IsKPI
+
+Subarea --> "*" Metric
+
+
+' ==== MetricValueHistory Aggregate ====
+package "<<aggregate MetricValueHistory>>" {
+    entity MetricValueHistory <<entity>> <<root>>
+    class MetricValueHistoryEntryID <<(V,#FF8B40)value object>> <<identifier>>
+    class Value <<(V,#FF8B40)value object>>
+    class RecordedAt <<(V,#FF8B40)value object>>
+}
+
+Metric --> MetricValueHistory
+MetricValueHistory --> MetricValueHistoryEntryID
+MetricValueHistory --> Value
+MetricValueHistory --> RecordedAt
+
+' ==== MeasureUnit Aggregate ====
+package "<<aggregate MeasureUnit>>" {
+    entity MeasureUnit <<entity>> <<root>>
+    class UnitID <<(V,#FF8B40)value object>> <<identifier>>
+    class UnitSymbol <<(V,#FF8B40)value object>>
+}
+
+MeasureUnit --> UnitID
+MeasureUnit --> Name
+MeasureUnit --> UnitSymbol
+Dataset --> "1" MeasureUnit
+
+' ==== Objective Aggregate ====
+package "<<aggregate Objective>>" {
+    entity Objective <<entity>> <<root>>
+    class ObjectiveID <<(V,#FF8B40)value object>> <<identifier>>
+    class TargetValue <<(V,#FF8B40)value object>>
+    class Deadline <<(V,#FF8B40)value object>>
+    class Priority <<(V,#FF8B40)value object>>
+}
+
+Objective --> ObjectiveID
+Objective --> Name
+Objective --> Description
+Objective --> TargetValue
+Objective --> Deadline
+Objective --> Priority
+Objective --> "1" Metric : "tracked with >"
+@enduml

@@ -1,0 +1,68 @@
+ @startuml
+
+actor User as USER
+participant "<<Component>>\nView" as VIEW
+participant "<<Component>>\nController / API Route" as COMP
+participant "<<Component>>\nService" as SERV
+participant "<<Component>>\nMapper" as MAP
+participant "<<Component>>\nRepository" as REPO
+database "<<External System>>\nESG Database" as DATA
+
+
+USER -> VIEW : wants to import new dataset
+activate VIEW
+
+
+VIEW --> USER : asks for the information needed
+deactivate VIEW
+activate USER
+
+USER -> VIEW : fills and submits the {dataset}
+deactivate USER
+activate VIEW
+
+
+VIEW -> COMP : POST method {dataset}
+activate COMP
+
+COMP -> SERV : request the import of the {dataset}
+activate SERV
+
+SERV -> REPO : request the import of the {dataset}
+activate REPO
+
+REPO -> DATA : inserts new {dataset}
+activate DATA
+
+DATA --> REPO : {dataset} data
+deactivate DATA
+
+
+REPO --> SERV : {dataset} data
+deactivate REPO
+
+
+SERV -> MAP : convert {dataset} data to frontend format
+activate MAP
+
+MAP --> SERV : converted {dataset} data
+deactivate MAP
+
+SERV --> COMP : converted {dataset} data
+deactivate SERV
+
+COMP --> VIEW : response
+deactivate COMP
+
+alt Dataset was imported
+
+    VIEW --> USER : displays the {dataset} data
+    
+    else Unsuccessful operation
+    
+    VIEW --> USER : displays error message
+    deactivate VIEW
+
+end alt
+
+@enduml

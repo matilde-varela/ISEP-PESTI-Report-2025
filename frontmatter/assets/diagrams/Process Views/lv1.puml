@@ -1,0 +1,23 @@
+@startuml
+actor       User       as USER
+participant "<<System (C4)>> ESG Platform" as ESG
+
+
+USER -> ESG : wants to see page with information
+activate ESG
+
+alt filtered
+
+ESG --> USER : asks for the information needed
+deactivate ESG
+activate USER
+
+USER -> ESG : provides information asked
+deactivate USER
+activate ESG
+end alt
+
+ESG --> USER : displays page with the information
+deactivate ESG 
+
+@enduml

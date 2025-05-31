@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+
+"ESG Platform User" as User
+
+User --> (View Metric Details)
+User --> (View ESG Score)
+User --> (View KPIs)
+User --> (View Materiality Map)
+User --> (Filter Metrics)
+User --> (Customize Metrics)
+User --> (Import Datasets)
+
+@enduml

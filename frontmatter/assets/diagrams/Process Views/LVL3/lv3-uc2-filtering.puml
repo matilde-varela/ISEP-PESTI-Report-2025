@@ -1,0 +1,74 @@
+     @startuml
+
+actor User as USER
+participant "<<Component>>\nView" as VIEW
+participant "<<Component>>\nController / API Route" as COMP
+participant "<<Component>>\nService" as SERV
+participant "<<Component>>\nMapper" as MAP
+participant "<<Component>>\nRepository" as REPO
+database "<<External System>>\nESG Database" as DATA
+participant "<<External System>>\nCloud Storage" as CLOUD
+
+
+USER -> VIEW : wants to see page with information
+activate VIEW
+
+
+VIEW --> USER : asks for the information needed
+deactivate VIEW
+activate USER
+
+USER -> VIEW : provides information asked
+deactivate USER
+activate VIEW
+
+
+VIEW -> COMP : GET method {resources}
+activate COMP
+
+COMP -> SERV : request filtered {resources} data
+activate SERV
+
+SERV -> REPO : request filtered {resources} data
+activate REPO
+
+REPO -> DATA : query to get filtered {resources} data
+activate DATA
+
+DATA --> REPO : results
+deactivate DATA
+
+REPO --> SERV : filtered {resources} data
+deactivate REPO
+
+SERV -> CLOUD : request to get aditional filtered {resources} data
+activate CLOUD
+
+CLOUD --> SERV : additional filtered {resources} data
+deactivate CLOUD
+
+
+SERV -> MAP : convert filtered {resources} data to frontend format
+activate MAP
+
+MAP --> SERV : converted filtered {resources} data
+deactivate MAP
+
+SERV --> COMP : converted filtered {resources} data
+deactivate SERV
+
+COMP --> VIEW : HTTP response
+deactivate COMP
+
+alt Resources were retrieved
+
+    VIEW --> USER : displays the filtered {resources} data
+    
+    else Unsuccessful retrieval
+    
+    VIEW --> USER : displays error message
+    deactivate VIEW
+
+end alt
+
+@enduml
