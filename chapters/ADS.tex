@@ -16,13 +16,11 @@ A proposta de desenvolvimento de uma plataforma ESG surgiu da necessidade identi
 
 \section{Domínio do problema}
 \label{sec:DP} 
-% Devem ser especificados os conceitos de domínio do problema através de artefactos adequados (e.g. glossário, modelo de domínio). 
 
 A presente secção visa descrever o domínio do problema através de vários artefactos de variadas complexidades, nomeadamente conceitos e diagramas.
 
 A Tabela \ref{tab:glossario_dominio} apresenta os conceitos introduzidos no domínio do problema e que serão usados ao longo do desenvolvimento.
 
-%- Glossario da soluçao (termos usados ao longo do desenvolvimento e o que são)
 \begin{table}[H]
     \rowcolors{2}{purple!10}{white}
     \renewcommand{\arraystretch}{1.2}
@@ -36,10 +34,10 @@ A Tabela \ref{tab:glossario_dominio} apresenta os conceitos introduzidos no dom�
         Materiality Map & Mapa de Materialidade & Ferramenta que destaca as métricas ESG mais relevantes para cada setor, segundo as normas da SASB. \\
         Metric & Métrica & Unidade de medida usada para quantificar aspectos específicos do desempenho ESG, como emissões de carbono, diversidade na força de trabalho ou políticas anticorrupção. \\
         PoC & Prova de Conceito & Implementação inicial e simplificada de um sistema ou funcionalidade com o objetivo de validar uma ideia, conceito ou abordagem técnica. \\
-        Dataset & Conjunto de Dados & Coleção estruturada de dados ESG, geralmente em formato tabular, que contem informações como métricas, datas e valores associados. \\
+        Dataset & Conjunto de Dados & Coleção estruturada de dados ESG, normalmente em formato tabular, que contem informações como categorias, datas e valores associados. \\
         URL & URL (Localizador Uniforme de Recursos) & Endereço que identifica e localiza um recurso na internet, como páginas web, APIs ou arquivos. \\
-        API & API (Interface de Programação de Aplicações) & Conjunto de regras que permite a comunicação entre diferentes sistemas ou componentes de software. Utilizada para integrar funcionalidades ou aceder a dados. \\
-        AWS S3 & AWS S3 (Amazon Simple Storage Service) & Serviço de armazenamento em nuvem da Amazon utilizado para guardar arquivos como documentos, imagens ou exportações de dados de forma segura e escalável. \\
+        API & API (Interface de Programação de Aplicações) & Conjunto de regras que permite a comunicação entre diferentes sistemas ou componentes de \textit{software}. Utilizada para integrar funcionalidades ou aceder a dados. \\
+        AWS S3 & AWS S3 (\textit{Amazon Simple Storage Service}) & Serviço de armazenamento em nuvem da \textit{Amazon} utilizado para guardar arquivos como documentos, imagens ou exportações de dados de forma segura e escalável. \\
     \end{tabular}
     \caption{Glossário do domínio do problema}
     \label{tab:glossario_dominio}
@@ -50,17 +48,17 @@ A Figura \ref{fig:domain_model} ilustra o modelo de domínio e relaciona os dife
 
 O \textit{dashboard} apresenta a pontuação ESG consolidada da empresa, oferecendo uma visão geral do seu desempenho em sustentabilidade. Além disso, destaca as métricas mais relevantes, assim como aquelas que apresentaram melhorias ou quedas em relação ao último registro.
 
-Outra seção da plataforma disponibiliza uma visão detalhada de todas as métricas existentes: métricas personalizadas (criadas pelos próprios utilizadores) e métricas orientadas pelos padrões definidos pela \gls{SASB}.
+Outra seção da plataforma disponibiliza uma visão detalhada de todas as métricas existentes: métricas customizáveis (criadas pelos próprios utilizadores) e métricas orientadas pelos padrões definidos pela \gls{SASB}.
 
 % - Modelo de dominio (diagrama)
 \begin{figure}[H]
     \centering
-    \includegraphics[width=5in,keepaspectratio]{frontmatter/assets/diagrams/Domain Model/Domain_Model.png}
+    \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/diagrams/Domain Model/Domain_Model2.png}
     \caption{Modelo de Dominio}
     \label{fig:domain_model}
 \end{figure}
 
-Cada métrica possui atributos específicos, incluindo o pilar e subárea ESG a que pertence, o seu nível de influência na pontuação ESG, código identificador, os conjunto de dados que lhe estão associados e a unidade de medida associada aos mesmos.
+Cada métrica possui atributos específicos, incluindo o pilar e subárea ESG a que pertence, o seu código identificador, os conjunto de dados que lhe estão associados, a unidade de medida associada aos mesmos e a classificação do seu progresso.
 
 De acordo com a \gls{SASB}, adotado pela Devscope neste projeto, existem normas específicas para cada setor — como é o caso do setor de \textit{Software} e Serviços de TI — que determinam quais as métricas devem ser reportadas (\cite{SASBSector2025}). É com base nestas diretrizes que se constrói o \textbf{Mapa de Materialidade}, como indicado na Figura \ref{fig:materiality_map}.
 
@@ -82,7 +80,7 @@ A seguinte seção compila os requisitos obtidos com o cliente e categoriza-os e
 
 \section{Requisitos Funcionais}
 
-Os requisitos funcionais correspondem a funcionalidades presentes no software a ser desenvolvido, normalmente representadas por casos de uso e acompanhados por diagramas. Os requisitos funcionais deste projeto estão organizados na Tabela \ref{tab:use_cases}, onde cada requisitos é considerado um caso de uso e identificado por um código alfa-numérico.
+Os requisitos funcionais correspondem a funcionalidades presentes no \textit{software} a ser desenvolvido, normalmente representadas por casos de uso e acompanhados por diagramas. Os requisitos funcionais deste projeto estão organizados na Tabela \ref{tab:use_cases}, onde cada requisitos é considerado um caso de uso e identificado por um código alfa-numérico.
 
 %- Use Cases list
 \begin{table}[H]
@@ -105,7 +103,7 @@ Os requisitos funcionais correspondem a funcionalidades presentes no software a 
     \label{tab:use_cases}
 \end{table}
 
-Alguns casos de uso partilham entre si a mesma estrutura de interação representada nos diagramas da vista de processos — detalhada na Subseção \ref{subsec:process_view}. É o caso dos \textit{use cases} \textbf{UC-01, UC-02, UC-03, UC-04} e \textbf{UC-05}, que seguem a sequência ilustrada na Figura \ref{fig:UC12345-lvl1}, variando apenas no conceito de negócio específico que cada um aborda.
+Alguns casos de uso partilham entre si a mesma estrutura de interação representada nos diagramas da vista de processos — detalhada na Subseção \ref{subsec:process_view}. Exemplos disso são os casos de uso \textbf{UC-01, UC-02, UC-03, UC-04} e \textbf{UC-05}, que seguem a sequência ilustrada na Figura \ref{fig:UC12345-lvl1}, variando apenas no conceito de negócio específico que cada um aborda.
 
 \begin{figure}[h]
 \centering
@@ -117,9 +115,9 @@ Alguns casos de uso partilham entre si a mesma estrutura de interação represen
 
 \subsection{UC-01 | Visualização de KPI's}
 
-\textbf{Objetivo:} Permitir ao utilizador consultar rapidamente os principais indicadores-chave de desempenho (KPIs) ESG da organização.
-\textbf{Ator Principal:} Utilizador da plataforma
-\textbf{Descrição Geral:} Este caso de uso disponibiliza uma visão geral de métricas dos três pilares (Ambiental, Social e de Governação). A interface mostra indicadores como emissões de CO$_2$, diversidade na força de trabalho, entre outros.
+\textbf{Objetivo:} Permitir ao utilizador consultar rapidamente os principais indicadores-chave de desempenho (KPIs) ESG da organização. \\
+\textbf{Ator Principal:} Utilizador da plataforma \\
+\textbf{Descrição Geral:} Este caso de uso disponibiliza uma visão geral de métricas dos três pilares (Ambiental, Social e de Governação). A interface mostra indicadores como emissões de CO$_2$, diversidade na força de trabalho, entre outros. \\
 \textbf{Fluxo Principal:}
 \begin{enumerate}
     \item O utilizador acede ao painel principal da plataforma.
@@ -230,10 +228,12 @@ Uma forma amplamente utilizada de categorizar estes requisitos é através do mo
     \label{tab:furps}
 \end{table}
 
+Os tópicos seguintes categorizam os requisitos não funcionais obtidos consoante o modelo FURPS+.
+
 \subsection{Usability (U)}
 \begin{itemize}
     \item Interface clara, intuitiva e fácil de navegar.
-    \item Feedback imediato ao utilizador através de alertas e logs indicando sucesso ou erro das ações realizadas.
+    \item Feedback imediato ao utilizador através de alertas e \textit{logs} indicando sucesso ou erro das ações realizadas.
     \item Aplicação disponível em inglês para melhor acessibilidade.
     \item Estilo visual coerente e consistente em todas as páginas e componentes.
 \end{itemize}
@@ -248,14 +248,14 @@ Uma forma amplamente utilizada de categorizar estes requisitos é através do mo
 \subsection{Performance (P)}
 \begin{itemize}
     \item As interações principais devem ser eficientes e não exceder 30 segundos por operação.
-    \item O tempo total para utilizar a prova de conceito (incluindo seeding de dados e carregamento da interface) não deve ultrapassar 3 minutos.
+    \item O tempo total para utilizar a prova de conceito (incluindo \textit{seeding} de dados e carregamento da interface) não deve ultrapassar 3 minutos.
 \end{itemize}
 
 \subsection{Supportability (S)}
 \begin{itemize}
     \item Código modular e bem estruturado, seguindo princípios de separação de responsabilidades.
     \item Facilidade em adicionar novas funcionalidades sem comprometer a usabilidade ou introduzir grandes alterações na base de código.
-    \item Arquitetura baseada em boas práticas, como Clean Architecture e uso de camadas (Controller, Service, Repository).
+    \item Arquitetura baseada em boas práticas, como \textit{Clean Architecture} e uso de camadas (\textit{Controller, Service, Repository}).
 \end{itemize}
 
 \subsection{+ (Outros)}
@@ -264,7 +264,7 @@ Uma forma amplamente utilizada de categorizar estes requisitos é através do mo
     \item Estilo visual consistente e agradável.
     \item Seguir boas práticas de programação e arquitetura coesa.
     \item Utilizar fonte de dados simulada através de scripts de seeding.
-    \item Conformidade com o padrão SASB para estruturação das métricas ESG.
+    \item Conformidade com o padrão \gls{SASB} para estruturação das métricas \gls{ESG}.
     \item Comunicação entre os diferentes módulos da aplicação através de REST APIs utilizando HTTP/S para garantir interoperabilidade e segurança.
 \end{itemize}
 
@@ -283,7 +283,7 @@ Este capítulo aborda a fase de \textit{design} no processo de desenvolvimento d
 
 \section{Arquitetura do Sistema} 
 
-Embora o projeto se inspire nos princípios da \textit{Clean Architecture}, como a separação clara entre a camada de apresentação, lógica de negócio e acesso a dados, não foi realizada uma implementação rigorosa desse modelo (por exemplo, com injeção de dependências ou uso sistemático de interfaces). Esta decisão deve-se ao âmbito do projeto e à sua natureza prática, que não exigem esse nível de abstração.
+Embora o projeto se inspire nos princípios da \textit{Clean Architecture}, como a separação clara entre a camada de apresentação, lógica de negócio e acesso a dados, não foi realizada uma implementação rigorosa deste modelo (por exemplo, com injeção de dependências ou uso sistemático de interfaces). Esta decisão deve-se ao âmbito do projeto e à sua natureza prática, que não exigem este nível de abstração.
 
 Em alternativa, foram aplicados os modelos C4 (Figura \ref{subsec:modelC4}) e “4+1” (Figura \ref{subsec:model4plus1}) para representar graficamente a arquitetura da solução, proporcionando uma visão clara e compreensível da estrutura do sistema e das suas interações.
 
@@ -291,7 +291,7 @@ Em alternativa, foram aplicados os modelos C4 (Figura \ref{subsec:modelC4}) e �
 \subsection{Modelo C4}
 \label{subsec:modelC4}
 
-O modelo C4 descreve a arquitetura de um \textit{software} em quatro níveis de detalhe (\textit{Context, containers, components} e \textit{code}). O modelo C4 considera as estruturas estáticas de um sistema de software em termos de \textit{containers}, componentes e código. De modo a criar os diferentes diagramas é necessario diferentes graus de abstração (\cite{Brown2018}):
+O modelo C4 descreve a arquitetura de um \textit{software} em quatro níveis de detalhe (\textit{Context, containers, components} e \textit{code}). De modo a criar os diferentes diagramas é necessario diferentes graus de abstração (\cite{Brown2018}):
 
 \begin{itemize}
     \item \textbf{(Nível 1) \textit{System context diagram} -} Dá uma vista geral do contexto em que o sistema se insere, isto é, quem usa o \textit{software} criado e como é que outros sistemas inseridos no mesmo contexto comunicam com ele. 
@@ -374,7 +374,7 @@ De igual forma, os respetivos diagramas de nível 2 também partilham uma estrut
 \label{fig:UC2-lvl3}
 \end{figure}
 
-Da mesma forma, a um nível de granularidade grande, ambas os casos de uso UC-06 e UC-07 são bastante semelhantes, mudando apenas a lógica do negócio, como ilustrado na Figura \ref{fig:UC67-lvl1}.
+Da mesma forma, no nível 1, ambas os casos de uso UC-06 e UC-07 são bastante semelhantes, mudando apenas a lógica do negócio, como ilustrado na Figura \ref{fig:UC67-lvl1}.
 
 \begin{figure}[H]
 \centering
