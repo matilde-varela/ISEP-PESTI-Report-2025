@@ -2,40 +2,36 @@
 
 actor User as USER
 participant Frontend as FE
-database "ESG Database" as DATA
-participant  "Cloud Storage" as CLOUD
-
+participant "<<component>>\nDataAccessService" as DATASERV
+database "<<external system>>\nESG Database" as DATA
 
 USER -> FE : wants to see page with information
 activate FE
 
-
-alt filtered
-    FE --> USER : asks for the information needed
+alt Filtered search
+    FE --> USER : asks for specific filters
     deactivate FE
     activate USER
 
-    USER -> FE : provides information asked
+    USER -> FE : provides filter values
     deactivate USER
     activate FE
 end alt
 
+FE -> DATASERV : find(with or without filters)
+activate DATASERV
 
-FE -> DATA : find(with or without filter)
-activate DATA
+DATASERV -> DATA : find(query with optional filters)
 
-DATA --> FE : results
-deactivate DATA
+note right DATASERV
+If the resource being retrieved is a metric,
+the result also includes its image URL
+end note
 
-alt Finding Metrics
-    FE -> CLOUD : find(with or without filter)
-    activate CLOUD
-
-    CLOUD --> FE : results
-    deactivate CLOUD
-end alt
-
+DATASERV --> FE : results
+deactivate DATASERV
 
 FE --> USER : displays page with the information
-deactivate FE 
+deactivate FE
+
 @enduml
