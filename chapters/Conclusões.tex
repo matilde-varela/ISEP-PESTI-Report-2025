@@ -1,21 +1,60 @@
-% 
 \chapter{Conclusões} 
-\label{chap:Conc} % For referencing the chapter elsewhere, use Chapter~\ref{Conc}
+\label{chap:Conc}
 
-O capítulo de conclusões é um dos mais importantes do relatório, devendo ser apresentado um resumo dos resultados do trabalho efetivamente desenvolvido. \textit{\textbf{As conclusões devem basear-se nos resultados realmente obtidos}}. Devem enquadrar se os resultados obtidos com os objetivos enunciados e procurar extrair conclusões mais gerais, eventualmente sugeridas pelos resultados. Podem acompanhar as conclusões incluindo recomendações apropriadas resultantes do trabalho, nomeadamente sugerindo e justificando eventuais extensões e modificações futuras.
-
-%-------------------------------------------------------------------------------
+Neste último Capítulo, é apresentada uma síntese do trabalho efectuado, bem como os resultados obtidos, que sustentam as conclusões finais. Os objectivos definidos para o projeto são reafirmados e é discutida a forma como os resultados os cumprem. De seguida, são apontadas as principais limitações encontradas, bem como recomendações para futuras extensões e melhorias da solução desenvolvida, seguindo-se uma análise global do projeto.
 
 \section{Objetivos concretizados} 
-\label{sec:desc} %For referencing this section elsewhere, use Section~\ref{sec:desc}
+\label{sec:ObjConc}
 
-Nesta secção devem ser repetidos os objetivos apresentados no capítulo de introdução e para cada um deles deve ser descrito o seu grau de realização. Recomenda-se o uso de uma lista ou tabela, dado que facilita a leitura e compreensão
+Tal como referido no Capítulo \ref{chap:Intro}, os objectivos especificados e o grau de concretização desses objectivos estão resumidos na Tabela \ref{tab:objective_done_table}:
 
-\section{Limitações e trabalho futuro} 
+\begin{table}[H]
+    \rowcolors{2}{purple!10}{white}
+    \renewcommand{\arraystretch}{1.2}
+    \setlength{\tabcolsep}{10pt}
+    \centering
+    \begin{tabular}{>{\bfseries}p{11cm} p{4cm}}
+        \rowcolor{purple!40}
+        \textbf{Objetivo} & \textbf{Realização} \\
+        \textbf{Consolidar dados de múltiplas fontes} & Realizado \\
+        \textbf{Desenvolver uma aplicação configurável} & Realizado \\
+        \textbf{Visualização clara e interactiva dos dados ESG} & Realizado \\
+        \textbf{Definir e monitorizar objectivos baseados em métricas} & Realizado \\
+    \end{tabular}
+    \caption{Objetivos do Projeto e o seu Grau de Realização}
+    \label{tab:objective_done_table}
+\end{table}
 
-Nesta secção devem ser identificadas as limitações do trabalho realizado, fazendo uma análise autocrítica do trabalho realizado, bem como extrapolar eventuais direções de desenvolvimento futuro.
+Todos os objectivos estabelecidos foram plenamente atingidos. A solução criada permite a centralização da informação ESG, a definição de objectivos baseados em metas ligadas a métricas (sejam estas pré-existentes ou personalizadas), tem uma interface adaptável e oferece uma visualização gráfica visível e interactiva dos dados.
 
-\section{Apreciação final} 
+A planificação cuidadosa e análise prévia permitiram uma implementação eficaz e livre de complicações, garantindo a realização dos objectivos definidos.
 
-Esta secção deve fornecer uma opinião pessoal sobre o trabalho desenvolvido.
+\section{Trabalho Futuro e Limitações}
 
+Apesar do facto de a solução proposta ser eficiente e completa, foram descobertas algumas limitações ao longo do processo de desenvolvimento. A funcionalidade do caso de uso UC-07 (Importação de Dados) tem limitações nos formatos de ficheiros suportados. De momento, apenas são suportados ficheiros CSV com uma estrutura predefinida. Isto foi recomendado pelo \textit{buddy} do aluno, tendo em conta a complexidade envolvida e o tempo disponível para a implementação da funcionalidade.
+
+Como consequência disso, a representação dos diagramas está igualmente limitada, pois a biblioteca usada, o \textit{ApexCharts} disponibiliza 20 diagramas diferentes, enquanto que a plataforma apenas usufrui de 5.
+
+Como trabalho futuro, destaca-se a possibilidade de:
+
+\begin{itemize}
+\item Aumentar ou melhorar a importação para aceitar vários tipos de ficheiros
+\item Explorar todas as categorias de gráficos disponíveis na biblioteca \textit{ApexCharts}
+\item Facilitar a intuitividade do processo de edição dos dados que foram importados 
+\item Implementar a criação automática de relatório com fluxos de recolha, tratamento e apresentação de dados
+\item Implementar um mecanismo de autenticação para limitar o acesso à plataforma apenas a utilizadores autorizados
+\end{itemize}
+
+Estas futuras extensões acrescentariam um valor significativo à solução e ao posicionamento da empresa no domínio ESG.
+
+\section{Considerações Finais}
+
+O planeamento e desenvolvimento do projeto, no âmbito profissional da DevScope, foram extremamente proveitoso. O ambiente positivo de troca de conhecimento, apoio e consistência contribuiu significativamente para a efetiva realização e implementação bem sucedida das funcionalidades propostas.
+
+O projeto ofereceu a possibilidade de aplicação de competências aprendidas durante a formação universitária e, simultaneamente, de aprender novos conhecimentos, tanto através do trabalho desenvolvido quanto pelas várias formações e \textit{workshops} que foram proporcionados pela DevScope.
+
+A nível pessoal, a experiência foi especialmente gratificante. O tema do projeto desperta um grande interesse por parte do autor, o que aumentou o envolvimento. Além disso, o desafio foi uma oportunidade de resiliência e crescimento, incluindo interações com profissionais experientes do setor.
+
+A empresa forneceu um estímulo constante e feedback pertinente, inclusive na redação do relatório.
+
+Em suma, o projeto foi uma experiência muito enriquecedora, tanto do ponto de vista técnico como humano, que abriu portas para futuras possibilidades profissionais e reforçou competências básicas para a integração no mercado de trabalho.

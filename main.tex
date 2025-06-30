@@ -30,7 +30,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[
+\documentclass[openright,
 11pt, % The default document font size, options: 10pt, 11pt, 12pt
 %oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side (for drafting/reading purposes)
 %english, % english for English;
@@ -50,11 +50,54 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[table]{xcolor}
 \usepackage{array}
 \usepackage{svg}
+\usepackage{abstract}
 
 \usepackage{tikz}
 
 \usepackage{rotating}
 \usepackage{pdflscape}
+\usepackage{caption}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, const, continue, debugger, default, delete, do, else, export, for, function, if, import, in, instanceof, let, new, return, super, switch, this, throw, try, typeof, var, void, while, with, yield, await, async},
+  ndkeywords={class, export, boolean, throw, implements, import, this},
+  sensitive=true,
+  comment=[l]//,
+  morecomment=[s]{/*}{*/},
+  morestring=[b]',
+  morestring=[b]",
+  morestring=[b]`,
+}
+
+\lstdefinelanguage{TypeScript}{
+  language=JavaScript,
+  morekeywords={
+    interface, type, enum, readonly, implements, private, public, protected, abstract, declare, module, namespace, keyof, typeof, infer, as, assert, satisfies, unknown, never
+  }
+}
+
+\lstdefinestyle{customts}{
+  language=TypeScript,
+  backgroundcolor=\color{white},
+  extendedchars=true,
+  basicstyle=\footnotesize\ttfamily,
+  showstringspaces=false,
+  showspaces=false,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=5pt,
+  tabsize=2,
+  breaklines=true,
+  showtabs=false,
+  captionpos=b,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{gray}\ttfamily,
+  stringstyle=\color{orange}
+}
+
  
 \usepackage{pgfplots} % Required for drawing high--quality function plots (can be removed if not used)
 \pgfplotsset{compat=newest}
@@ -74,42 +117,47 @@ headsepline, % Uncomment to get a line under the header
   
 \addbibresource{mainbibliography.bib} % The filename of the bibliography
  
-\makeglossaries % build the glossary
- 
-% %----------------------------------------------------------------------------------------
+\usepackage[acronym, toc]{glossaries}
+\makeglossaries
+
+%----------------------------------------------------------------------------------------
 % %	THESIS INFORMATION
 % %----------------------------------------------------------------------------------------
 
-\thesistitle{{[}Painel ESG - Gestão Sustentável{]}} % Your thesis title, this is used in the title, print it elsewhere with \ttitle
+\thesistitle{Painel ESG - Gestão Sustentável} % Your thesis title, this is used in the title, print it elsewhere with \ttitle
 
-\thesissubtitle{{[}DevScope - Devscope SA{]}} % Your thesis title, this is used in the title, print it elsewhere with \tsubtitle
+\thesissubtitle{DevScope Lda.} % Your thesis title, this is used in the title, print it elsewhere with \tsubtitle
 
 \thesisdate{2024/2025}
 %\author{Nome do Candidato e \textsc{Sobrenome}} % Your name, this is used in the title page, print it elsewhere with \authorname
 
-\author{1220683 | Matilde Varela}
+\author{1220683 | Matilde Xavier Varela}
 
 \subjectarea{Computer Systems} % Specialisation area (Computer Systems, Information and Knowledge Systems, Graphics, Systems and Multimedia, Software Engineering), used in the title page, print it elsewhere with \areaname
 
-\supervisor{Paulo Rogério Soares Proença}
+\supervisor{Paulo \textsc{Proença}}
 \cosupervisor{David Mota}
-%\supervisor{Nome \textsc{Sobrenome}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+
+% \committeepresident{  Ho}
+% \committeemembers{hi}
 
 \university{Instituto Superior de Engenharia do Porto}
 
 \monthyear{Julho 2025}
 
-\keywords{Keyword1, ..., Keyword6} % Please define up to 6 keywords that better describe your work, print it elsewhere with \keywordnames
+% \keywords{Keyword1, ..., Keyword6} % Please define up to 6 keywords that better describe your work, print it elsewhere with \keywordnames
 
 \university{\href{https://www.isep.ipp.pt/}{Instituto Superior de Engenharia do Porto}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
 
 \department{\href{https://www.dei.isep.ipp.pt/}{Departmento de Informática}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
 
-\thesisdate{Porto, \today} % thesis date,  print it elsewhere with \tdate
+% Correct way to set PDF metadata:
+\hypersetup{
+    pdftitle={\ttitle},    % Sets the PDF's title
+    pdfauthor={\authorname}, % Sets the PDF's author
+    % pdfkeywords={\keywordnames} % Uncomment if you have keywords
+}
 
-% \hypersetup{painel_esg_gestao_sustentavel=\ttitle} % Set the PDF's title to your title
-% \hypersetup{matilde_varela=\authorname} % Set the PDF's author to your name
-% \hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
 
 \begin{document}
 
@@ -130,8 +178,11 @@ headsepline, % Uncomment to get a line under the header
 \input{chapters/Introdução}
 \input{chapters/EA}
 \input{chapters/ADS}
-% \input{chapters/Implementação}
-% \input{chapters/Conclusões}
+\input{chapters/Implementação}
+\input{chapters/Conclusões}
+
+% Backmatter
+% \input{backmatter/references}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
@@ -148,9 +199,9 @@ headsepline, % Uncomment to get a line under the header
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-% \input{appendices/appendixA}
-%\input{appendices/appendixB}
-%\input{appendices/appendixC}
+\input{appendices/appendixA}
+\input{appendices/appendixB}
+\input{appendices/appendixC}
 
 %----------------------------------------------------------------------------------------
 

@@ -1,51 +1,52 @@
 
 %-------------------------------------------------------------------------------
 \chapter{Análise do Problema}
-\label{sec:AP}
+\label{chap:AP}
 
-Neste próximo capítulo aborda-se a análise do problema em questão. Inicia-se com a descrição do domínio do problema, através do glossário de termos usados, do modelo de domínio e do mapa de materialidade da Devscope de acordo com as métricas indicadas pela \gls{SASB} para o setor de \textit{software} e serviços IT. Por fim, serão delineados os requisitos funcionais e não funcionais do sistema.
+Neste próximo capítulo aborda-se a análise do problema em questão. Inicia-se com a descrição do domínio do problema através do glossário de termos usados, do modelo de domínio e do mapa de materialidade da Devscope de acordo com as métricas indicadas pela \gls{SASB} para o setor de \textit{software} e serviços IT. Por fim, serão elencados os requisitos funcionais e não funcionais do sistema.
 
 \section{Contexto}
 \label{sec:Context}
 
 A fase de análise é uma das mais importantes no ciclo de vida do desenvolvimento de software, pois é nela que ocorre a recolha dos requisitos, funcionalidades e necessidades do cliente, bem como das especificações do sistema. O objetivo final é definir de forma clara os recursos e funcionalidades que compõem a solução a ser desenvolvida.
 
-Qualquer informação incorreta ou não obtida pode comprometer o desenvolvimento do produto, tanto em termos de qualidade como de cumprimento dos prazos.
+Qualquer informação incorreta, ou não obtida, pode comprometer o desenvolvimento do produto, tanto em termos de qualidade como de cumprimento dos prazos.
 
 A proposta de desenvolvimento de uma plataforma ESG surgiu da necessidade identificada pela Devscope em centralizar e otimizar o controlo de diversas métricas relacionadas com os pilares ambiental, social e de governança (ESG). Esta necessidade prende-se com a crescente importância de monitorizar e reportar práticas sustentáveis, promovendo uma gestão mais transparente, eficiente e alinhada com os objetivos de responsabilidade corporativa da empresa. Ao centralizar estes dados numa única plataforma, a Devscope pretende não só melhorar a sua capacidade de análise e tomada de decisões, como também reforçar o seu compromisso com a sustentabilidade e o impacto positivo na sociedade.
 
 \section{Domínio do problema}
 \label{sec:DP} 
 
-A presente secção visa descrever o domínio do problema através de vários artefactos de variadas complexidades, nomeadamente conceitos e diagramas.
+A presente secção visa descrever o domínio do problema através de vários artefactos de complexidades diversas, nomeadamente conceitos e diagramas.
 
-A Tabela \ref{tab:glossario_dominio} apresenta os conceitos introduzidos no domínio do problema e que serão usados ao longo do desenvolvimento.
+A Tabela \ref{tab:glossario_dominio} apresenta os conceitos de domínio do problema e que serão usados ao longo do desenvolvimento.
 
 \begin{table}[H]
     \rowcolors{2}{purple!10}{white}
     \renewcommand{\arraystretch}{1.2}
     \setlength{\tabcolsep}{10pt}
     \centering
-    \begin{tabular}{>{\bfseries}p{2.5cm} >{\bfseries}p{4cm} p{8cm}}
+    \begin{tabular}{>{\bfseries}p{4cm} p{11cm}}
         \rowcolor{purple!40}
-        Conceito (EN) & Conceito (PT) & \textbf{Descrição} \\
-        ESG & ESG (Ambiente, Social, Governança) & Conjunto de critérios que avaliam o desempenho ambiental, social e de governança de uma organização, com foco na sustentabilidade e responsabilidade corporativa. \\
-        Dashboard & Painel & Resumo gráfico de várias informações importantes, normalmente utilizado para dar uma visão geral de um negócio. \\
-        Materiality Map & Mapa de Materialidade & Ferramenta que destaca as métricas ESG mais relevantes para cada setor, segundo as normas da SASB. \\
-        Metric & Métrica & Unidade de medida usada para quantificar aspectos específicos do desempenho ESG, como emissões de carbono, diversidade na força de trabalho ou políticas anticorrupção. \\
-        PoC & Prova de Conceito & Implementação inicial e simplificada de um sistema ou funcionalidade com o objetivo de validar uma ideia, conceito ou abordagem técnica. \\
-        Dataset & Conjunto de Dados & Coleção estruturada de dados ESG, normalmente em formato tabular, que contem informações como categorias, datas e valores associados. \\
-        URL & URL (Localizador Uniforme de Recursos) & Endereço que identifica e localiza um recurso na internet, como páginas \textit{web}, APIs ou arquivos. \\
-        API & API (Interface de Programação de Aplicações) & Conjunto de regras que permite a comunicação entre diferentes sistemas ou componentes de \textit{software}. Utilizada para integrar funcionalidades ou aceder a dados. \\
-        KPI & KPI (Indicador-Chave de Desempenho) & Métrica usada para avaliar o sucesso de uma organização ou de uma atividade específica na conquista de objetivos estratégicos ou operacionais. \\
-        SPA & SPA (Aplicação de Página Única) & Tipo de aplicação \textit{web} que carrega uma única página HTML e atualiza dinamicamente o conteúdo conforme o utilizador interage, sem recarregar completamente a página. \\
-        AWS S3 & AWS S3 (\textit{Amazon Simple Storage Service}) & Serviço de armazenamento em nuvem da \textit{Amazon} utilizado para guardar arquivos como documentos, imagens ou exportações de dados de forma segura e escalável. \\
+        \textbf{Conceito (EN)} & \textbf{Descrição} \\
+        ESG & \textbf{ESG (Ambiente, Social e Governança)}: Conjunto de critérios que avaliam o desempenho ambiental, social e de governança de uma organização, com foco na sustentabilidade e responsabilidade corporativa. \\
+        Dashboard & \textbf{Painel}: Resumo gráfico de várias informações importantes, normalmente utilizado para dar uma visão geral de um negócio. \\
+        Materiality Map & \textbf{Mapa de Materialidade}: Ferramenta que destaca as métricas ESG mais relevantes para cada setor, segundo as normas da SASB. \\
+        Metric & \textbf{Métrica}: Unidade de medida usada para quantificar aspetos específicos do desempenho ESG, como emissões de carbono, diversidade na força de trabalho ou políticas anticorrupção. \\
+        Dataset & \textbf{Conjunto de Dados}: Coleção estruturada de dados ESG, normalmente em formato tabular, que contém informações como categorias, datas e valores associados. \\
+        URL & \textbf{Localizador Uniforme de Recursos (URL)}: Endereço que identifica e localiza um recurso na internet, como páginas \textit{web}, APIs ou arquivos. \\
+        API & \textbf{Interface de Programação de Aplicações (API)}: Conjunto de regras que permite a comunicação entre diferentes sistemas ou componentes de \textit{software}. Utilizada para integrar funcionalidades ou aceder a dados. \\
+        KPI & \textbf{Indicador-Chave de Desempenho (KPI)}: Métrica usada para avaliar o sucesso de uma organização ou de uma atividade específica na conquista de objetivos estratégicos ou operacionais. \\
+        SPA & \textbf{Aplicação de Página Única (SPA)}: Tipo de aplicação \textit{web} que carrega uma única página HTML e atualiza dinamicamente o conteúdo conforme o utilizador interage, sem recarregar completamente a página. \\
+        AWS S3 & \textbf{Amazon Simple Storage Service (AWS S3)}: Serviço de armazenamento em nuvem da \textit{Amazon} utilizado para guardar arquivos como documentos, imagens ou exportações de dados de forma segura e escalável. \\
     \end{tabular}
     \caption{Glossário do domínio do problema}
     \label{tab:glossario_dominio}
 \end{table}
 
-A Figura \ref{fig:domain_model} ilustra o modelo de domínio e relaciona os diferentes conceitos da solução.
+A Figura \ref{fig:domain_model} ilustra uma visualização do modelo de domínio, traçando as relações entre os principais conceitos da solução pretendida. Cada uma das entidades principais foi especificada como uma raiz agregada, uma escolha motivada por preocupações de consistência transnacional, concorrência, escalabilidade e clareza semântica.
+
+Um bom exemplo é a distinção entre \texttt{Empresa} e \texttt{Setor}. Enquanto o \texttt{Setor} caracteriza a empresa no contexto da indústria, também organiza o sistema agrupando as \texttt{Subáreas} e, por extensão, as \texttt{Métricas} relevantes para a avaliação ESG com base nas normas SASB. Ao representá-lo como um agregado autónomo, esta abordagem localiza a lógica subjacente, minimizando as redundâncias e promovendo a consistência.
 
 \begin{figure}[H]
 \centering
@@ -64,7 +65,7 @@ Outra seção da plataforma disponibiliza uma visão detalhada de todas as métr
 
 Cada métrica possui atributos específicos, incluindo o pilar e subárea ESG a que pertence, o seu código identificador, os conjunto de dados que lhe estão associados, a unidade de medida associada aos mesmos e a classificação do seu progresso.
 
-De acordo com a \gls{SASB}, adotado pela Devscope neste projeto, existem normas específicas para cada setor — como é o caso do setor de \textit{Software} e Serviços de TI — que determinam quais as métricas devem ser reportadas (\cite{SASBSector2025}). É com base nestas diretrizes que se constrói o Mapa de Materialidade, como indicado na Figura \ref{fig:materiality_map}.
+De acordo com a \gls{SASB}, adotado pela Devscope neste projeto, existem normas específicas para cada setor — como é o caso do setor de \textit{Software} e Serviços de TI — que determinam quais as métricas devem ser reportadas (\cite{SASBSector2025}). É com base nestas diretrizes que se constrói o Mapa de Materialidade, indicado na Figura \ref{fig:materiality_map}.
 
 % - mapa de materialidade da DevScope (Software e IT sector - SASB)
 \begin{figure}[H]
@@ -74,19 +75,19 @@ De acordo com a \gls{SASB}, adotado pela Devscope neste projeto, existem normas 
     \label{fig:materiality_map}
 \end{figure}
 
-Este mapa, um dos elementos centrais da plataforma, reflete as métricas ativas não só definidas pela \gls{SASB}, consoante o setor da empresa, bem como as métricas personalizadas. Este mapa organiza as métricas segundo os pilares ESG e respectivas subáreas, e atribui uma cor correspondente ao seu progresso, proporcionando uma visão estruturada das prioridades de sustentabilidade da organização.
+Neste mapa, um dos elementos centrais da plataforma, reflete as métricas ativas não só definidas pela \gls{SASB}, consoante o setor da empresa, bem como as métricas personalizadas. Este mapa organiza as métricas segundo os pilares ESG e respectivas subáreas, e atribui uma cor correspondente ao seu progresso, proporcionando uma visão estruturada das prioridades de sustentabilidade da organização.
 
 Por fim, outra página da plataforma é dedicada à gestão de objetivos, permitindo acompanhar os objetivos definidos, as métricas a eles associadas, o progresso na sua concretização ao saber se se encontram dentro ou fora do plano estabelecido.
 
 \section{Requisitos Funcionais e Não Funcionais}
 
-A seguinte seção compila os requisitos obtidos com o cliente e categoriza-os entre funcionais e não funcionais.
+Esta seção compila os requisitos obtidos com o cliente e categoriza-os entre funcionais e não funcionais.
 
-\section{Requisitos Funcionais}
+\subsection{Requisitos Funcionais}
+\label{subsec:FunReq}
 
 Os requisitos funcionais correspondem a funcionalidades presentes no \textit{software} a ser desenvolvido, normalmente representadas por casos de uso e acompanhados por diagramas. Os requisitos funcionais deste projeto estão organizados na Tabela \ref{tab:use_cases}, onde cada requisitos é considerado um caso de uso e identificado por um código alfa-numérico.
 
-%- Use Cases list
 \begin{table}[H]
     \rowcolors{2}{orange!20}{white}
     \renewcommand{\arraystretch}{1.2}
@@ -101,13 +102,22 @@ Os requisitos funcionais correspondem a funcionalidades presentes no \textit{sof
         UC-04 & Pontuação ESG & Como utilizador da plataforma, quero aceder a uma pontuação ESG agregada, para ter uma visão geral do desempenho da empresa em responsabilidade social, ambiental e de governança. \\
         UC-05 & Detalhes de Métricas & Como utilizador da plataforma, quero clicar numa métrica e ver mais detalhes, para compreender a progressão de cada indicador. \\
         UC-06 & Métricas Customizáveis & Como utilizador da plataforma, quero poder criar métricas ESG específicas à realidade da empresa e definir a sua fonte de dados, para garantir que o painel reflete os indicadores mais relevantes para a nossa estratégia. \\
-        UC-07 & Importe de Dados & Como utilizador da plataforma, quero poder importar dados para associar às métricas. \\      
+        UC-07 & Importação de Dados & Como utilizador da plataforma, quero poder importar dados para associar às métricas. \\      
     \end{tabular}
     \caption{Lista de Casos de Uso}
     \label{tab:use_cases}
 \end{table}
 
-\subsection{UC-01 | Visualização de KPI's}
+A Figura \ref{fig:scenario_view} trata-se de um diagrama que compila os caso de usos principais do projeto, que serão posteriormente apresentados de forma detalhada.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=4in,keepaspectratio]{frontmatter/assets/diagrams/Scenario View/Scenario_View.png}
+    \caption{Vista de Cenários}
+    \label{fig:scenario_view}
+\end{figure}
+
+\subsubsection{UC-01 | Visualização de KPI's}
 
 \textbf{Objetivo:} Permitir ao utilizador consultar rapidamente os principais \gls{KPI} ESG da organização. \\
 \textbf{Ator Principal:} Utilizador da plataforma \\
@@ -120,7 +130,7 @@ Os requisitos funcionais correspondem a funcionalidades presentes no \textit{sof
 \end{enumerate}
 \textbf{Resultado Esperado:} O utilizador obtém uma perceção imediata do desempenho ESG da empresa.
 
-\subsection{UC-02 | Filtragem de Métricas}
+\subsubsection{UC-02 | Filtragem de Métricas}
 
 \textbf{Objetivo:} Permitir ao utilizador filtrar os dados por pilar ESG (\textit{Environmental}, \textit{Social} ou \textit{Governance}).\\
 \textbf{Ator Principal:} Utilizador da plataforma\\
@@ -132,7 +142,7 @@ Os requisitos funcionais correspondem a funcionalidades presentes no \textit{sof
 \end{enumerate}
 \textbf{Resultado Esperado:} O utilizador consegue concentrar-se nos dados ESG mais relevantes ao seu objetivo de análise.
 
-\subsection{UC-03 | Mapa de Materialidade}
+\subsubsection{UC-03 | Mapa de Materialidade}
 
 \textbf{Objetivo:} Exibir uma matriz de materialidade com base no setor da empresa, permitindo a priorização de temas ESG.\\
 \textbf{Ator Principal:} Utilizador da plataforma\\
@@ -145,7 +155,7 @@ Os requisitos funcionais correspondem a funcionalidades presentes no \textit{sof
 \end{enumerate}
 \textbf{Resultado Esperado:} Facilita a identificação de prioridades estratégicas ESG para o setor em análise.
 
-\subsection{UC-04 | Pontuação ESG}
+\subsubsection{UC-04 | Pontuação ESG}
 
 \textbf{Objetivo:} Fornecer uma pontuação ESG agregada para a empresa.\\
 \textbf{Ator Principal:} Utilizador da plataforma\\
@@ -158,7 +168,7 @@ Os requisitos funcionais correspondem a funcionalidades presentes no \textit{sof
 \end{enumerate}
 \textbf{Resultado Esperado:} Oferece uma visão sintética do desempenho ESG.
 
-\subsection{UC-05 | Detalhes de Métricas}
+\subsubsection{UC-05 | Detalhes de Métricas}
 
 \textbf{Objetivo:} Permitir a exploração detalhada de cada métrica ESG.\\
 \textbf{Ator Principal:} Utilizador da plataforma\\
@@ -170,7 +180,7 @@ Os requisitos funcionais correspondem a funcionalidades presentes no \textit{sof
 \end{enumerate}
 \textbf{Resultado Esperado:} Maior compreensão do desempenho de cada indicador específico.
 
-\subsection{UC-06 | Métricas Customizáveis}
+\subsubsection{UC-06 | Métricas Customizáveis}
 
 \textbf{Objetivo:} Permitir ao utilizador definir novas métricas ESG alinhadas com a realidade da empresa.\\
 \textbf{Ator Principal:} Utilizador da plataforma\\
@@ -183,7 +193,7 @@ Os requisitos funcionais correspondem a funcionalidades presentes no \textit{sof
 \end{enumerate}
 \textbf{Resultado Esperado:} Flexibilidade para adaptar o sistema ESG a diferentes contextos empresariais.
 
-\subsection{UC-07 | Importe de Dados}
+\subsubsection{UC-07 | Importação de Dados}
 
 \textbf{Objetivo:} Permitir ao utilizador importar datasets em formato CSV para análise ESG.\\
 \textbf{Ator Principal:} Utilizador da plataforma\\
@@ -197,11 +207,11 @@ Os requisitos funcionais correspondem a funcionalidades presentes no \textit{sof
 \textbf{Resultado Esperado:} Capacidade de integração de dados externos no ecossistema ESG da aplicação.
 
 
-\section{Requisitos Não Funcionais}
+\subsection{Requisitos Não Funcionais}
 
 Requisitos não funcionais correspondem a todas as propriedades do sistema que não se referem diretamente a funcionalidades específicas, mas sim a qualidades e restrições sobre como o sistema se deve comportar. Incluem aspetos como desempenho, usabilidade, confiabilidade, manutenibilidade e outros fatores de qualidade da aplicação.
 
-Uma forma amplamente utilizada de categorizar estes requisitos é através do modelo \textbf{FURPS+}, detalhado na Tabela \ref{tab:furps}, que divide os requisitos não funcionais em cinco categorias principais, com um grupo adicional representado pelo símbolo \texttt{+}.
+Uma forma amplamente utilizada de categorizar estes requisitos é através do modelo \textbf{FURPS+}, detalhado na Tabela \ref{tab:furps}, que cataloga os requisitos não funcionais em cinco categorias principais, com um grupo adicional representado pelo símbolo \texttt{+}.
 
 \begin{table}[H]
     \rowcolors{2}{blue!30}{white}
@@ -226,17 +236,14 @@ Os tópicos seguintes categorizam os requisitos não funcionais obtidos consoant
 
 \subsection{Usability (U)}
 \begin{itemize}
-    \item Interface clara, intuitiva e fácil de navegar.
-    \item Feedback imediato ao utilizador através de alertas e \textit{logs} indicando sucesso ou erro das ações realizadas.
-    \item Aplicação dispoNível em inglês para melhor acessibilidade.
-    \item Estilo visual coerente e consistente em todas as páginas e componentes.
+    \item Feedback imediato ao utilizador através de alertas indicando sucesso ou erro das ações realizadas.
+    \item Aplicação disponível em inglês para melhor acessibilidade.
 \end{itemize}
 
 \subsection{Reliability (R)}
 \begin{itemize}
     \item Tratamento robusto de erros, com mensagens claras sobre a origem dos problemas.
     \item Consistência e atualização correta dos dados apresentados ao utilizador.
-    \item Implementação de testes unitários e de integração para garantir a confiabilidade das funcionalidades críticas.
 \end{itemize}
 
 \subsection{Performance (P)}
@@ -254,18 +261,17 @@ Os tópicos seguintes categorizam os requisitos não funcionais obtidos consoant
 
 \subsection{+ (Outros)}
 \begin{itemize}
-    \item A aplicação está totalmente em inglês.
-    \item Estilo visual consistente e agradável.
     \item Seguir boas práticas de programação e arquitetura coesa.
     \item Utilizar fonte de dados simulada através de scripts de seeding.
     \item Conformidade com o padrão \gls{SASB} para estruturação das métricas \gls{ESG}.
     \item Comunicação entre os diferentes módulos da aplicação através de REST APIs utilizando HTTP/S para garantir interoperabilidade e segurança.
+    \item Implementação de testes unitários e de integração para garantir a confiabilidade das funcionalidades críticas.
 \end{itemize}
 
 %-------------------------------------------------------------------------------
 
 \chapter{Desenho da solução}
-\label{ch:DS}
+\label{chap:DS}
 
 Este capítulo aborda a fase de \textit{design} no processo de desenvolvimento de \textit{software}, onde, após a recolha de requisitos e análise das funcionalidades, são delineados os elementos do sistema através de diagramas que refletem a arquitetura e os modelos escolhidos, tendo em conta os requisitos e restrições definidos. Conforme descrito em \cite{tsui2022essentials}, o \textit{design} é dividido em duas etapas principais:
 
@@ -433,14 +439,7 @@ De forma semelhante, o caso de uso UC-07 também apresenta essa distinção, evi
 
 \subsection{Vista de Cenários}
 
-A vista de cenários, ilustrada pela Figura \ref{fig:scenario_view}, compila os caso de usos principais. Esta vista é redundante, daí o "+1" na designação do modelo arquitetural (\cite{Kruchten1995}).
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[height=4in,keepaspectratio]{frontmatter/assets/diagrams/Scenario View/Scenario_View.png}
-    \caption{Vista de Cenários}
-    \label{fig:scenario_view}
-\end{figure}
+A vista de cenários, ilustrada pela Figura \ref{fig:scenario_view} e apresentada na secção \ref{subsec:FunReq}, compila os caso de usos principais. Esta vista é redundante, daí o "+1" na designação do modelo arquitetural (\cite{Kruchten1995}).
 
 \subsection{Vista Lógica}
 
@@ -497,6 +496,8 @@ Todas as ações realizadas pelos utilizadores têm origem no \textit{Frontend},
     \caption{Vista de Implementação Nível 3}
     \label{fig:development_view_lv3}
 \end{figure}
+
+O Apêndice \ref{AppendixB} apresenta o mapeamento entre a vista lógica e a de implementação de Nível 3 de modo a facilitar o entendimento das relações entre as duas vistas.
     
 \subsection{Vista Física}
 

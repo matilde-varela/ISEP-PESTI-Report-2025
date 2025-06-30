@@ -1,5 +1,5 @@
 \chapter{Introdução}
-\label{chap:Introdução}
+\label{chap:Intro}
 
 Este Capítulo tem como objetivo apresentar o projeto, o trabalho realizado e a sua contextualização, abordando o problema em estudo e os objetivos a serem alcançados. Também será feita uma descrição das principais metodologias utilizadas ao longo do trabalho, bem como a identificação dos contributos e dos aspetos inovadores da solução desenvolvida. O Capítulo conclui com a apresentação da estrutura do presente documento.
 
@@ -34,25 +34,26 @@ O projeto visa desenvolver a interface do utilizador para esta plataforma, garan
 
 \subsection{Objetivos}
 
-O objetivo principal deste projeto é o desenvolvimento de um \textit{frontend} para o protótipo de uma ferramenta interna da DevScope, que visa o acompanhamento de métricas de \gls{ESG}, facilitando uma tomada de decisão mais informada e estruturada.
+O foco do projeto é o desenvolvimento de um protótipo \textit{frontend} de uma ferramenta interna da DevScope com o objetivo de rastrear e avaliar métricas ESG para levar a uma tomada de decisão mais informada, em alinhamento com as necessidades específicas de cada organização.
 
-Aprofundando-se nos objetivos técnicos, o projeto visa:
+A nível técnico, o projeto tem como objectivos:
+
 \begin{itemize}
-    \item \textbf{Centralizar dados de diferentes fontes:} Integrar informações de várias origens para garantir uma visão unificada e acessível.
-    \item \textbf{Desenvolver um sistema intuitivo de visualização de dados:} Criar uma interface fácil de usar que permita aos utilizadores analisarem e interpretarem rapidamente as métricas ESG.
-    \item \textbf{Automatizar a coleta e o processamento de dados:} Melhorar a precisão dos relatórios por meio de um sistema automatizado que reduz erros manuais e aumenta a eficiência.
+\item \textbf{Consolidar dados de múltiplas fontes:} Combinar conjuntos relevantes de dados no mesmo sistema, fornecendo uma visão unificada e acessível.
+\item \textbf{Desenvolver uma aplicação configurável:} Permitir que as organizações configurem a ferramenta de acordo com as suas prioridades, sectores e objectivos estratégicos.
+\item \textbf{Visualização clara e interactiva dos dados ESG:} Conceber uma interface intuitiva que simplifique a análise e interpretação dos dados relacionados com ESG.
+\item \textbf{Definir e monitorizar objectivos baseados em métricas:} Facilitar o estabelecimento de objectivos personalizados de acordo com a informação ESG disponível, e simplificar a monitorização ao longo do tempo.
 \end{itemize}
-
 
 \subsection{Abordagem} 
 
-O desenvolvimento do projeto seguiu uma abordagem ágil, caracterizada pela iteratividade do \textit{software} desenvolvido, pela compreensão das prioridades e pela capacidade de introduzir mudanças ao longo do processo. A flexibilidade perante os pedidos do cliente (DevScope) foi um dos principais fatores, promovendo uma comunicação próxima e frequente (\cite{Patel2025}). O projeto fará ainda uso da \textit{agile framework} \textbf{Scrum}, sendo o projeto divido em iterações de uma semana (\textit{sprints}) e diferentes fases, tais como: pré-planeamento do \textit{sprint} (\textit{release backlog} e \textit{sprint goals}), planeamento do sprint/iteração (\textit{sprint backlog}), implementação e demonstração das funcionalidades desenvolvidas (\cite{Cohen2004}).
+O desenvolvimento do projeto seguiu uma abordagem ágil, caracterizada pela iteratividade do \textit{software} desenvolvido, pela compreensão das prioridades e pela capacidade de introduzir mudanças ao longo do processo. A flexibilidade perante os pedidos do cliente (DevScope) foi um dos principais fatores, promovendo uma comunicação próxima e frequente (\cite{Patel2025}). O projeto fará ainda uso da \textit{agile framework Scrum}, sendo o projeto divido em iterações de uma semana (\textit{sprints}) e diferentes fases, tais como: pré-planeamento do \textit{sprint} (\textit{release backlog} e \textit{sprint goals}), planeamento do sprint/iteração (\textit{sprint backlog}), implementação e demonstração das funcionalidades desenvolvidas (\cite{Cohen2004}).
 
-Além das metodologias mencionadas, foi utilizado o \textbf{Microsoft OneNote}, uma ferramenta adotada pela DevScope como base de conhecimento colaborativa, desenvolvida pelos próprios colaboradores e acessível a toda a empresa. O \textbf{GitHub} foi empregado não apenas como repositório da solução desenvolvida, mas também como \textit{hub} central do projeto, integrando o quadro \textbf{Kanban}. Esta abordagem, alinhada às metodologias ágeis, visa minimizar o tempo ocioso, promover um fluxo de trabalho mais eficiente e garantir um gerenciamento de tarefas estruturado, por meio de cartões detalhados que acompanham o progresso de cada etapa (\cite{Wakode2021Kanban}).
+Além das metodologias mencionadas, foi utilizado o \textit{Microsoft OneNote}, uma ferramenta adotada pela DevScope como base de conhecimento colaborativa, desenvolvida pelos próprios colaboradores e acessível a toda a empresa. O \textit{GitHub} foi empregado não apenas como repositório da solução desenvolvida, mas também como \textit{hub} central do projeto, integrando o quadro \textit{Kanban}. Esta abordagem, alinhada às metodologias ágeis, visa minimizar o tempo ocioso, promover um fluxo de trabalho mais eficiente e garantir um gerenciamento de tarefas estruturado, por meio de cartões detalhados que acompanham o progresso de cada etapa (\cite{Wakode2021Kanban}).
 
 As funções de \textit{product owner} e \textit{scrum master} foram exercidas por supervisores da empresa.
 
-O estagiário teve flexibilidade horária, mas manteve comunicação contínua com a empresa. As \textbf{reuniões diárias} (\textit{daily stand-ups}, ~30 min) serviram para atualizar a equipa, enquanto as \textbf{reuniões semanais} garantiram acompanhamento mais detalhado com o supervisor, incluindo demonstrações e \textit{feedback} para orientar o desenvolvimento.
+O estagiário teve flexibilidade horária, mas manteve comunicação contínua com a empresa. As reuniões diárias (\textit{daily stand-ups}, ~30 min) serviram para atualizar a equipa, enquanto as reuniões semanais garantiram acompanhamento mais detalhado com o supervisor, incluindo demonstrações e \textit{feedback} para orientar o desenvolvimento.
 
 \subsection{Contributos} 
 
@@ -91,19 +92,18 @@ Embora a submissão do projeto fosse até 30 de junho, a DevScope planeou conclu
 
  No Apêndice \ref{AppendixA}, apresenta-se um diagrama de \textit{Gantt} detalhado com o planeamento definido.
 
-
 \section{Estrutura do relatório}
 
 O presente documento é composto por cinco capítulos que descrevem o desenvolvimento da solução pretendida.
 
-A \textbf{Introdução} contextualiza o projeto, apresenta o problema e as abordagens adotadas, destaca os contributos para os \textit{stakeholders} e expõe o cronograma.
+A Introdução contextualiza o projeto, apresenta o problema e as abordagens adotadas, destaca os contributos para os \textit{stakeholders} e expõe o cronograma.
 
-O \textbf{Estado da Arte} analisa trabalhos e tecnologias relevantes, explorando soluções existentes relacionadas com o problema em questão.
+O Estado da Arte analisa trabalhos e tecnologias relevantes, explorando soluções existentes relacionadas com o problema em questão.
 
-O Capítulo de \textbf{Análise e Desenho da Solução} detalha a metodologia, as tecnologias e os algoritmos utilizados, além da modelação da solução e especificação de requisitos.
+O Capítulo de Análise e Desenho da Solução detalha a metodologia, as tecnologias e os algoritmos utilizados, além da modelação da solução e especificação de requisitos.
 
-A \textbf{Implementação da Solução} descreve aspetos técnicos, como \textit{software}, ferramentas e sistemas utilizados, bem como os testes realizados e a avaliação da solução.
+A Implementação da Solução descreve aspetos técnicos, como \textit{software}, ferramentas e sistemas utilizados, bem como os testes realizados e a avaliação da solução.
 
-Por fim, as \textbf{Conclusões} apresentam um balanço dos resultados obtidos, analisam as limitações encontradas e incluem uma reflexão crítica sobre o trabalho desenvolvido.
+Por fim, as Conclusões apresentam um balanço dos resultados obtidos, analisam as limitações encontradas e incluem uma reflexão crítica sobre o trabalho desenvolvido.
 
 \vspace{20mm} 

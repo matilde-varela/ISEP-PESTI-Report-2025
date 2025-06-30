@@ -331,15 +331,15 @@ KOMA-script documentation for details.}]{fancyhdr}
 
 
 
-%\newcommand{\evallabel}{Evaluation Committee}
-%\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\evallabel}{Evaluation Committee}
-%\providecaptionname{portuguese}{\evallabel}{J\'uri}
-%\newcommand{\presidentlabel}{President}
-%\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\presidentlabel}{President}
-%\providecaptionname{portuguese}{\presidentlabel}{Presidente}
-%\newcommand{\memberslabel}{Members}
-%\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\memberslabel}{Members}
-%\providecaptionname{portuguese}{\memberslabel}{Vogais}
+\newcommand{\evallabel}{Evaluation Committee}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\evallabel}{Evaluation Committee}
+\providecaptionname{portuguese}{\evallabel}{J\'uri}
+\newcommand{\presidentlabel}{President}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\presidentlabel}{President}
+\providecaptionname{portuguese}{\presidentlabel}{Presidente}
+\newcommand{\memberslabel}{Members}
+\providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\memberslabel}{Members}
+\providecaptionname{portuguese}{\memberslabel}{Vogais}
 
 
 \newcommand{\maketitlepage}{
@@ -384,12 +384,12 @@ KOMA-script documentation for details.}]{fancyhdr}
      \vspace{5mm}
 	\ifdefined\cosupname {\large \bfseries \cosupervisorlabel: \cosupname} \\ \fi
 	\vfill
-	{\normalsize \bfseries \noindent \evallabel} \\
-	{\normalsize \presidentlabel } \\
-	\bigskip
-	{\normalsize \presidentname } \\
-	{\normalsize \memberslabel} \\
-	{\normalsize \committee } \\
+	% {\normalsize \bfseries \noindent \evallabel} \\
+	% {\normalsize \presidentlabel } \\
+	% \bigskip
+	% {\normalsize \presidentname } \\
+	% {\normalsize \memberslabel} \\
+	% {\normalsize \committee } \\
     \end{center}
 
 %\thesisdate{Porto, \today} % thesis date,  print it elsewhere with \tdate
