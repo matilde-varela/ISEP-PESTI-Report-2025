@@ -1,14 +1,13 @@
 
-%-------------------------------------------------------------------------------
 \chapter{Análise do Problema}
 \label{chap:AP}
 
-Neste próximo capítulo aborda-se a análise do problema em questão. Inicia-se com a descrição do domínio do problema através do glossário de termos usados, do modelo de domínio e do mapa de materialidade da Devscope de acordo com as métricas indicadas pela \gls{SASB} para o setor de \textit{software} e serviços IT. Por fim, serão elencados os requisitos funcionais e não funcionais do sistema.
+Neste próximo Capítulo aborda-se a análise do problema em questão. Inicia-se com a descrição do domínio do problema através do glossário de termos usados, do modelo de domínio e do mapa de materialidade da Devscope de acordo com as métricas indicadas pela \gls{SASB} para o setor de \textit{software} e serviços IT. Por fim, serão elencados os requisitos funcionais e não funcionais do sistema.
 
 \section{Contexto}
 \label{sec:Context}
 
-A fase de análise é uma das mais importantes no ciclo de vida do desenvolvimento de software, pois é nela que ocorre a recolha dos requisitos, funcionalidades e necessidades do cliente, bem como das especificações do sistema. O objetivo final é definir de forma clara os recursos e funcionalidades que compõem a solução a ser desenvolvida.
+A fase de análise é uma das mais importantes no ciclo de vida do desenvolvimento de \textit{software}, pois é nela que ocorre a recolha dos requisitos, funcionalidades e necessidades do cliente, bem como das especificações do sistema. O objetivo final é definir de forma clara os recursos e funcionalidades que compõem a solução a ser desenvolvida.
 
 Qualquer informação incorreta, ou não obtida, pode comprometer o desenvolvimento do produto, tanto em termos de qualidade como de cumprimento dos prazos.
 
@@ -30,15 +29,14 @@ A Tabela \ref{tab:glossario_dominio} apresenta os conceitos de domínio do probl
         \rowcolor{purple!40}
         \textbf{Conceito (EN)} & \textbf{Descrição} \\
         ESG & \textbf{ESG (Ambiente, Social e Governança)}: Conjunto de critérios que avaliam o desempenho ambiental, social e de governança de uma organização, com foco na sustentabilidade e responsabilidade corporativa. \\
-        Dashboard & \textbf{Painel}: Resumo gráfico de várias informações importantes, normalmente utilizado para dar uma visão geral de um negócio. \\
-        Materiality Map & \textbf{Mapa de Materialidade}: Ferramenta que destaca as métricas ESG mais relevantes para cada setor, segundo as normas da SASB. \\
-        Metric & \textbf{Métrica}: Unidade de medida usada para quantificar aspetos específicos do desempenho ESG, como emissões de carbono, diversidade na força de trabalho ou políticas anticorrupção. \\
-        Dataset & \textbf{Conjunto de Dados}: Coleção estruturada de dados ESG, normalmente em formato tabular, que contém informações como categorias, datas e valores associados. \\
+        \textit{Dashboard} & \textbf{Painel}: Resumo gráfico de várias informações importantes, normalmente utilizado para dar uma visão geral de um negócio. \\
+        \textit{Materiality Map} & \textbf{Mapa de Materialidade}: Ferramenta que destaca as métricas ESG mais relevantes para cada setor, segundo as normas da SASB. \\
+        \textit{Metric} & \textbf{Métrica}: Unidade de medida usada para quantificar aspetos específicos do desempenho ESG, como emissões de carbono, diversidade na força de trabalho ou políticas anticorrupção. \\
+        \textit{Dataset} & \textbf{Conjunto de Dados}: Coleção estruturada de dados ESG, normalmente em formato tabular, que contém informações como categorias, datas e valores associados. \\
         URL & \textbf{Localizador Uniforme de Recursos (URL)}: Endereço que identifica e localiza um recurso na internet, como páginas \textit{web}, APIs ou arquivos. \\
         API & \textbf{Interface de Programação de Aplicações (API)}: Conjunto de regras que permite a comunicação entre diferentes sistemas ou componentes de \textit{software}. Utilizada para integrar funcionalidades ou aceder a dados. \\
         KPI & \textbf{Indicador-Chave de Desempenho (KPI)}: Métrica usada para avaliar o sucesso de uma organização ou de uma atividade específica na conquista de objetivos estratégicos ou operacionais. \\
         SPA & \textbf{Aplicação de Página Única (SPA)}: Tipo de aplicação \textit{web} que carrega uma única página HTML e atualiza dinamicamente o conteúdo conforme o utilizador interage, sem recarregar completamente a página. \\
-        AWS S3 & \textbf{Amazon Simple Storage Service (AWS S3)}: Serviço de armazenamento em nuvem da \textit{Amazon} utilizado para guardar arquivos como documentos, imagens ou exportações de dados de forma segura e escalável. \\
     \end{tabular}
     \caption{Glossário do domínio do problema}
     \label{tab:glossario_dominio}
@@ -51,7 +49,7 @@ Um bom exemplo é a distinção entre \texttt{Empresa} e \texttt{Setor}. Enquant
 \begin{figure}[H]
 \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/diagrams/Domain Model/Domain_Model2.png}
-    \caption{Modelo de Dominio}
+    \caption{Modelo de Dominio (autoria própria)}
     \label{fig:domain_model}
 \end{figure}
 
@@ -65,13 +63,13 @@ Outra seção da plataforma disponibiliza uma visão detalhada de todas as métr
 
 Cada métrica possui atributos específicos, incluindo o pilar e subárea ESG a que pertence, o seu código identificador, os conjunto de dados que lhe estão associados, a unidade de medida associada aos mesmos e a classificação do seu progresso.
 
-De acordo com a \gls{SASB}, adotado pela Devscope neste projeto, existem normas específicas para cada setor — como é o caso do setor de \textit{Software} e Serviços de TI — que determinam quais as métricas devem ser reportadas (\cite{SASBSector2025}). É com base nestas diretrizes que se constrói o Mapa de Materialidade, indicado na Figura \ref{fig:materiality_map}.
+De acordo com a \gls{SASB}, adotado pela Devscope neste projeto, existem normas específicas para cada setor, como é o caso do setor de \textit{Software} e Serviços de TI, que determinam quais as métricas devem ser reportadas (\cite{SASBSector2025}). É com base nestas diretrizes que se constrói o Mapa de Materialidade, indicado na Figura \ref{fig:materiality_map}.
 
 % - mapa de materialidade da DevScope (Software e IT sector - SASB)
 \begin{figure}[H]
     \centering
     \includegraphics[width=5in]{frontmatter/assets/mapa-materialidade.png}
-    \caption{Mapa de Materialidade segundo o setor SASB da Devscope (\textit{Software} e serviços IT)}
+    \caption{Mapa de Materialidade segundo o setor SASB da Devscope (\textit{Software} e serviços IT) (autoria própria)}
     \label{fig:materiality_map}
 \end{figure}
 
@@ -81,12 +79,12 @@ Por fim, outra página da plataforma é dedicada à gestão de objetivos, permit
 
 \section{Requisitos Funcionais e Não Funcionais}
 
-Esta seção compila os requisitos obtidos com o cliente e categoriza-os entre funcionais e não funcionais.
+Esta secção compila os requisitos obtidos com o cliente e categoriza-os entre funcionais e não funcionais.
 
 \subsection{Requisitos Funcionais}
 \label{subsec:FunReq}
 
-Os requisitos funcionais correspondem a funcionalidades presentes no \textit{software} a ser desenvolvido, normalmente representadas por casos de uso e acompanhados por diagramas. Os requisitos funcionais deste projeto estão organizados na Tabela \ref{tab:use_cases}, onde cada requisitos é considerado um caso de uso e identificado por um código alfa-numérico.
+Os requisitos funcionais correspondem a funcionalidades presentes no \textit{software} a ser desenvolvido, normalmente representadas por casos de uso e acompanhados por diagramas. Os requisitos funcionais deste projeto estão organizados na Tabela \ref{tab:use_cases}, onde cada requisito é considerado um caso de uso e identificado por um código alfa-numérico.
 
 \begin{table}[H]
     \rowcolors{2}{orange!20}{white}
@@ -108,18 +106,18 @@ Os requisitos funcionais correspondem a funcionalidades presentes no \textit{sof
     \label{tab:use_cases}
 \end{table}
 
-A Figura \ref{fig:scenario_view} trata-se de um diagrama que compila os caso de usos principais do projeto, que serão posteriormente apresentados de forma detalhada.
+A Figura \ref{fig:scenario_view} é um diagrama que compila os caso de usos principais do projeto, que serão apresentados de forma detalhada.
 
 \begin{figure}[H]
     \centering
     \includegraphics[height=4in,keepaspectratio]{frontmatter/assets/diagrams/Scenario View/Scenario_View.png}
-    \caption{Vista de Cenários}
+    \caption{Vista de Cenários (autoria própria)}
     \label{fig:scenario_view}
 \end{figure}
 
 \subsubsection{UC-01 | Visualização de KPI's}
 
-\textbf{Objetivo:} Permitir ao utilizador consultar rapidamente os principais \gls{KPI} ESG da organização. \\
+\textbf{Objetivo:} Permitir ao utilizador consultar rapidamente os principais \textit{\gls{KPI}} ESG da organização. \\
 \textbf{Ator Principal:} Utilizador da plataforma \\
 \textbf{Descrição Geral:} Este caso de uso disponibiliza uma visão geral de métricas dos três pilares (Ambiental, Social e de Governação). A interface mostra indicadores como emissões de CO$_2$, diversidade na força de trabalho, entre outros. \\
 \textbf{Fluxo Principal:}
@@ -172,7 +170,7 @@ A Figura \ref{fig:scenario_view} trata-se de um diagrama que compila os caso de 
 
 \textbf{Objetivo:} Permitir a exploração detalhada de cada métrica ESG.\\
 \textbf{Ator Principal:} Utilizador da plataforma\\
-\textbf{Descrição Geral:} O utilizador pode selecionar uma métrica para visualizar dados históricos, a classificação do seu progresso, o dataset de origem e o pilar e subárea a que pertence.\\
+\textbf{Descrição Geral:} O utilizador pode selecionar uma métrica para visualizar dados históricos, a classificação do seu progresso, o conjunto de dados de origem e o pilar e subárea a que pertence.\\
 \textbf{Fluxo Principal:}
 \begin{enumerate}
     \item O utilizador clica numa métrica apresentada em \textit{dashboards} ou gráficos.
@@ -195,7 +193,7 @@ A Figura \ref{fig:scenario_view} trata-se de um diagrama que compila os caso de 
 
 \subsubsection{UC-07 | Importação de Dados}
 
-\textbf{Objetivo:} Permitir ao utilizador importar datasets em formato CSV para análise ESG.\\
+\textbf{Objetivo:} Permitir ao utilizador importar conjuntos de dados em formato CSV para análise ESG.\\
 \textbf{Ator Principal:} Utilizador da plataforma\\
 \textbf{Descrição Geral:} O utilizador pode carregar ficheiros de dados externos, que serão associados a métricas e utilizados em gráficos e cálculos.\\
 \textbf{Fluxo Principal:}
@@ -221,12 +219,12 @@ Uma forma amplamente utilizada de categorizar estes requisitos é através do mo
     \begin{tabular}{>{\bfseries}p{1cm} >{\bfseries}p{2.5cm} p{10cm}}
         \rowcolor{blue!50}
         Letra & Categoria & Descrição \\
-        F & Functionality & Funcionalidades esperadas, segurança, interoperabilidade e adequação funcional \\
-        U & Usability & Facilidade de uso, aparência, acessibilidade, e interação com o utilizador \\
-        R & Reliability & Confiabilidade, tolerância a falhas, disponibilidade, e recuperação \\
-        P & Performance & Tempo de resposta, eficiência de recursos e escalabilidade \\
-        S & Supportability & Facilidade de manutenção, extensibilidade, modularidade, e testabilidade \\
-        + & Outros & Restrições de design, implementação, normas, tecnologias ou frameworks \\
+        F & \textit{Functionality} & Funcionalidades esperadas, segurança, interoperabilidade e adequação funcional \\
+        U & \textit{Usability} & Facilidade de uso, aparência, acessibilidade, e interação com o utilizador \\
+        R & \textit{Reliability} & Confiabilidade, tolerância a falhas, disponibilidade, e recuperação \\
+        P & \textit{Performance} & Tempo de resposta, eficiência de recursos e escalabilidade \\
+        S & \textit{Supportability} & Facilidade de manutenção, extensibilidade, modularidade, e testabilidade \\
+        + & \textit{Others} & Restrições de design, implementação, normas, tecnologias ou frameworks \\
     \end{tabular}
     \caption{Categorias FURPS+}
     \label{tab:furps}
@@ -234,38 +232,37 @@ Uma forma amplamente utilizada de categorizar estes requisitos é através do mo
 
 Os tópicos seguintes categorizam os requisitos não funcionais obtidos consoante o modelo FURPS+.
 
-\subsection{Usability (U)}
+\subsection{\textit{Usabilidade (U)}}
 \begin{itemize}
-    \item Feedback imediato ao utilizador através de alertas indicando sucesso ou erro das ações realizadas.
-    \item Aplicação disponível em inglês para melhor acessibilidade.
+    \item \textit{Feedback} imediato ao utilizador através de alertas indicando sucesso ou erro das ações realizadas.
+    \item Interface do utilizador em inglês para facilitar o acesso global.
 \end{itemize}
 
-\subsection{Reliability (R)}
+\subsection{\textit{Confiabilidade (R)}}
 \begin{itemize}
-    \item Tratamento robusto de erros, com mensagens claras sobre a origem dos problemas.
-    \item Consistência e atualização correta dos dados apresentados ao utilizador.
+    \item O sistema deve apresentar mensagens de erro claras e específicas, indicando a origem do problema, em pelo menos 95\% dos casos de falha.
 \end{itemize}
 
-\subsection{Performance (P)}
+\subsection{\textit{Performance (P)}}
 \begin{itemize}
     \item As interações principais devem ser eficientes e não exceder 30 segundos por operação.
     \item O tempo total para utilizar a prova de conceito (incluindo \textit{seeding} de dados e carregamento da interface) não deve ultrapassar 3 minutos.
 \end{itemize}
 
-\subsection{Supportability (S)}
+\subsection{\textit{Suportabilidade (S)}}
 \begin{itemize}
-    \item Código modular e bem estruturado, seguindo princípios de separação de responsabilidades.
-    \item Facilidade em adicionar novas funcionalidades sem comprometer a usabilidade ou introduzir grandes alterações na base de código.
-    \item Arquitetura baseada em boas práticas, como \textit{Clean Architecture} e uso de camadas (\textit{Controller, Service, Repository}).
+    \item Conformidade com o padrão \gls{SASB} para estruturação das métricas \gls{ESG}.
+    \item A arquitetura do sistema deve permitir a adição de novas funcionalidades com impacto mínimo na base de código existente e sem degradação da usabilidade.
 \end{itemize}
 
 \subsection{+ (Outros)}
 \begin{itemize}
     \item Seguir boas práticas de programação e arquitetura coesa.
     \item Utilizar fonte de dados simulada através de scripts de seeding.
-    \item Conformidade com o padrão \gls{SASB} para estruturação das métricas \gls{ESG}.
     \item Comunicação entre os diferentes módulos da aplicação através de REST APIs utilizando HTTP/S para garantir interoperabilidade e segurança.
-    \item Implementação de testes unitários e de integração para garantir a confiabilidade das funcionalidades críticas.
+    \item Devem ser implementados testes unitários e de integração cobrindo, no mínimo, 80\% das funcionalidades críticas do sistema.
+    \item Código modular e bem estruturado, seguindo princípios de separação de responsabilidades.
+    \item Arquitetura baseada em boas práticas, como \textit{Clean Architecture} e uso de camadas (\textit{Controller, Service, Repository}).
 \end{itemize}
 
 %-------------------------------------------------------------------------------
@@ -293,7 +290,7 @@ A Figura \ref{fig:cleanArchitecture} ilustra o modelo \textit{Clean Architecture
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/models/CleanArchitecture.jpg}
+    \includegraphics[width=5.5in,keepaspectratio]{frontmatter/assets/models/CleanArchitecture.jpg}
     \caption{Modelo Arquitural \textit{Clean Architecture} (\cite{Martin2012})}
     \label{fig:cleanArchitecture}
 \end{figure}
@@ -319,7 +316,7 @@ A Figura \ref{fig:c4model} hierarquiza a granularidade pretendida no detalhe das
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/models/c4-overview.png}
+    \includegraphics[width=6.5in,keepaspectratio]{frontmatter/assets/models/c4-overview.png}
     \caption{Modelo Arquitural C4 (\cite{C4Model})}
     \label{fig:c4model}
 \end{figure}
@@ -332,15 +329,15 @@ A granularidade do Nível 4 revela-se excessiva e retira o foco aos diagramas qu
 Segundo \cite{Kruchten1995}, o modelo arquitetural "4+1" descreve a arquitetura de um sistema de \textit{software} a partir de cinco perspetivas complementares, cada uma focada em diferentes preocupações e públicos-alvo:
 
 \begin{itemize}
-\item \textbf{Vista Lógica} — Foca-se na funcionalidade do sistema, pois representa a estrutura dos principais componentes do domínio.
+\item \textbf{Vista Lógica -} Foca-se na funcionalidade do sistema, pois representa a estrutura dos principais componentes do domínio.
 
-\item \textbf{Vista de Processos} — Descreve os aspectos dinâmicos do sistema, como a comunicação entre processos concorrentes e a forma como as tarefas são sincronizadas e distribuídas.
+\item \textbf{Vista de Processos -} Descreve os aspectos dinâmicos do sistema, como a comunicação entre processos concorrentes e a forma como as tarefas são sincronizadas e distribuídas.
 
-\item \textbf{Vista Física} — Mapeia os componentes de \textit{software} para os recursos de \textit{hardware} e ilustra como o sistema está distribuídoo.
+\item \textbf{Vista Física -} Mapeia os componentes de \textit{software} para os recursos de \textit{hardware} e ilustra como o sistema está distribuídoo.
 
-\item \textbf{Vista de Implementação/Desenvolvimento} — Mostra a estrutura estática do código, organização em módulos/pacotes e o ambiente de desenvolvimento.
+\item \textbf{Vista de Implementação/Desenvolvimento -} Mostra a estrutura estática do código, organização em módulos/pacotes e o ambiente de desenvolvimento.
 
-\item \textbf{Vista de Cenários} — Representa os principais casos de uso ou fluxos de interação do sistema.
+\item \textbf{Vista de Cenários -} Representa os principais casos de uso ou fluxos de interação do sistema.
 \end{itemize}
 
 A Figura \ref{fig:41viewmodel} ilustra as diferentes vistas, o respetivo público-alvo para cada uma, e as suas interações.
@@ -360,7 +357,7 @@ Alguns casos de uso partilham entre si a mesma estrutura de interação represen
 \begin{figure}[h]
 \centering
 \includegraphics[width=3.5in]{frontmatter/assets/diagrams/Process Views/UC12345-lvl1.png}
-\caption{Vista de processos dos casos de uso de consulta/visualização e filtragem (Nível 1)}
+\caption{Vista de processos dos casos de uso de consulta/visualização e filtragem (Nível 1) (autoria própria)}
 \label{fig:UC12345-lvl1}
 \end{figure}
 
@@ -369,7 +366,7 @@ De igual forma, os respetivos diagramas de Nível 2 também partilham uma estrut
 \begin{figure}[H]
 \centering
 \includegraphics[width=5in]{frontmatter/assets/diagrams/Process Views/UC12345-lvl2.png}
-\caption{Vista de processos dos casos de uso de consulta/visualização e filtragem (Nível 2)}
+\caption{Vista de processos dos casos de uso de consulta/visualização e filtragem (Nível 2) (autoria própria)}
 \label{fig:UC12345-lvl2}
 \end{figure}
 
@@ -378,7 +375,7 @@ De igual forma, os respetivos diagramas de Nível 2 também partilham uma estrut
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{frontmatter/assets/diagrams/Process Views/LVL3/uc134-lvl3.png}
-\caption{Vista de processos dos casos de uso de consulta (Nível 3)}
+\caption{Vista de processos dos casos de uso de consulta (Nível 3) (autoria própria)}
 \label{fig:UC134-lvl3}
 \end{figure}
 
@@ -387,7 +384,7 @@ Já o caso UC-05 (Figura \ref{fig:UC5-lvl3}) inclui também comunicação com o 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{frontmatter/assets/diagrams/Process Views/LVL3/uc-05-lvl3.png}
-\caption{Vista de processo do caso de uso de consulta com acesso ao armazenamento na nuvem (Nível 3)}
+\caption{Vista de processo do caso de uso de consulta com acesso ao armazenamento na nuvem (Nível 3) (autoria própria)}
 \label{fig:UC5-lvl3}
 \end{figure}
 
@@ -396,7 +393,7 @@ A UC-02 (Figura \ref{fig:UC2-lvl3}) distingue-se ainda por incluir uma etapa de 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{frontmatter/assets/diagrams/Process Views/LVL3/uc-02-lvl3.png}
-\caption{Vista de processo do caso de uso de filtragem (Nível 3)}
+\caption{Vista de processo do caso de uso de filtragem (Nível 3) (autoria própria)}
 \label{fig:UC2-lvl3}
 \end{figure}
 
@@ -405,7 +402,7 @@ Da mesma forma, no Nível 1, ambas os casos de uso UC-06 e UC-07 são bastante s
 \begin{figure}[H]
 \centering
 \includegraphics[width=3in]{frontmatter/assets/diagrams/Process Views/UC67-lvl1.png}
-\caption{Vista de processo dos casos de uso de criação e importação (Nível 1)}
+\caption{Vista de processo dos casos de uso de criação e importação (Nível 1) (autoria própria)}
 \label{fig:UC67-lvl1}
 \end{figure}
 
@@ -414,7 +411,7 @@ A mesma tendência continua no nível seguinte, como é representado pela Figura
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{frontmatter/assets/diagrams/Process Views/UC67-lvl2.png}
-\caption{Vista de processo dos casos de uso de criação e importação (Nível 2)}
+\caption{Vista de processo dos casos de uso de criação e importação (Nível 2) (autoria própria)}
 \label{fig:UC67-lvl2}
 \end{figure}
 
@@ -423,7 +420,7 @@ A diferença no caso de uso UC-06 é realçada pelo diagrama de granularidade de
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{frontmatter/assets/diagrams/Process Views/LVL3/uc-06-lvl3.png}
-\caption{Vista de processo do caso de uso de criação de métricas (Nível 3)}
+\caption{Vista de processo do caso de uso de criação de métricas (Nível 3) (autoria própria)}
 \label{fig:UC6-lvl3}
 \end{figure}
 
@@ -432,7 +429,7 @@ De forma semelhante, o caso de uso UC-07 também apresenta essa distinção, evi
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{frontmatter/assets/diagrams/Process Views/LVL3/uc-07-lvl3.png}
-\caption{Vista de processo dos casos de uso de importação de dados (Nível 3)}
+\caption{Vista de processo dos casos de uso de importação de dados (Nível 3) (autoria própria)}
 \label{fig:UC7-lvl3}
 \end{figure}
 
@@ -448,52 +445,52 @@ Esta vista será abordada por vários diagramas correspondentes a sucessivos ní
 \begin{figure}[H]
     \centering
     \includegraphics[width=3in,keepaspectratio]{frontmatter/assets/diagrams/Logical View/Logical View Lv1.drawio.png}
-    \caption{Vista Lógica (Nível 1)}
+    \caption{Vista Lógica (Nível 1) (autoria própria)}
     \label{fig:logical_view_lv1}
 \end{figure}
 
-A Figura \ref{fig:logical_view_lv2} apresenta o Nível 2, oferecendo uma visão mais detalhada do sistema. Este nível inclui o contentor \textit{Visualization}, responsável por disponibilizar a \textit{User UI}, através da qual os utilizadores interagem com a aplicação. Este contentor consome duas APIs, a \textit{Database API} e a \textit{Cloud Storage API}, que, respetivamente, comunicam com a base de dados e com o serviço de armazenamento na nuvem.
+A Figura \ref{fig:logical_view_lv2} apresenta o Nível 2, oferecendo uma visão mais detalhada do sistema. Este nível inclui o contentor \textit{Frontend}, responsável por disponibilizar a \textit{User \gls{UI}}, através da qual os utilizadores interagem com a aplicação. Este contentor consome duas APIs, a \textit{Database API} e a \textit{Cloud Storage API}, que, respetivamente, comunicam com a base de dados e com o serviço de armazenamento na nuvem.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=4in,keepaspectratio]{frontmatter/assets/diagrams/Logical View/Logical View Lv2.drawio.png}
-    \caption{Vista Lógica (Nível 2)}
+    \caption{Vista Lógica (Nível 2) (autoria própria)}
     \label{fig:logical_view_lv2}
 \end{figure}
 
 Já o Nível 3 (Figura \ref{fig:logical_view_lv3}) representa os componentes que compõem os contentores do sistema, tornando mais claras as interações entre eles.
 
-Observa-se que o contentor \textit{Visualization} consome duas APIs: uma disponibilizada pelo \textit{Database Provider} e outra pelo \textit{Cloud Storage Provider}.
+Observa-se que o contentor \textit{Frontend} consome duas APIs: uma disponibilizada pelo \textit{Database Provider} e outra pelo \textit{Cloud Storage Provider}.
 
-O \textit{Cloud Storage Provider} é utilizado para armazenar ficheiros estáticos (como imagens) e gerar URLs de acesso público. Estes URLs são posteriormente armazenados na base de dados.
+O \textit{Cloud Storage Provider} é utilizado para armazenar ficheiros estáticos (como imagens) e gerar os seus \textit{\gls{URL}} de acesso público. Estes URLs são posteriormente armazenados na base de dados.
 
-O \textit{Database Provider}, por sua vez, utiliza uma base de dados relacional. A responsabilidade de persistir os dados, incluindo os URLs gerados, cabe ao contentor \textit{Visualization}, que interage diretamente com ambas as APIs.
+O \textit{Database Provider}, por sua vez, utiliza uma base de dados relacional. A responsabilidade de persistir os dados, incluindo os URLs gerados, cabe ao contentor \textit{Frontend}, que interage diretamente com ambas as APIs.
 
 \begin{landscape}
 \begin{figure}[p]
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/diagrams/Logical View/Logical View Lv3.drawio.png}
-    \caption{Vista Lógica (Nível 3)}
+    \caption{Vista Lógica (Nível 3) (autoria própria)}
     \label{fig:logical_view_lv3}
 \end{figure}
 \end{landscape}
 
 \subsection{Vista de Implementação}
 
-Semelhante à subseção anterior, esta vista será detalhada somente com um diagrama de Nível 3, representado pela Figura \ref{fig:development_view_lv3}.
+Semelhante à subsecção anterior, esta vista será detalhada somente com um diagrama de Nível 3, representado pela Figura \ref{fig:development_view_lv3}.
 
 O Nível 1 não consta neste relatório por se tratar de uma representação demasiado abstrata, que pouco acrescentaria ao entendimento do sistema em questão. O Nível 2 não oferece nenhuma informação acrescida comparativamente ao diagrama do mesmo nível da vista lógica (Figura \ref{fig:logical_view_lv2}).
 
 O Nível 3, de granularidade mais fina, elabora conteúdo do módulo \textit{Frontend}, dando um maior  entendimento não só na sua constituição mas também nas diferentes interações entre os seus elementos 
 
-A aplicação Plataforma ESG é constituida por uma React \gls{SPA} para o \textit{Frontend}, construída para suportar a geração atual de \textit{browsers} para \textit{desktop}.
+A aplicação Plataforma ESG é constituida por uma \textit{React \gls{SPA}} para o \textit{Frontend}, construída para suportar a geração atual de \textit{browsers} para \textit{desktop}.
 
 Todas as ações realizadas pelos utilizadores têm origem no \textit{Frontend}, que comunica com o \textit{Database Provider} para obter ou inserir os dados necessários. No caso específico da criação de uma nova métrica, o \textit{Frontend} interage adicionalmente com o \textit{Cloud Storage Provider}, onde ocorre o \textit{upload} da imagem representativa da respetiva métrica.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=5.25in,keepaspectratio]{frontmatter/assets/diagrams/Development View/Implementation Lv3.drawio.png}
-    \caption{Vista de Implementação Nível 3}
+    \includegraphics[width=4.75in,keepaspectratio]{frontmatter/assets/diagrams/Development View/Implementation Lv3.drawio.png}
+    \caption{Vista de Implementação (Nível 3) (autoria própria)}
     \label{fig:development_view_lv3}
 \end{figure}
 
@@ -505,29 +502,29 @@ A vista física tem como objetivo mapear o \textit{software} para o \textit{hard
 
 \begin{figure}[H]
     \centering
-    \includegraphics[height=6.25in,keepaspectratio]{frontmatter/assets/diagrams/Physical View/physical_view_lv2.drawio.png}
-    \caption{Diagrama de Nível 2 da vista física da solução}
+    \includegraphics[height=5.75in,keepaspectratio]{frontmatter/assets/diagrams/Physical View/physical_view_lv2.drawio.png}
+    \caption{Diagrama de Nível 2 da vista física da solução (autoria própria)}
     \label{fig:physical_view_lv2}
 \end{figure}
 
-Os Load Balancers são responsáveis por distribuir o tráfego de forma dinâmica entre os servidores que compõem as camadas de \textit{Visualization} (\textit{frontend}) e \textit{Data Management} (\textit{backend} com base de dados). Estes atuam como intermediários entre os utilizadores e os servidores, assegurando uma distribuição equilibrada da carga, especialmente durante períodos de maior tráfego. Com isso, aumentam a disponibilidade e a resiliência do sistema: caso um servidor falhe, o tráfego é automaticamente redirecionado para outro servidor ativo (tolerância a falhas). Esta abordagem contribui ainda para a redução da latência e para evitar respostas inconsistentes da aplicação (\Cite{F52025}).
+Os \textit{Load Balancers} são responsáveis por distribuir o tráfego de forma dinâmica entre os servidores que compõem as camadas de \textit{Frontend} e \textit{Data Management} (\textit{backend} com base de dados). Estes atuam como intermediários entre os utilizadores e os servidores, assegurando uma distribuição equilibrada da carga, especialmente durante períodos de maior tráfego. Com isso, aumentam a disponibilidade e a resiliência do sistema: caso um servidor falhe, o tráfego é automaticamente redirecionado para outro servidor ativo (tolerância a falhas). Esta abordagem contribui ainda para a redução da latência e para evitar respostas inconsistentes da aplicação (\Cite{F52025}).
 
 As comunicações entre os vários componentes são realizadas através de protocolo HTTP ou HTTPS.
 
 \section{Alternativa Arquitetural: DDD com \textit{Clean Architecture}}
 \label{sec:SolAlt}
 
-Uma alternativa à arquitetura baseada nos modelos C4/4+1 seria o uso de \textit{Domain-Driven Design} (DDD) combinado com os princípios da \textit{Clean Architecture}. Esta abordagem também permite uma estrutura modular e escalável, alinhada aos limites naturais do domínio e preparada para futuras expansões.
+Uma alternativa à arquitetura representada pelos modelos C4/4+1 seria o uso de \textit{Domain-Driven Design} (DDD) combinado com os princípios da \textit{Clean Architecture}. Esta abordagem também permite uma estrutura modular e escalável, alinhada aos limites naturais do domínio e preparada para futuras expansões.
 
 Como mostra a Figura \ref{fig:alternativeModel}, o sistema é dividido em módulos independentes, cada um representando um conceito central da aplicação ESG: \textit{Dataset}, \textit{Metric}, \textit{Objective}, \textit{Pillar} e \textit{Subarea}. Cada módulo encapsula as suas entidades, regras de negócio e casos de uso, comunicando-se com o exterior por meio de interfaces (\textit{ports}), enquanto os adaptadores (como base de dados ou APIs) implementam essas interfaces.
 
-A estrutura segue o modelo em anéis concêntricos da \textit{Clean Architecture}, isolando o núcleo de domínio das dependências externas. Os casos de uso coordenam a lógica na camada de aplicação, e as camadas mais externas lidam com frameworks como \textit{Prisma} ou \textit{Next.js}.
+A estrutura segue o modelo em anéis concêntricos da \textit{Clean Architecture}, isolando o núcleo de domínio das dependências externas. Os casos de uso coordenam a lógica na camada de aplicação, e as camadas mais externas lidam com \textit{frameworks} como \textit{Prisma} ou \textit{Next.js}.
 
-Esta organização garante separação clara de responsabilidades, menor acoplamento, maior testabilidade e independência tecnológica — fatores que contribuem para um código mais limpo, coeso e sustentável.
+Esta organização garante separação clara de responsabilidades, menor acoplamento, maior testabilidade e independência tecnológica. Estes são fatores que contribuem para um código mais limpo, coeso e sustentável.
 
 \begin{figure}[H]
     \centering
     \includegraphics[height=5in,keepaspectratio]{frontmatter/assets/diagrams/AlternativeModel.drawio.png}
-    \caption{Diagrama de Nível 3 da vista lógica do \textit{container Frontend} segundo uma arquitetura de camadas concêntricas}
+    \caption{Diagrama de Nível 3 da vista lógica do \textit{container Frontend} segundo uma arquitetura de camadas concêntricas (autoria própria)}
     \label{fig:alternativeModel}
 \end{figure}

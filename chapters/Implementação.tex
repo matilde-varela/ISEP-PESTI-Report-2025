@@ -2,7 +2,7 @@
 \chapter{Implementação da Solução} 
 \label{chap:Impl}
 
-A fase de implementação/desenvolvimento de software segue as diretrizes definidas na análise e no design do sistema, traduzindo-as em código-fonte e linguagem de programação \cite{UBIMINDS2025}. É nesta etapa que se integram sistemas externos e se utilizam ferramentas que auxiliam na programação, rastreio de código, colaboração da equipa, gestão de tarefas e cumprimento de prazos e metas estabelecidos.
+A fase de implementação/desenvolvimento de \textit{software} segue as diretrizes definidas na análise e no \textit{design} do sistema, traduzindo-as em código-fonte e linguagem de programação (\cite{UBIMINDS2025}). É nesta etapa que se integram sistemas externos e se utilizam ferramentas que auxiliam na programação, rastreio de código, colaboração da equipa, gestão de tarefas e cumprimento de prazos e metas estabelecidos.
 
 Neste capítulo, será descrito o processo de implementação do projeto ao longo de várias fases, nomeadamente as fases de planeamento e de desenvolvimento. Serão também referidas as tecnologias utilizadas, incluídas imagens representativas da plataforma criada e explicadas as funcionalidades implementadas, conforme definidas nos casos de uso apresentados nos Capítulos \ref{chap:AP} e \ref{chap:DS}. Detalhes considerados desnecessários para a compreensão do trabalho serão remetidos para os anexos.
 
@@ -19,12 +19,12 @@ Nesta subsecção são descritas as tecnologias usadas na implementação, categ
 
 No desenvolvimento dos diagramas da vista de progresso (Subsecção \ref{subsec:process_view}) que servem de guia para a implementação das funcionalidades foi usado o \textit{PlantUML}\footnote{Site do \textit{Plantuml}: \url{https://plantuml.com/}} compilado no \textit{Visual Studio Code}\footnote{Site do \textit{Visual Studio Code}: \url{https://code.visualstudio.com/}}. Os restantes diagramas foram feitos pelo programa \textit{Draw.io}\footnote{Site do \textit{Draw\.io}: \url{https://www.drawio.com/}}.
 
-O protótipo da plataforma \gls{ESG}, referido no Apêndice \ref{AppendixC}, foi realizado no \textit{Figma}\footnote{Site do \textit{Figma}: \url{https://www.figma.com/}}, a divisão de tarefas e planeamento do projeto foi realizado no \textit{Github Projects}\footnote{Página sobre o \textit{Github Projects}: \url{https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects}}, como ilustrado na Figura \ref{fig:kanbanBoard}, e o repositório foi alocado no \textit{Github}\footnote{Site do \textit{Github}: \url{https://github.com/}}. A aplicação tem como referência visual o \textit{kit} de marca da Devscope\footnote{Site do \textit{kit} de marca da Devscope: \url{https://brand.devscope.net/intro.html}}
+O protótipo visual da plataforma \gls{ESG}, referido no Apêndice \ref{AppendixC}, foi realizado no \textit{Figma}\footnote{Site do \textit{Figma}: \url{https://www.figma.com/}}, a divisão de tarefas e planeamento do projeto foi realizado no \textit{Github Projects}\footnote{Página sobre o \textit{Github Projects}: \url{https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects}}, como ilustrado na Figura \ref{fig:kanbanBoard}, e o repositório foi alocado no \textit{Github}\footnote{Site do \textit{Github}: \url{https://github.com/}}. A aplicação tem como referência visual o \textit{kit} de marca da Devscope\footnote{Site do \textit{kit} de marca da Devscope: \url{https://brand.devscope.net/intro.html}}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/github_projects.png}
-    \caption{Painel com quadro \textit{kanban} usado no planeamento do projeto}
+    \caption{Painel com quadro \textit{kanban} usado no planeamento do projeto (autoria própria)}
     \label{fig:kanbanBoard}
 \end{figure}
 
@@ -34,15 +34,15 @@ Relativamente às tecnologias utilizadas no desenvolvimento do projeto, o \texti
 
 No que diz respeito ao \textit{frontend}, recorreu-se ao \textit{TypeScript} como linguagem de programação de alto nível, de código aberto\footnote{Site oficial do \textit{TypeScript}: \url{https://www.typescriptlang.org/}}. O \textit{TypeScript} é uma versão melhorada do \textit{JavaScript}, orientada a objetos, sendo preferida em projetos de maior escala devido à sua robustez, melhor manutenção e escalabilidade.
 
-Para o desenvolvimento da interface, utilizaram-se as tecnologias \textit{React}\footnote{Site do \textit{React}: \url{https://react.dev/}}, uma biblioteca \textit{JavaScript} focada na construção de interfaces de utilizador, especialmente em aplicações do tipo \gls{SPA}, e \textit{Next.js}\footnote{Site do \textit{Next.js}: \url{https://nextjs.org/}}, uma \textit{framework} baseada em \textit{React} que facilita a criação de aplicações web com funcionalidades como renderização no lado do servidor (\textit{Server-Side Rendering}) e geração estática de páginas.
+Para o desenvolvimento da interface, utilizaram-se as tecnologias \textit{React}\footnote{Site do \textit{React}: \url{https://react.dev/}}, uma biblioteca \textit{JavaScript} focada na construção de interfaces de utilizador, especialmente em aplicações do tipo \gls{SPA} e o \textit{Next.js}\footnote{Site do \textit{Next.js}: \url{https://nextjs.org/}}, uma \textit{framework} baseada em \textit{React} que facilita a criação de aplicações \textit{web} com funcionalidades como renderização no lado do servidor (\textit{Server-Side Rendering}) e geração estática de páginas.
 
 A nível de estilização, foi usada a \textit{framework} \textit{Tailwind CSS}\footnote{Site do \textit{Tailwind CSS}: \url{https://tailwindcss.com/}}, que permite desenvolver rapidamente interfaces personalizadas através da aplicação de classes utilitárias diretamente no HTML, evitando a necessidade de escrever folhas de estilo tradicionais.
 
-No \textit{frontend}, foi utilizado o \textit{Vuexy}\footnote{Site oficial: \url{https://pixinvent.com/vuexy-bootstrap-html-admin-template/}} como base para o desenvolvimento do painel de administração. Este \textit{template} de \textit{dashboard} é altamente personalizável e compatível com tecnologias como \textit{Vue.js}\footnote{Site oficial: \url{https://vuejs.org/}}, \textit{React}, \textit{HTML} e \textit{Laravel}\footnote{Site oficial: \url{https://laravel.com/}}, oferecendo componentes reutilizáveis, gráficos e estruturas de layout. Para a visualização interativa dos dados, foi utilizada a biblioteca \textit{ApexCharts}\footnote{Site oficial: \url{https://apexcharts.com/}}, uma solução \textit{open source} baseada em \textit{JavaScript}.
+No \textit{frontend}, foi utilizado o \textit{Vuexy}\footnote{Site oficial do \textit{Vuexy}: \url{https://pixinvent.com/vuexy-bootstrap-html-admin-template/}} como base para o desenvolvimento do painel de administração. Este \textit{template} de \textit{dashboard} é altamente personalizável e compatível com tecnologias como \textit{Vue.js}\footnote{Site oficial do \textit{Vue.js}: \url{https://vuejs.org/}}, \textit{React}, \textit{HTML} e \textit{Laravel}\footnote{Site oficial do \textit{Laravel}: \url{https://laravel.com/}}, oferecendo componentes reutilizáveis, gráficos e estruturas de \textit{layout}. Para a visualização interativa dos dados, foi utilizada a biblioteca \textit{ApexCharts}\footnote{Site oficial do \textit{ApexCharts}: \url{https://apexcharts.com/}}, uma solução \textit{open source} baseada em \textit{JavaScript}.
 
 A escolha de todas as tecnologias mencionadas foi uma exigência da empresa onde decorreu o estágio, assegurando a compatibilidade do projeto desenvolvido com os restantes produtos e soluções da organização.
 
-A plataforma \textit{Railway}\footnote{Site oficial: \url{https://railway.com/}} foi utilizada para alojar a base de dados relacional \textit{MySQL}\footnote{Site oficial: \url{https://www.mysql.com/}} e realizar o \textit{deployment} da aplicação. Esta permite integração direta com repositórios \textit{Git}, facilitando a integração contínua e a publicação. Para além disso, trata automaticamente da infraestrutura e escalabilidade, sendo útil no desenvolvimento e manutenção de aplicações \textit{web}.
+A plataforma \textit{Railway}\footnote{Site oficial: \url{https://railway.com/}} foi utilizada para alojar a base de dados relacional \textit{MySQL}\footnote{Site oficial: \url{https://www.mysql.com/}}. Esta permite integração direta com repositórios \textit{Git}, facilitando a integração contínua e a publicação. Para além disso, trata automaticamente da infraestrutura e escalabilidade, sendo útil no desenvolvimento e manutenção de aplicações \textit{web}.
 
 Para o armazenamento de ficheiros estáticos, como imagens associadas às métricas ESG, foi utilizado o serviço da \textit{Amazon} \textit{AWS S3}\footnote{Site do \textit{AWS S3}: \url{https://aws.amazon.com/s3/}}, onde foi criado um \textit{bucket} próprio para o projeto. As imagens são alojadas nesse \textit{bucket}, sendo o respetivo URL público guardado no atributo \texttt{imageURL} da tabela de métricas ESG da base de dados \textit{MySQL}. 
 
@@ -57,7 +57,7 @@ A página inicial, Figura \ref{fig:homepage}, apresenta a informação mais rece
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/platform_prints/dashboard/dashboard_done.png}
-    \caption{Página Inicial com pontuação ESG}
+    \caption{Página Inicial com pontuação ESG (autoria própria)}
     \label{fig:homepage}
 \end{figure}
 
@@ -104,7 +104,7 @@ A pontuação final ESG é obtida pela média ponderada dos pilares, limitada ao
 
 onde $p$ é o número total de pilares considerados (Ambiental, Social e Governança).
 
-No \textit{frontend}, os dados do \textit{dashboard} são obtidos dinamicamente através de uma chamada HTTP do tipo \texttt{GET}, utilizando a função \texttt{fetch} (Listagem~\ref{lst:fetch_dashboard}) para aceder à rota \texttt{/api/dashboard}. A resposta, em formato JSON, agrega todas as métricas necessárias, evitando múltiplas chamadas à API e melhorando a performance da aplicação.
+No \textit{frontend}, os dados do \textit{dashboard} são obtidos dinamicamente através de uma chamada HTTP do tipo \texttt{GET}, utilizando a função \texttt{fetch} (Listagem~\ref{lst:fetch_dashboard}) para aceder à rota \texttt{/api/dashboard}. A resposta, em formato \textit{\gls{JSON}}, agrega todas as métricas necessárias, evitando múltiplas chamadas à API e melhorando a performance da aplicação.
 
 \begin{lstlisting}[style=customts, caption={Função responsável por obter os dados do ESG Score e do dashboard no carregamento do componente}, label={lst:fetch_dashboard}]
  useEffect(() => {
@@ -137,7 +137,7 @@ No \textit{frontend}, os dados do \textit{dashboard} são obtidos dinamicamente 
   }, []);
 \end{lstlisting}
 
-De modo a melhorar a experiência do utilizador relativamente à espera do retorno da informação requisitada foi desenvolvido um excerto HTML (Listagem \ref{lst:loading_code}) que escure-se levemente a plataforma e introduz um componente circular a indicar o progresso de obtençao das informaçoes.
+De modo a melhorar a experiência do utilizador relativamente à espera do retorno da informação requisitada foi desenvolvido um excerto HTML (Listagem \ref{lst:loading_code}) que escure-se levemente a plataforma e introduz um componente circular a indicar o progresso de obtenção das informações.
 
 \begin{lstlisting}[style=customts, caption={Componente mostrado no carregamento da página}, label={lst:loading_code}]
   if (isLoading) {
@@ -189,7 +189,7 @@ Esta página (Figura \ref{fig:metric_done}) da plataforma agrupa várias informa
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/platform_prints/metrics/metrics_done.png}
-    \caption{Página das Métricas}
+    \caption{Página das Métricas (autoria própria)}
     \label{fig:metric_done}
 \end{figure}
 
@@ -207,12 +207,16 @@ Adicionalmente, é feita uma distinção clara entre as métricas definidas pela
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=5in,keepaspectratio]{frontmatter/assets/platform_prints/metrics/metric_creation.png}
-    \caption{Formulário de Criação de Métrica}
+    \includegraphics[width=4.5in,keepaspectratio]{frontmatter/assets/platform_prints/metrics/metric_creation.png}
+    \caption{Formulário de Criação de Métrica (autoria própria)}
     \label{fig:metric_creation}
 \end{figure}
 
-Tendo em conta que cada métrica está relacionada com uma imagem e que o armazenamento de imagens como BLOB em bases de dados não é aconselhável, por questões de desempenho e escalabilidade, foi implementada uma solução híbrida (\cite{code-examplesnet2025}). As imagens são armazenadas no serviço AWS S3, que é perfeito para ficheiros estáticos, e o URL gerado é guardado na base de dados, com o objetivo de ser utilizado na renderização do cartão da métrica (Listagem \ref{lst:image_upload}).
+Tendo em conta que cada métrica está relacionada com uma imagem e que o armazenamento de imagens como BLOB em bases de dados não é aconselhável, por questões de desempenho e escalabilidade, foi implementada uma solução híbrida (\cite{code-examplesnet2025}).
+
+As imagens são armazenadas no serviço AWS S3, que é perfeito para ficheiros estáticos, e o URL gerado é guardado na base de dados, com o objetivo de ser utilizado na renderização do cartão da métrica (Listagem \ref{lst:image_upload}).
+
+\newpage
 
 \begin{lstlisting}[style=customts, caption={Função de \textit{Upload} de uma imagem para o AWS S3}, label={lst:image_upload}]
 export async function generateSignedUploadUrl(fileName: string, fileType: string) {
@@ -227,12 +231,12 @@ return { url, key, bucket }
 }
 \end{lstlisting}
 
-Cada cartão representante de uma métrica é interativo. Quando clicado, abre uma janela com as informações da métrica (UC-05), como ilustrado pela Figura \ref{fig:metric_info}. Esta janela mostra os diferentes atributos das metricas.
+Cada cartão representante de uma métrica é interativo. Quando clicado, abre uma janela com as informações da métrica (UC-05), como ilustrado pela Figura \ref{fig:metric_info}. Esta janela mostra os diferentes atributos das métricas.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=5.5in,keepaspectratio]{frontmatter/assets/platform_prints/metrics/metric_info.png}
-    \caption{Cartão com informação detalhada da Métrica}
+    \caption{Cartão com informação detalhada da Métrica (autoria própria)}
     \label{fig:metric_info}
 \end{figure}
 
@@ -243,53 +247,43 @@ O mapa de materialidade, abordado no Capítulo \ref{chap:EA}, corresponde a uma 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/platform_prints/matrix/matrix_done.png}
-    \caption{Página da Matriz da Materialidade}
+    \caption{Página da Matriz da Materialidade (autoria própria)}
     \label{fig:matrix_done}
 \end{figure}
 
-Tal como na página das métricas, cada cartão referente a uma métrica é interativo e disponibiliza a informaçao da mesma, contudo é colorido com base no progresso da métrica associada. A Listagem \ref{lst:metric_classification} refere-se à função responsável por classificar o progresso da métrica e atribuir uma cor correspondente.
+Tal como na página das métricas, cada cartão é interativo e apresenta informações da métrica, sendo colorido conforme o seu progresso. A Listagem~\ref{lst:metric_classification} mostra a função que classifica esse progresso e define a cor correspondente.
 
-\begin{lstlisting}[style=customts, caption={Função de Classificação de Progresso de uma Métrica}, label={lst:metric_classification}]
+\begin{lstlisting}[style=customts, caption={Classificação do progresso de uma métrica}, label={lst:metric_classification}]
 export function getMetricDevelopmentStatus(
-  valueHistories: MetricValueHistory[],
-  goalIsDecrease: boolean,
+  values: MetricValueHistory[], goalIsDecrease: boolean,
   options = { recentPoints: 5 }
 ): { status: MetricStatus; color: string } {
-  if (valueHistories.length < 2) {
-    return { status: 'Medium', color: nodeColors['Medium'] };
-  }
-  const normalizedHistories = valueHistories.map(h => ({
-    ...h,
-    recordedAt: new Date(h.recordedAt),
-  }));
-  const sortedHistories = normalizedHistories.sort(
-    (a, b) => a.recordedAt.getTime() - b.recordedAt.getTime()
-  );
+  if (values.length < 2) return { status: 'Medium', color: nodeColors['Medium'] };
 
-  const recentHistories = sortedHistories.slice(-options.recentPoints);
-  const firstValue = recentHistories[0].value;
-  const lastValue = recentHistories[recentHistories.length - 1].value;
-  const delta = lastValue - firstValue;
-  const adjustedDelta = goalIsDecrease ? -delta : delta;
-  const pctChange = (adjustedDelta / firstValue) * 100;
+  const recent = values
+    .map(h => ({ ...h, recordedAt: new Date(h.recordedAt) }))
+    .sort((a, b) => a.recordedAt.getTime() - b.recordedAt.getTime())
+    .slice(-options.recentPoints);
 
-  if (pctChange >= 10) return { status: 'Very High', color: nodeColors['Very High'] };
-  if (pctChange >= 5) return { status: 'High', color: nodeColors['High'] };
-  if (pctChange > -5) return { status: 'Medium', color: nodeColors['Medium'] };
-  if (pctChange > -10) return { status: 'Low', color: nodeColors['Low'] };
-  
-return { status: 'Very Low', color: nodeColors['Very Low'] };
+  const [first, last] = [recent[0].value, recent.at(-1)!.value];
+  const change = ((goalIsDecrease ? first - last : last - first) / first) * 100;
+
+  if (change >= 10) return { status: 'Very High', color: nodeColors['Very High'] };
+  if (change >= 5)  return { status: 'High',      color: nodeColors['High'] };
+  if (change > -5)  return { status: 'Medium',    color: nodeColors['Medium'] };
+  if (change > -10) return { status: 'Low',       color: nodeColors['Low'] };
+  return { status: 'Very Low', color: nodeColors['Very Low'] };
 }
 \end{lstlisting}
 
 \subsection{Página dos Conjuntos de Dados}
 
-Cada métrica tem o seu conjunto de dados associado, estando estes acessiveis noutra página da plataforma (Figura \ref{fig:dataset_done}), organizados como entradas numa tabela.
+Cada métrica tem o seu conjunto de dados associado, estando estes acessíveis noutra página da plataforma (Figura \ref{fig:dataset_done}), organizados como entradas numa tabela.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/platform_prints/dataset/dataset_done.png}
-    \caption{Página dos Conjuntos de Dados}
+    \caption{Página dos Conjuntos de Dados (autoria própria)}
     \label{fig:dataset_done}
 \end{figure}
 
@@ -298,7 +292,7 @@ Cada métrica tem o seu conjunto de dados associado, estando estes acessiveis no
 \begin{figure}[H]
     \centering
     \includegraphics[width=4in,keepaspectratio]{frontmatter/assets/platform_prints/dataset/dataset_import.png}
-    \caption{Formulário de Importação de um Conjunto de Dados com Múltipla Renderização de Diagramas}
+    \caption{Formulário de Importação de um Conjunto de Dados com Múltipla Renderização de Diagramas (autoria própria)}
     \label{fig:create_dataset}
 \end{figure}
 
@@ -310,12 +304,10 @@ Após o preenchimento do formulário de importação de dados, é realizado um p
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(newDataset)
     })
-
     if (!response.ok) {
     const text = await response.text()
     throw new Error(`Failed to import dataset: ${text}`)
     }
-    
     const createdDataset: DatasetReadable = await response.json()
 \end{lstlisting}
 
@@ -323,8 +315,8 @@ A página permite ainda fazer a filtragem dos conjuntos de dados (Figura \ref{fi
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=4.5in,keepaspectratio]{frontmatter/assets/platform_prints/dataset/dataset_filter.png}
-    \caption{Filtragem de Conjunto de Dados}
+    \includegraphics[width=3.25in,keepaspectratio]{frontmatter/assets/platform_prints/dataset/dataset_filter.png}
+    \caption{Filtragem de Conjunto de Dados (autoria própria)}
     \label{fig:dataset_filter}
 \end{figure}
 
@@ -333,22 +325,16 @@ A Listagem \ref{lst:filter_function} apresenta a função que faz o pedido \text
 \begin{lstlisting}[style=customts, caption={Função de Filtragem de Conjunto de Dados}, label={lst:filter_function}]
 const handleApplyFilters = async (filters: { pillars: string[], types: string[] }) => {
     const queryParams = new URLSearchParams()
-
     filters.pillars.forEach(pillar => queryParams.append('pillars', pillar))
     filters.types.forEach(type => queryParams.append('types', type))
-
     const response = await fetch(`/api/datasets/filter?${queryParams.toString()}`, {
       method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      }
+      headers: { 'Content-Type': 'application/json'}
     })
-
     if (!response.ok) {
       console.error('Error fetching filtered datasets')
       return
     }
-
     const data = await response.json()
     setDatasets(data)
   }
@@ -359,8 +345,8 @@ const handleApplyFilters = async (filters: { pillars: string[], types: string[] 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=5.5in,keepaspectratio]{frontmatter/assets/platform_prints/dataset/dataset_info.png}
-    \caption{Informação de um Conjunto de Dados}
+    \includegraphics[width=5in,keepaspectratio]{frontmatter/assets/platform_prints/dataset/dataset_info.png}
+    \caption{Informação de um Conjunto de Dados (autoria própria)}
     \label{fig:dataset_info}
 \end{figure}
 
@@ -371,7 +357,7 @@ Esta página da plataforma, ilustrada na Figura \ref{fig:objectives_done}, compl
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/platform_prints/objetives/objective_done.png}
-    \caption{Página de Gestão de Objetivos}
+    \caption{Página de Gestão de Objetivos (autoria própria)}
     \label{fig:objectives_done}
 \end{figure}
 
@@ -380,7 +366,7 @@ A funcionalidade principal desta página é a criação e acompanhamento de obje
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/platform_prints/objetives/objective_card.png}
-    \caption{Cartão com Informação Detalhada de um Objetivo}
+    \caption{Cartão com Informação Detalhada de um Objetivo (autoria própria)}
     \label{fig:objective_card}
 \end{figure}
 
@@ -392,10 +378,12 @@ const response = await fetch('/api/objectives', {
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(data),
 });
+
 if (!response.ok) {
   const errorText = await response.text();
   throw new Error(`Failed to create new objective: ${errorText}`);
 }
+
 const createdObjective = await response.json() as ObjectiveReadable;
 \end{lstlisting}
 
@@ -403,12 +391,12 @@ O formulário criado para a criação de novos objetivos é ilustrado pela Figur
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=3.5in,keepaspectratio]{frontmatter/assets/platform_prints/objetives/objective_creation.png}
-    \caption{Formulário de Criação de Objetivo}
+    \includegraphics[width=3in,keepaspectratio]{frontmatter/assets/platform_prints/objetives/objective_creation.png}
+    \caption{Formulário de Criação de Objetivo (autoria própria)}
     \label{fig:objective_creation}
 \end{figure}
 
-\section{\textit{Seeding} da Base de Dados}
+\section{Inicialização da Base de Dados}
 
 De forma a tornar a demonstração da plataforma mais rica e realista, foram desenvolvidos diversos \textit{scripts} para preparar o estado da base de dados. Estes \textit{scripts} permitem simular diferentes cenários de utilização e facilitar a visualização dos resultados obtidos no \textit{dashboard}.
 
@@ -416,10 +404,8 @@ Inicialmente, foi criado um \textit{script} de limpeza (Listagem \ref{lst:clean_
 
 \begin{lstlisting}[style=customts, caption={\textit{Script} de limpeza da Base de Dados}, label={lst:clean_script}]
 const prisma = new PrismaClient()
-
 async function clearDatabase() {
   console.log('Clearing database...')
-
   await prisma.objective.deleteMany({})
   await prisma.metric.deleteMany({})
   await prisma.subarea.deleteMany({})
@@ -428,10 +414,8 @@ async function clearDatabase() {
   await prisma.pillar.deleteMany({})
   await prisma.company.deleteMany({})
   await prisma.sector.deleteMany({})
-
   console.log('Database cleared!')
 }
-
 clearDatabase()
   .catch(e => {
     console.error('Error clearing database:', e)
@@ -453,9 +437,11 @@ async function main() {
   if (SEED_SCENARIO === 'good') {
     console.log('Seeding good scenario...')
     await seedGood(prisma)
+
   } else if (SEED_SCENARIO === 'bad') {
     console.log('Seeding bad scenario...')
     await seedBad(prisma)
+
   } else {
     console.log('Seeding random scenario...')
     await seedRandom(prisma)
@@ -481,7 +467,7 @@ A Figura \ref{fig:good_esg} demonstra a pontuação ESG resultante da execução
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/platform_prints/seeding/good_esg.png}
-    \caption{Pontuação ESG segundo o \textit{script seedGood}}
+    \caption{Pontuação ESG segundo o \textit{script seedGood} (autoria própria)}
     \label{fig:good_esg}
 \end{figure}
 
@@ -490,7 +476,7 @@ A Figura \ref{fig:bad_esg} demonstra a pontuação ESG resultante da execução 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/platform_prints/seeding/bad_esg.png}
-    \caption{Pontuação ESG segundo o \textit{script seedBad}}
+    \caption{Pontuação ESG segundo o \textit{script seedBad} (autoria própria)}
     \label{fig:bad_esg}
 \end{figure}
 
@@ -506,17 +492,17 @@ A Tabela~\ref{tab:esg_categories} resume os intervalos e significados associados
     \centering
     \begin{tabular}{>{\bfseries}p{2.5cm} p{3cm} p{9cm}}
         \rowcolor{red!30} 
-        Very Low & [0--20] & A empresa necessita de melhorias significativas nas suas práticas ESG. \\
+        \textit{Very Low} & [0--20] & A empresa necessita de melhorias significativas nas suas práticas ESG. \\
         \rowcolor{orange!40} 
-        Low & [21--40] & Há margem de progressão, especialmente nas áreas de responsabilidade social e sustentabilidade ambiental. \\
+        \textit{Low} & [21--40] & Há margem de progressão, especialmente nas áreas de responsabilidade social e sustentabilidade ambiental. \\
         \rowcolor{yellow!40} 
-        Medium & [41--60] & A empresa está no caminho certo, mas ainda precisa de melhorias substanciais. \\
+        \textit{Medium} & [41--60] & A empresa está no caminho certo, mas ainda precisa de melhorias substanciais. \\
         \rowcolor{green!30} 
-        Good & [61--80] & A empresa apresenta um bom desempenho ESG, com espaço para ajustes menores. \\
+        \textit{Good} & [61--80] & A empresa apresenta um bom desempenho ESG, com espaço para ajustes menores. \\
         \rowcolor{green!45!blue!25} 
-        Great & [81--90] & A empresa destaca-se nas práticas ESG, estando próxima da excelência. \\
+        \textit{Great} & [81--90] & A empresa destaca-se nas práticas ESG, estando próxima da excelência. \\
         \rowcolor{teal!40} 
-        Very High & [91--100] & A empresa é uma referência no desempenho ESG e serve como modelo de boas práticas. \\
+        \textit{Very High} & [91--100] & A empresa é uma referência no desempenho ESG e serve como modelo de boas práticas. \\
     \end{tabular}
     \caption{Categorias de pontuação ESG}
     \label{tab:esg_categories}
@@ -525,7 +511,7 @@ A Tabela~\ref{tab:esg_categories} resume os intervalos e significados associados
 
 \section{Testes}
 
-O objetivo dos testes de software é garantir a qualidade do produto, confirmando a sua funcionalidade, desempenho e conformidade com os requisitos previamente estabelecidos (\cite{softdesing2025}). Estes foram realizados com o auxílio do \textit{Jest}\footnote{Site oficial do \textit{Jest}: \url{https://jestjs.io/}} e da \textit{React Testing Library}\footnote{Site oficial da \textit{React Testing Library}: \url{https://testing-library.com/docs/react-testing-library/intro/}}.
+O objetivo dos testes de \textit{software} é garantir a qualidade do produto, confirmando a sua funcionalidade, desempenho e conformidade com os requisitos previamente estabelecidos (\cite{softdesing2025}). Estes foram realizados com o auxílio do \textit{Jest}\footnote{Site oficial do \textit{Jest}: \url{https://jestjs.io/}} e da \textit{React Testing Library}\footnote{Site oficial da \textit{React Testing Library}: \url{https://testing-library.com/docs/react-testing-library/intro/}}. Os testes foram compilados num portátil com o \textit{Windows 11} instalado, um processador \textit{AMD Ryzen 7 6800HS} com \textit{Radeon Graphics} e 16 \textit{gigabytes} de memória RAM.
 
 Para garantir a robustez e o correto funcionamento da solução desenvolvida, foram concebidos testes de várias tipologias. Foram utilizados testes unitários para garantir que cada componente isolado se comportava como esperado e que as suas funções estavam funcionais. A Listagem \ref{lst:unit_test} refere-se a um teste unitário feito ao componente \texttt{SwiperControls}, na página inicial da aplicação, que verifica o comportamento do componente mediante um cenário onde não existem KPIs válidos.
 
@@ -542,40 +528,37 @@ it('renders a message when no valid KPIs exist', () => {
 
 Paralelamente, foram realizados testes de integração com o objetivo de verificar a comunicação e interação entre os vários componentes e confirmar que estes funcionam de forma harmoniosa e consistente quando combinados. Um teste de integração entre os componentes \texttt{ChartErrorBoundary} e \texttt{ChartRenderer} é apresentado na Listagem \ref{lst:integration_test}. De forma a evitar que a aplicação falhe completamente, o componente \texttt{ChartErrorBoundary} é responsável por capturar os erros ocorridos durante a renderização dos gráficos no seu componente de ficheiro, neste caso o \texttt{ChartRenderer}. Adicionalmente, assegura o registo das mensagens de erro (\textit{logging}), permitindo uma melhor monitorização e diagnóstico do problema.
 
-\begin{lstlisting}[style=customts, caption={Teste de integração entre o componente \texttt{ChartErrorBoundary} e \texttt{ChartRenderer}}, label={lst:integration_test}]
-describe('ChartErrorBoundary + ChartRenderer integration', () => {
-    it('renders fallback UI when ChartRenderer throws due to invalid dataset', () => {
-        const invalidDataset = {
-            headers: ['value'], // falta a informacao das datas dos registos
-            rows: [
-                { value: 42 },
-                { value: 12 }
-            ]
-        };
+\begin{lstlisting}[style=customts, caption={Teste de integração entre \texttt{ChartErrorBoundary} e \texttt{ChartRenderer}}, label={lst:integration_test}]
+describe('ChartErrorBoundary + ChartRenderer', () => {
+  it('renders fallback UI on invalid dataset', () => {
+    const invalidDataset = {
+      headers: ['value'],
+      rows: [{ value: 42 }, { value: 12 }]
+    };
+    render(
+      <ChartErrorBoundary>
+        <ChartRenderer
+          chartType="line"
+          dataset={invalidDataset}
+          datasetType="Time Series"
+          title="Invalid Test Chart"
+          unit="kg"
+        />
+      </ChartErrorBoundary>
+    );
 
-        render(
-            <ChartErrorBoundary>
-                <ChartRenderer
-                    chartType="line"
-                    dataset={invalidDataset}
-                    datasetType="Time Series"
-                    title="Invalid Test Chart"
-                    unit="kg"
-                />
-            </ChartErrorBoundary>
-        );
-
-        expect(screen.getByText(/missing required date field/i)).toBeInTheDocument();
-    });
+    expect(screen.getByText(/missing required date field/i)).toBeInTheDocument();
+  });
 });
 \end{lstlisting}
+
 
 Esta abordagem diversificada leva à criação de um elevado número de testes, Figura \ref{fig:test_number}, permite identificar falhas a vários níveis do sistema, o que contribui para melhorar a qualidade contínua e a qualidade do produto final.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=2.5in,keepaspectratio]{frontmatter/assets/tests/test_suits.png}
-    \caption{Testes desenvolvidos para a solução}
+    \caption{Testes desenvolvidos para a solução (autoria própria)}
     \label{fig:test_number}
 \end{figure}
 
@@ -584,7 +567,7 @@ A Figura \ref{fig:coverage} ilustra o resumo do relatório de cobertura dos test
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/tests/coverage.png}
-    \caption{Resumo do relatório de cobertura dos testes desenvolvidos da solução}
+    \caption{Resumo do relatório de cobertura dos testes desenvolvidos da solução (autoria própria)}
     \label{fig:coverage}
 \end{figure}
 
@@ -597,7 +580,7 @@ A aplicação apresenta tempos de carregamento eficientes, não ultrapassando os
 \begin{figure}[H]
     \centering
     \includegraphics[width=2.5in,keepaspectratio]{frontmatter/assets/compiling/pages_time.png}
-    \caption{Compilação das páginas em menos de 30 segundos}
+    \caption{Compilação das páginas em menos de 30 segundos (autoria própria)}
     \label{fig:page_compiling}
 \end{figure}
 
@@ -625,19 +608,19 @@ A Figura \ref{fig:initial_compile} mostra o resultado obtido com a execução de
 \begin{figure}[H]
     \centering
     \includegraphics[width=3.5in,keepaspectratio]{frontmatter/assets/compiling/initial_compile.png}
-    \caption{Execução do \textit{script} de avaliação do tempo de compilação inicial}
+    \caption{Execução do \textit{script} de avaliação do tempo de compilação inicial (autoria própria)}
     \label{fig:initial_compile}
 \end{figure}
 
 As animações utilizadas são fornecidas pelos componentes nativos do \textit{React} e pelo template \textit{Vuexy}, para uma experiência visual contínua e suave, sem sacrificar o desempenho da aplicação.
 
-O design da aplicação é de fácil utilização e foi elogiado por várias partes interessadas, tais como o supervisor de estágio, o \textit{buddy} (colaborador responsável pelo acompanhamento do estagiário na empresa), a equipa de produtos DevScope, que também analisou o protótipo apresentado no Apêndice \ref{AppendixC}, bem como colegas da universidade e do estágio. A navegação foi clara e intuitiva, facilitando a interação dos utilizadores com o sistema.
+O \textit{design} da aplicação é de fácil utilização e foi elogiado por várias partes interessadas, tais como o supervisor de estágio, o \textit{buddy} (colaborador responsável pelo acompanhamento do estagiário na empresa), a equipa de produtos DevScope, que também analisou o protótipo apresentado no Apêndice \ref{AppendixC}, bem como colegas da universidade e do estágio. A navegação foi clara e intuitiva, facilitando a interação dos utilizadores com o sistema.
 
 Os componentes implementados atendem ao esperado, sem apresentar erros imprevistos ao serem utilizados. O código é organizado em módulos, facilitando alterações e manutenções futuras, fruto não apenas da arquitetura tradicional das aplicações \textit{React}, mas também da aplicação estrita de boas práticas de programação.
 
 No que respeita à acessibilidade, a aplicação tem a língua inglesa e incorpora as cores institucionais da organização. A aplicação destina-se apenas a ser utilizada em computadores, posicionando-se como uma área com espaço para melhorias no futuro.
 
-Foram efectuados testes unitários e testes de integração para garantir a estabilidade e a qualidade do sistema disponível. Além disso, a usabilidade foi testada com a participação de colegas, o que ajudou a revelar possíveis melhorias na experiência do utilizador. Os conjuntos de dados aplicados são imaginários, numa tentativa de manter a confidencialidade da empresa no que respeita às questões ESG abrangidas. A cobertura dos testes é considerada satisfatória, apesar de haver alguma margem para melhorias, nomeadamente em termos de ramos de código.
+Foram efetuados testes unitários e testes de integração para garantir a estabilidade e a qualidade do sistema disponível. Além disso, a usabilidade foi testada com a participação de colegas, o que ajudou a revelar possíveis melhorias na experiência do utilizador. Os conjuntos de dados aplicados são imaginários, numa tentativa de manter a confidencialidade da empresa no que respeita às questões ESG abrangidas. A cobertura dos testes é considerada satisfatória, apesar de haver alguma margem para melhorias, nomeadamente em termos de ramos de código.
 
 \section{Implementação Alternativa} 
 
@@ -645,4 +628,4 @@ Durante o processo de desenvolvimento da aplicação, foi tida em conta a utiliz
 
 Esta hipótese ganhou um significado ainda maior à luz do acordo de parceria entre a DevScope e a \textit{Microsoft}, que facilitaria a integração do \textit{Power BI} na estrutura da solução, tanto estratégica como tecnicamente.
 
-No entanto, na sequência de uma análise interna e de uma consulta à equipa de produto, concluiu-se que, relativamente aos objectivos estabelecidos para o projeto, essa abordagem teria inconvenientes consideráveis. A principal consideração a favor de uma solução personalizada foi o modelo de negócio pretendido: a criação de um produto de venda única, independente de subscrições ou licenciamentos contínuos de terceiros. A utilização do \textit{Power BI} obrigaria a que os utilizadores da solução estivessem associados a uma subscrição ativa do serviço por parte da \textit{Microsoft}, o que poderia ser um inibidor de adoção e comprometer a independência da organização relativamente ao produto final. Desta forma, foi determinada a implementação de uma aplicação autónoma, que fornece visualizações personalizadas e permite o controlo total sobre todos os elementos da experiência do utilizador, alinhando-se com os objectivos de negócio da DevScope, bem como com as melhores práticas no desenvolvimento de soluções de negócio escaláveis a nível empresarial.
+No entanto, na sequência de uma análise interna e de uma consulta à equipa de produto, concluiu-se que, relativamente aos objetivos estabelecidos para o projeto, essa abordagem teria inconvenientes consideráveis. A principal consideração a favor de uma solução personalizada foi o modelo de negócio pretendido: a criação de um produto de venda única, independente de subscrições ou licenciamentos contínuos de terceiros. A utilização do \textit{Power BI} obrigaria a que os utilizadores da solução estivessem associados a uma subscrição ativa do serviço por parte da \textit{Microsoft}, o que poderia ser um inibidor de adoção e comprometer a independência da organização relativamente ao produto final. Desta forma, foi determinada a implementação de uma aplicação autónoma, que fornece visualizações personalizadas e permite o controlo total sobre todos os elementos da experiência do utilizador, alinhando-se com os objetivos de negócio da DevScope, bem como com as melhores práticas no desenvolvimento de soluções de negócio escaláveis a nível empresarial.

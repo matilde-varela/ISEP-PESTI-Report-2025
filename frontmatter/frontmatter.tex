@@ -26,16 +26,40 @@ Dedico este projeto a todos que me permitiram chegar a este capítulo da minha v
 \end{dedicatory}
 
 %----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS (optional)
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+
+Gostaria de iniciar esta secção do relatório a expressar a minha profunda gratidão às pessoas que me acompanharam ao longo deste percurso e contribuíram para a conceção deste projeto.
+
+Em primeiro lugar, um sincero agradecimento ao professor Paulo Proença, cujo papel como orientador foi fundamental. A sua disponibilidade para rever o relatório inúmeras vezes permitiu-me apresentar uma versão mais refinada e estruturada deste trabalho.
+
+Agradeço também ao David Mota, supervisor dos estágios na Devscope, a quem tive o prazer de conhecer na edição de \textit{FallStack} 2024. Foi ele quem me selecionou para este estágio e acolheu os meus interesses em áreas específicas da informática, que mais tarde se integrariam na minha proposta de estágio.
+
+Um agradecimento especial ao meu \textit{buddy}, André Reis, pela orientação técnica e apoio especializado ao longo do projeto.
+
+A todos os estagiários da Devscope, expresso a minha gratidão por tornarem esta experiência mais acolhedora e enriquecedora.
+
+Quero também agradecer aos meus colegas de universidade, Rita Barbosa, Ana Guterres e Afonso Santos, que sempre me incentivaram e apoiaram durante a licenciatura. A sua amizade e motivação foram essenciais para o meu desenvolvimento académico e profissional.
+
+Um agradecimento à Direção Geral de Ensino Superior, pelo apoio financeiro concedido através da bolsa de estudo durante os três anos da licenciatura, e à Câmara Municipal de Portimão, pelo apoio adicional durante dois anos. O contributo destas instituições foi crucial para que eu pudesse prosseguir os meus estudos.
+
+Por fim, e com um carinho especial, quero agradecer aos meus pais, que, apesar dos desafios e dificuldades, sempre se esforçaram para que eu tivesse acesso ao ensino superior. Agradeço também ao meu namorado e à sua família, que têm sido um pilar fundamental de apoio para esta menina deslocada de casa.
+\end{acknowledgements}
+
+%----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
 
-\begin{abstract}
+\chapter*{\textbf{Resumo}}
+
 
 Os temas ESG (\textit{Environment}, \textit{Social} e \textit{Governance}) têm vindo a ganhar relevância nos últimos vinte anos, sobretudo no que respeita à divulgação de dados empresariais associados a estes domínios e às suas implicações. A questão do \textit{greenwashing}, as discrepâncias nas classificações ESG fornecidas por várias agências, as abordagens para reduzir o impacto das empresas nestas dimensões e os avanços tecnológicos associados são, atualmente, temas de grande relevância. Este projeto visou a criação de um protótipo de aplicação que permite monitorizar o desempenho ESG de uma empresa.
 
-O presente relatório, elaborado no âmbito da unidade curricular Projeto/Estágio do curso de Licenciatura em Engenharia Informática do Instituto Superior de Engenharia do Porto, apresenta o processo de desenvolvimento da plataforma ESG, realizado para a empresa Devscope, entidade responsável pela orientação do projeto. A ferramenta permite que as organizações carreguem conjuntos de dados, avaliem o desempenho ao nível ESG de várias formas, façam corresponder métricas específicas ao seu contexto, misturem métricas com base na estrutura SASB e estabeleçam objectivos em relação às mesmas métricas.
+O presente relatório, elaborado no âmbito da unidade curricular Projeto/Estágio do curso de Licenciatura em Engenharia Informática do Instituto Superior de Engenharia do Porto, apresenta o processo de desenvolvimento da plataforma ESG, realizado para a empresa Devscope, entidade responsável pela orientação do projeto. A ferramenta permite que as organizações carreguem conjuntos de dados, avaliem o desempenho ao nível ESG de várias formas, façam corresponder métricas específicas ao seu contexto, misturem métricas com base na estrutura SASB e estabeleçam objetivos em relação às mesmas métricas.
 
-O desenvolvimento do projeto baseou-se em várias etapas. A primeira fase consistiu na análise do estado da arte, na qual se estuda o conceito de ESG e as suas implicações. Seguiu-se o processo de engenharia de software, na qual se procedeu à recolha e análise de requisitos, tanto funcionais como não funcionais. Com os requisitos delineados, procedeu-se à conceção do sistema, definindo a sua arquitetura com base nos modelos C4 e 4+1, bem como as suas funções. Por fim, foram efectuadas as fases de implementação e teste, bem como as evidências e a avaliação geral do que foi feito.
+O desenvolvimento do projeto baseou-se em várias etapas. A primeira fase consistiu na análise do estado da arte, na qual se estuda o conceito de ESG e as suas implicações. Seguiu-se o processo de engenharia de \textit{software}, na qual se procedeu à recolha e análise de requisitos, tanto funcionais como não funcionais. Com os requisitos delineados, procedeu-se à conceção do sistema, definindo a sua arquitetura com base nos modelos C4 e 4+1, bem como as suas funções. Por fim, foram efetuadas as fases de implementação e teste, bem como as evidências e a avaliação geral do que foi feito.
 
 A solução criada cumpre os requisitos e objectivos definidos e é uma aplicação funciona como um \textit{hub} centralizado de apoio à gestão e visualização de temas aplicáveis à ESG para a Devscope. \\
 
@@ -45,8 +69,6 @@ A solução criada cumpre os requisitos e objectivos definidos e é uma aplicaç
 
 \vspace{20mm}
 
-
-\end{abstract}
 
 \begin{abstractotherlanguage}
 
@@ -63,28 +85,6 @@ The solution created meets the requirements and objectives defined and is an app
 \textbf{Keywords (Technologies):} React, Next.js, ApexCharts, Railway, AWS S3, Jest
 
 \end{abstractotherlanguage}
-
-%----------------------------------------------------------------------------------------
-%	ACKNOWLEDGEMENTS (optional)
-%----------------------------------------------------------------------------------------
-
-\begin{acknowledgements}
-Gostaria de iniciar esta secção do relatório a expressar a minha profunda gratidão às pessoas que me acompanharam ao longo deste percurso e contribuíram para a conceção deste projeto.
-
-Em primeiro lugar, um sincero agradecimento ao professor Paulo Proença, cujo papel como orientador foi fundamental. A sua disponibilidade para rever o relatório inúmeras vezes permitiu-me apresentar uma versão mais refinada e estruturada deste trabalho.
-
-Agradeço também ao David Mota, supervisor dos estágios na Devscope, a quem tive o prazer de conhecer na edição de FallStack 2024. Foi ele quem me selecionou para este estágio e acolheu os meus interesses em áreas específicas da informática, que mais tarde se integrariam na minha proposta de estágio.
-
-Um agradecimento especial ao meu buddy, André Reis, pela orientação técnica e apoio especializado ao longo do projeto.
-
-A todos os estagiários da Devscope, expresso a minha gratidão por tornarem esta experiência mais acolhedora e enriquecedora.
-
-Quero também agradecer aos meus colegas de universidade, Rita Barbosa, Ana Guterres e Afonso Santos, que sempre me incentivaram e apoiaram durante a licenciatura. A sua amizade e motivação foram essenciais para o meu desenvolvimento académico e profissional.
-
-Um agradecimento à DGES, pelo apoio financeiro concedido através da bolsa de estudo durante os três anos da licenciatura, e à Câmara Municipal de Portimão, pelo apoio adicional durante dois anos. O contributo destas instituições foi crucial para que eu pudesse prosseguir os meus estudos.
-
-Por fim, e com um carinho especial, quero agradecer aos meus pais, que, apesar dos desafios e dificuldades, sempre se esforçaram para que eu tivesse acesso ao ensino superior. Agradeço também ao meu namorado e à sua família, que têm sido um pilar fundamental de apoio para esta menina deslocada de casa.
-\end{acknowledgements}
 
 
 %----------------------------------------------------------------------------------------
@@ -148,15 +148,46 @@ Por fim, e com um carinho especial, quero agradecer aos meus pais, que, apesar d
 %	ACRONYMS
 %----------------------------------------------------------------------------------------
 
-\newcommand{\listacronymname}{List of Acronyms}
-\iflanguage{portuguese}{
-	\renewcommand{\listacronymname}{Lista de Acr\'onimos}
-}
+% \newcommand{\listacronymname}{List of Acronyms}
+% \iflanguage{portuguese}{
+% 	\renewcommand{\listacronymname}{Lista de Acr\'onimos}
+% }
 
-%Use GLS
-\glsresetall
-\printglossary[title=\listacronymname,type=\acronymtype,style=long]
-\addcontentsline{toc}{chapter}{\listacronymname}
+% %Use GLS
+% \glsresetall
+% \printglossary[title=\listacronymname,type=\acronymtype,style=long]
+% \addcontentsline{toc}{chapter}{\listacronymname}
+
+
+\begin{acronyms}{lp{4cm}p{10cm}} % Adjust column widths as needed
+\textbf{Sigla} & \textbf{Definição} \\ \midrule
+API & Application Programming Interface \\
+CRS & Corporate Social Responsibility \\
+ESG & Environmental, Social, and Governance \\
+GEE & Gases de Efeito Estufa \\
+GRI & Global Reporting Initiative \\
+HTML & HyperText Markup Language \\
+HTTP & HyperText Transfer Protocol \\
+IA & Inteligência Artificial \\
+ISEP & Instituto Superior de Engenharia do Porto \\
+IoT & Internet of Things \\
+IT & Information Technology \\
+JSON & JavaScript Object Notation \\
+KPI & Key Performance Indicator \\
+LEI & Licenciatura em Engenharia Informática \\
+ODS & Objetivos de Desenvolvimento Sustentável \\
+ONU & Organização das Nações Unidas \\
+PESTI & Projecto / Estágio \\
+PNL & Processamento de Linguagem Natural \\
+PRI & Princípios para Investimento Responsável \\
+RFID & Radio-Frequency Identification \\
+SaaS & Software as a Service \\
+SASB & Sustainability Accounting Standards Board \\
+SPA & Single Page Application \\
+UI & User Interface \\
+UNEP FI & UNEP Finance Initiative \\
+URL & Uniform Resource Locator \\
+\end{acronyms}
 
 
 %----------------------------------------------------------------------------------------

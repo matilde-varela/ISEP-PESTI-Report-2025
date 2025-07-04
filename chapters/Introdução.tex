@@ -8,46 +8,44 @@ Este Capítulo tem como objetivo apresentar o projeto, o trabalho realizado e a 
 \section{Enquadramento/Contexto} 
 \label{sec:chap1_introduction} 
 
-Este documento descreve o trabalho realizado na unidade curricular de Projeto/Estágio (PESTI) da Licenciatura em Engenharia Informática (LEI) do ISEP e constitui um dos elementos mais importantes do curso. Através dele, é atribuído um problema a ser resolvido, esperando-se uma solução documentada neste relatório. O principal objetivo deste projeto é desenvolver competências pessoais e profissionais, aplicando os conhecimentos adquiridos ao longo da licenciatura e preparando o estudante para a inserção no mercado de trabalho.
+Este documento descreve o trabalho realizado na unidade curricular de \gls{PESTI} da Licenciatura em Engenharia Informática (LEI) do \gls{ISEP} e constitui um dos elementos mais importantes do curso. Através dele, é atribuído um problema a ser resolvido, esperando-se uma solução documentada neste relatório. O principal objetivo deste projeto é desenvolver competências pessoais e profissionais, aplicando os conhecimentos adquiridos ao longo da licenciatura e preparando o estudante para a inserção no mercado de trabalho.
 
 O presente projeto foi desenvolvido durante um estágio em ambiente empresarial na DevScope, uma empresa sediada no Porto, fundada em 2003, com mais de vinte anos de experiência em consultoria e desenvolvimento de \textit{software}. A empresa especializa-se em tecnologias da Microsoft, nomeadamente \textit{Power Platform}, \textit{Portals} (Office 365 \& SharePoint), \textit{Web \& App Development}, \textit{AI \& Machine Learning}, \textit{Business Intelligence}, \textit{Enterprise Integration}, \textit{Cloud \& DevOps} e \textit{Training \& Education} (\cite{DevScopeSolutions}). Os seus serviços são aplicados em diversas áreas, incluindo saúde, retalho e setor imobiliário.
 
-Como parte do programa de estágio, a DevScope proporciona um período inicial de três semanas, denominado Ramp Up, onde os estagiários participam em \textit{workshops} sobre diferentes tecnologias utilizadas na empresa. Este processo acelera a integração dos estagiários nos projetos, reduzindo o tempo necessário para a implementação de soluções. Além disso, a empresa oferece um horário de trabalho remoto e flexível, bem como diversas atividades ao longo do ano, promovendo um ambiente colaborativo e fortalecendo a cultura organizacional.
+Nos últimos anos, as empresas têm demonstrado uma preocupação crescente com questões dos tipos \textit{\gls{ESG}}. Este foco tem levado as organizações a recolher e analisar dados que auxiliem numa tomada de decisão mais consciente e estratégica. No entanto, a falta de centralização no tratamento e visualização desses dados pode comprometer a performance empresarial e expô-la a riscos, como falhas de conformidade regulatória ou problemas éticos.
 
-Nos últimos anos, as empresas têm demonstrado uma preocupação crescente com questões ambientais, sociais e de governança (ESG). Este foco tem levado as organizações a recolher e analisar dados que auxiliem numa tomada de decisão mais consciente e estratégica. No entanto, a falta de centralização no tratamento e visualização desses dados pode comprometer a performance empresarial e expô-la a riscos, como falhas de conformidade regulatória ou problemas éticos.
+Assim, torna-se fundamental dispor de uma plataforma que compile e organize estes dados de forma acessível e estruturada, permitindo às empresas obter \textit{insights} mais claros e estratégicos sobre as suas iniciativas \gls{ESG}.
 
-Assim, torna-se fundamental dispor de uma plataforma que compile e organize estes dados de forma acessível e estruturada, permitindo às empresas obter insights mais claros e estratégicos sobre as suas iniciativas ESG.
-
-O presente projeto tem como objetivo o desenvolvimento do \textit{frontend} desta plataforma, funcionando como o primeiro passo para a criação de uma ferramenta interna da DevScope. Além de contribuir para o desenvolvimento de um protótipo funcional, o projeto permite ao estudante aprender e aplicar ferramentas e tecnologias não abordadas no currículo académico, enriquecendo assim as suas competências técnicas e práticas.
+O presente projeto tem como objetivo o desenvolvimento do \textit{frontend} desta plataforma, tornando-se o primeiro passo para a criação de uma ferramenta interna da DevScope. Além de contribuir para o desenvolvimento de um protótipo funcional, o projeto permite ao estudante aprender e aplicar ferramentas e tecnologias não abordadas no currículo académico, enriquecendo assim as suas competências técnicas e práticas.
 
 
 \section{Descrição do Problema}
 
-Nos últimos anos, a DevScope tem vindo a crescer exponencialmente, passando de uma empresa com um ambiente mais familiar para uma estrutura de maior dimensão. Com esse crescimento, surgiu a necessidade de uma plataforma que permita monitorizar e gerir de forma estruturada as iniciativas de \gls{ESG}.
+Nos últimos anos, a DevScope tem vindo a crescer exponencialmente, passando de uma empresa com um ambiente mais familiar para uma estrutura de maior dimensão. Com esse crescimento, surgiu a necessidade de uma plataforma que permita monitorizar e gerir de forma estruturada as iniciativas \gls{ESG}.
 
-Atualmente, a empresa enfrenta desafios na centralização e análise de métricas ESG, dificultando a identificação de padrões e a tomada de decisões informadas. Questões como consumo de eletricidade, temperatura do escritório e outras métricas ambientais, assim como indicadores sociais e de governança, precisam de ser monitorizados de forma mais acessível e eficiente.
+Atualmente, a empresa enfrenta desafios na centralização e análise de métricas \gls{ESG}, dificultando a identificação de padrões e a tomada de decisões informadas. Questões como consumo de eletricidade, temperatura do escritório e outras métricas ambientais, assim como indicadores sociais e de governança, precisam de ser monitorizados de forma mais acessível e eficiente.
 
-A implementação desta plataforma permitirá um acompanhamento mais estruturado das métricas ESG, facilitando auditorias, identificando comportamentos que possam gerar custos desnecessários e garantindo uma maior transparência. Sem uma solução eficaz, a empresa pode enfrentar perdas financeiras devido a desperdícios operacionais, além de possíveis riscos reputacionais e regulatórios caso não consiga demonstrar conformidade com boas práticas ESG.
+A implementação desta plataforma permitirá um acompanhamento mais estruturado das métricas \gls{ESG}, facilitando auditorias, identificando comportamentos que possam gerar custos desnecessários e garantindo uma maior transparência. Sem uma solução eficaz, a empresa pode enfrentar perdas financeiras devido a desperdícios operacionais, além de possíveis riscos reputacionais e regulatórios caso não consiga demonstrar conformidade com boas práticas \gls{ESG}.
 
-O projeto visa desenvolver a interface do utilizador para esta plataforma, garantindo uma experiência intuitiva e eficiente na visualização e gestão dos dados ESG, utilizando frameworks reconhecidos como GRI e SASB para a definição das métricas.
+O projeto visa desenvolver a interface do utilizador para esta plataforma, garantindo uma experiência intuitiva e eficiente na visualização e gestão dos dados \gls{ESG}, ao utilizar \textit{frameworks} reconhecidas como a \textit{\gls{GRI}} ou \textit{Sustainability Accounting Standards Board (SASB)} para a definição das métricas.
 
 
 \subsection{Objetivos}
 
-O foco do projeto é o desenvolvimento de um protótipo \textit{frontend} de uma ferramenta interna da DevScope com o objetivo de rastrear e avaliar métricas ESG para levar a uma tomada de decisão mais informada, em alinhamento com as necessidades específicas de cada organização.
+O foco do projeto é o desenvolvimento de um protótipo \textit{frontend} de uma ferramenta interna da DevScope com o objetivo de rastrear e avaliar métricas \gls{ESG} para levar a uma tomada de decisão mais informada, em alinhamento com as necessidades específicas de cada organização.
 
-A nível técnico, o projeto tem como objectivos:
+A nível técnico, o projeto tem como objetivos:
 
 \begin{itemize}
 \item \textbf{Consolidar dados de múltiplas fontes:} Combinar conjuntos relevantes de dados no mesmo sistema, fornecendo uma visão unificada e acessível.
-\item \textbf{Desenvolver uma aplicação configurável:} Permitir que as organizações configurem a ferramenta de acordo com as suas prioridades, sectores e objectivos estratégicos.
+\item \textbf{Desenvolver uma aplicação configurável:} Permitir que as organizações configurem a ferramenta de acordo com as suas prioridades, sectores e objetivos estratégicos.
 \item \textbf{Visualização clara e interactiva dos dados ESG:} Conceber uma interface intuitiva que simplifique a análise e interpretação dos dados relacionados com ESG.
-\item \textbf{Definir e monitorizar objectivos baseados em métricas:} Facilitar o estabelecimento de objectivos personalizados de acordo com a informação ESG disponível, e simplificar a monitorização ao longo do tempo.
+\item \textbf{Definir e monitorizar objetivos baseados em métricas:} Facilitar o estabelecimento de objetivos personalizados de acordo com a informação ESG disponível, e simplificar a monitorização ao longo do tempo.
 \end{itemize}
 
 \subsection{Abordagem} 
 
-O desenvolvimento do projeto seguiu uma abordagem ágil, caracterizada pela iteratividade do \textit{software} desenvolvido, pela compreensão das prioridades e pela capacidade de introduzir mudanças ao longo do processo. A flexibilidade perante os pedidos do cliente (DevScope) foi um dos principais fatores, promovendo uma comunicação próxima e frequente (\cite{Patel2025}). O projeto fará ainda uso da \textit{agile framework Scrum}, sendo o projeto divido em iterações de uma semana (\textit{sprints}) e diferentes fases, tais como: pré-planeamento do \textit{sprint} (\textit{release backlog} e \textit{sprint goals}), planeamento do sprint/iteração (\textit{sprint backlog}), implementação e demonstração das funcionalidades desenvolvidas (\cite{Cohen2004}).
+O desenvolvimento do projeto seguiu uma abordagem ágil, caracterizada pela iteratividade do \textit{software} desenvolvido, pela compreensão das prioridades e pela capacidade de introduzir mudanças ao longo do processo. A flexibilidade perante os pedidos do cliente (DevScope) foi um dos principais fatores, promovendo uma comunicação próxima e frequente (\cite{Patel2025}). O projeto fará ainda uso da \textit{agile framework Scrum}, sendo o projeto divido em iterações de uma semana (\textit{sprints}) e diferentes fases, tais como: pré-planeamento do \textit{sprint} (\textit{release backlog} e \textit{sprint goals}), planeamento do \textit{sprint}/iteração (\textit{sprint backlog}), implementação e demonstração das funcionalidades desenvolvidas (\cite{Cohen2004}).
 
 Além das metodologias mencionadas, foi utilizado o \textit{Microsoft OneNote}, uma ferramenta adotada pela DevScope como base de conhecimento colaborativa, desenvolvida pelos próprios colaboradores e acessível a toda a empresa. O \textit{GitHub} foi empregado não apenas como repositório da solução desenvolvida, mas também como \textit{hub} central do projeto, integrando o quadro \textit{Kanban}. Esta abordagem, alinhada às metodologias ágeis, visa minimizar o tempo ocioso, promover um fluxo de trabalho mais eficiente e garantir um gerenciamento de tarefas estruturado, por meio de cartões detalhados que acompanham o progresso de cada etapa (\cite{Wakode2021Kanban}).
 
@@ -55,7 +53,7 @@ As funções de \textit{product owner} e \textit{scrum master} foram exercidas p
 
 O estagiário teve flexibilidade horária, mas manteve comunicação contínua com a empresa. As reuniões diárias (\textit{daily stand-ups}, ~30 min) serviram para atualizar a equipa, enquanto as reuniões semanais garantiram acompanhamento mais detalhado com o supervisor, incluindo demonstrações e \textit{feedback} para orientar o desenvolvimento.
 
-\subsection{Contributos} 
+\subsection{Contributos}
 
 A solução desenvolvida oferece à DevScope uma ferramenta que centraliza e processa informação importante e permite todo um conjunto de benefícios, contribuindo para a mesma de diversas formas:
 \begin{itemize}
@@ -67,7 +65,7 @@ A solução desenvolvida oferece à DevScope uma ferramenta que centraliza e pro
 
 Para o estudante, a solução desenvolvida representa o culminar de uma experiência enriquecedora, que exigiu a aquisição e o aprimoramento de novas competências. Além disso, proporcionou a sua integração num ambiente empresarial real, com as suas regras, processos, políticas e exposição à cultura organizacional.
 
-\subsection{Planeamento do trabalho}  
+\subsection{Planeamento do trabalho}
 
 O projeto iniciou-se com uma fase de \textit{Ramp Up} de três semanas, durante a qual são realizados \textit{workshops} sobre as tecnologias utilizadas na DevScope. Após essa etapa inicial, o estágio seguiu um cronograma definido pela empresa, dividido em três fases principais: pesquisa e estado da arte, implementação da solução e refinamento do relatório e da solução. A escrita deste documento teve início após o período de \textit{Ramp Up}.
 
@@ -80,30 +78,22 @@ O cronograma do estágio foi organizado da seguinte forma:
     \item \textbf{Refinamento e Revisão}: 19 de maio a 6 de junho
 \end{itemize}
 
-Durante o estágio, ocorreram momentos de avaliação chamados \textit{checkpoints}, nos quais os estagiários apresentaram o progresso do projeto para todos os colaboradores da empresa. Estes momentos são essenciais, pois permitiram a obtenção de \textit{feedback} que foi utilizado para aprimorar tanto a solução desenvolvida quanto o relatório. Foram previstos três \textit{checkpoints} principais:
+No Apêndice \ref{AppendixA}, apresenta-se um diagrama de \textit{Gantt} detalhado com o planeamento definido.
 
-\begin{enumerate}
-    \item \textbf{Estado da Arte} – 7 a 11 de abril
-    \item \textbf{Prova de Conceito Funcional} – 12 a 16 de maio
-    \item \textbf{Apresentação Final do Projeto e Relatório} – 9 a 13 de junho
-\end{enumerate}
-
-Embora a submissão do projeto fosse até 30 de junho, a DevScope planeou concluir essa fase entre 16 e 20 de junho.
-
- No Apêndice \ref{AppendixA}, apresenta-se um diagrama de \textit{Gantt} detalhado com o planeamento definido.
+Devido ao aumento de complexidade do projeto desenvolvido, surgiram desvios do planeamento inicial, levando a que a submissão final fosse apontada para 6 de julho, de modo a concluir a implementação, testagem, escrita e refinamento do documento.
 
 \section{Estrutura do relatório}
 
-O presente documento é composto por cinco capítulos que descrevem o desenvolvimento da solução pretendida.
+O presente documento é composto por seis capítulos que descrevem o desenvolvimento da solução pretendida.
 
-A Introdução contextualiza o projeto, apresenta o problema e as abordagens adotadas, destaca os contributos para os \textit{stakeholders} e expõe o cronograma.
+A \textbf{Introdução} contextualiza o projeto, apresenta o problema e as abordagens adotadas, destaca os contributos para os \textit{stakeholders} e expõe o cronograma.
 
-O Estado da Arte analisa trabalhos e tecnologias relevantes, explorando soluções existentes relacionadas com o problema em questão.
+O \textbf{Estado da Arte} analisa trabalhos e tecnologias relevantes, explorando soluções existentes relacionadas com o problema em questão.
 
-O Capítulo de Análise e Desenho da Solução detalha a metodologia, as tecnologias e os algoritmos utilizados, além da modelação da solução e especificação de requisitos.
+Os Capítulos de \textbf{Análise e Desenho da Solução} detalha a metodologia, as tecnologias e os algoritmos utilizados, além da modelação da solução e especificação de requisitos.
 
-A Implementação da Solução descreve aspetos técnicos, como \textit{software}, ferramentas e sistemas utilizados, bem como os testes realizados e a avaliação da solução.
+A \textbf{Implementação da Solução} descreve aspetos técnicos, como \textit{software}, ferramentas e sistemas utilizados, bem como os testes realizados e a avaliação da solução.
 
-Por fim, as Conclusões apresentam um balanço dos resultados obtidos, analisam as limitações encontradas e incluem uma reflexão crítica sobre o trabalho desenvolvido.
+Por fim, as \textbf{Conclusões} apresentam um balanço dos resultados obtidos, analisam as limitações encontradas e incluem uma reflexão crítica sobre o trabalho desenvolvido.
 
 \vspace{20mm} 

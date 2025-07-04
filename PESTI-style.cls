@@ -204,6 +204,8 @@
   title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
+\renewcommand{\lstlistingname}{Listagem}
+
 \RequirePackage[acronym,nonumberlist,toc]{glossaries} %Required to define acronyms and make glossaries
 
 \RequirePackage[centerlast,small,sc]{caption} % Required for customising the captions
@@ -526,6 +528,24 @@ KOMA-script documentation for details.}]{fancyhdr}
 \ifbool{nolistspace}{\endgroup}{}
 }
 
+
+%----------------------------------------------------------------------------------------
+%	ACRONYM PAGE DESIGN
+%----------------------------------------------------------------------------------------
+
+\newcommand{\acronymsname}{List of Acronyms}
+\iflanguage{portuguese}{
+  \renewcommand{\acronymsname}{Lista de Acrónimos}
+}{}
+
+\NewDocumentEnvironment{acronyms}{m}{%
+  \chapter*{\acronymsname}
+  \addcontentsline{toc}{chapter}{\acronymsname}
+  \begin{longtable}{#1}
+}{
+  \end{longtable}
+}
+
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENT PAGE DESIGN
 %----------------------------------------------------------------------------------------
@@ -534,7 +554,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish} {\acknowledgementlabel}{Acknowledgement} 
 \providecaptionname{portuguese} {\acknowledgementlabel}{Agradecimentos}
 \newenvironment{acknowledgements}{
-	\addchaptertocentry{\acknowledgementlabel} % Add the acknowledgements to the table of contents
+	% \addchaptertocentry{\acknowledgementlabel} % Add the acknowledgements to the table of contents
 	\tttypeout{\acknowledgementlabel}
 	\null\vfil
 	\thispagestyle{plain}

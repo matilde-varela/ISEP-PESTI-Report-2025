@@ -1,12 +1,12 @@
 \chapter{Conclusões} 
 \label{chap:Conc}
 
-Neste último Capítulo, é apresentada uma síntese do trabalho efectuado, bem como os resultados obtidos, que sustentam as conclusões finais. Os objectivos definidos para o projeto são reafirmados e é discutida a forma como os resultados os cumprem. De seguida, são apontadas as principais limitações encontradas, bem como recomendações para futuras extensões e melhorias da solução desenvolvida, seguindo-se uma análise global do projeto.
+Neste último Capítulo, é apresentada uma síntese do trabalho efetuado, bem como os resultados obtidos, que sustentam as conclusões finais. Os objetivos definidos para o projeto são reafirmados e é discutida a forma como os resultados os cumprem. De seguida, são apontadas as principais limitações encontradas, bem como recomendações para futuras extensões e melhorias da solução desenvolvida, seguindo-se uma análise global do projeto.
 
 \section{Objetivos concretizados} 
 \label{sec:ObjConc}
 
-Tal como referido no Capítulo \ref{chap:Intro}, os objectivos especificados e o grau de concretização desses objectivos estão resumidos na Tabela \ref{tab:objective_done_table}:
+Tal como referido no Capítulo \ref{chap:Intro}, os objetivos especificados e o grau de concretização desses objetivos estão resumidos na Tabela \ref{tab:objective_done_table}:
 
 \begin{table}[H]
     \rowcolors{2}{purple!10}{white}
@@ -19,26 +19,26 @@ Tal como referido no Capítulo \ref{chap:Intro}, os objectivos especificados e o
         \textbf{Consolidar dados de múltiplas fontes} & Realizado \\
         \textbf{Desenvolver uma aplicação configurável} & Realizado \\
         \textbf{Visualização clara e interactiva dos dados ESG} & Realizado \\
-        \textbf{Definir e monitorizar objectivos baseados em métricas} & Realizado \\
+        \textbf{Definir e monitorizar objetivos baseados em métricas} & Realizado \\
     \end{tabular}
     \caption{Objetivos do Projeto e o seu Grau de Realização}
     \label{tab:objective_done_table}
 \end{table}
 
-Todos os objectivos estabelecidos foram plenamente atingidos. A solução criada permite a centralização da informação ESG, a definição de objectivos baseados em metas ligadas a métricas (sejam estas pré-existentes ou personalizadas), tem uma interface adaptável e oferece uma visualização gráfica visível e interactiva dos dados.
+Todos os objetivos estabelecidos foram plenamente atingidos. A solução criada permite a centralização da informação ESG, a definição de objetivos baseados em metas ligadas a métricas (sejam estas pré-existentes ou personalizadas), tem uma interface adaptável e oferece uma visualização gráfica visível e interactiva dos dados.
 
-A planificação cuidadosa e análise prévia permitiram uma implementação eficaz e livre de complicações, garantindo a realização dos objectivos definidos.
+A planificação cuidadosa e análise prévia permitiram uma implementação eficaz e livre de complicações, garantindo a realização dos objetivos definidos.
 
 \section{Trabalho Futuro e Limitações}
 
-Apesar do facto de a solução proposta ser eficiente e completa, foram descobertas algumas limitações ao longo do processo de desenvolvimento. A funcionalidade do caso de uso UC-07 (Importação de Dados) tem limitações nos formatos de ficheiros suportados. De momento, apenas são suportados ficheiros CSV com uma estrutura predefinida. Isto foi recomendado pelo \textit{buddy} do aluno, tendo em conta a complexidade envolvida e o tempo disponível para a implementação da funcionalidade.
+Apesar do facto de a solução proposta ser eficiente e completa, foram descobertas algumas limitações ao longo do processo de desenvolvimento. A funcionalidade do caso de uso UC-07 (Importação de Dados) tem limitações nos formatos de ficheiros suportados. De momento, apenas são suportados ficheiros CSV com uma estrutura predefinida.
 
-Como consequência disso, a representação dos diagramas está igualmente limitada, pois a biblioteca usada, o \textit{ApexCharts} disponibiliza 20 diagramas diferentes, enquanto que a plataforma apenas usufrui de 5.
+Como consequência da limitação acima mencionada, a representação dos diagramas está igualmente limitada, pois a biblioteca usada, o \textit{ApexCharts} disponibiliza 20 diagramas diferentes, enquanto que a plataforma apenas usufrui de 5.
 
 Como trabalho futuro, destaca-se a possibilidade de:
 
 \begin{itemize}
-\item Aumentar ou melhorar a importação para aceitar vários tipos de ficheiros
+\item Aumentar ou melhorar a importação para aceitar vários tipos de ficheiros e estruturas
 \item Explorar todas as categorias de gráficos disponíveis na biblioteca \textit{ApexCharts}
 \item Facilitar a intuitividade do processo de edição dos dados que foram importados 
 \item Implementar a criação automática de relatório com fluxos de recolha, tratamento e apresentação de dados
@@ -53,8 +53,28 @@ O planeamento e desenvolvimento do projeto, no âmbito profissional da DevScope,
 
 O projeto ofereceu a possibilidade de aplicação de competências aprendidas durante a formação universitária e, simultaneamente, de aprender novos conhecimentos, tanto através do trabalho desenvolvido quanto pelas várias formações e \textit{workshops} que foram proporcionados pela DevScope.
 
+Revendo o percurso percorrido existem certos aspetos que, caso a proposta do problema apresentado fosse feita novamente, poderiam ser melhorados.
+
+A propostas inicialmente apresentada para o estágio foi a criação de uma plataforma de apoio à avaliação ESG, com ênfase na vertente técnica de implementação e integração das respectivas funcionalidades, incluindo o acompanhamento das medidas. No entanto, no processo de desenvolvimento do projeto, tornou-se claro que a proposta inicial poderia ter sido mais precisa através de uma melhor definição dos objectivos estratégicos da aplicação, como por exemplo: o perfil do utilizador final, os fluxos de trabalho pretendidos e os requisitos organizacionais reais em termos de monitorização ESG. Uma melhor articulação inicial com a organização teria permitido um alinhamento mais cedo do foco da aplicação com as suas prioridades operacionais e tecnológicas.
+
+Ao longo do desenvolvimento, utilizou-se o \textit{React.js} para o \textit{frontend}, aliado ao \textit{template Vuexy}, que permitiu a criação rápida de interfaces modernas.
+
+Apesar disso, desde o início, teria sido viável adotar uma abordagem mais modular, com o objetivo de simplificar as manutenções futuras e a adição de novas funcionalidades, particularmente num contexto empresarial em que as equipas trabalham remotamente. No projeto foi utilizada uma base de dados \textit{MySQL} com um esquema relacional bem definido.
+
+Apesar de eficaz, é possível observar que a utilização de um sistema de gestão de bases de dados como o \textit{PostgreSQL}, que tem suporte para campos dinâmicos, ou mesmo uma solução \textit{NoSQL}, poderia potencialmente proporcionar mais flexibilidade, especialmente no tratamento de grandes diferenças entre sectores ou empresas, normalmente observadas no caso das práticas ESG.
+
+Do ponto de vista infraestrutural, foi configurado armazenamento na \textit{cloud} através do AWS S3. Esta escolha foi prática e facilitou o desenvolvimento local e a prototipagem, mas a utilização do \textit{Azure Blob Storage} teria sido mais integrada no ecossistema tecnológico que a empresa já possui, e a integração no futuro numa configuração real teria sido mais simples. Contudo, a escolha e exploração de uma tecnologia diferente ao ecossistema da empresa foi incentivada, por se tratar de uma prova de conceito e não de um projeto com vista a produção.
+
+Ao nível da investigação e fundamentação, foi efectuada uma comparação aprofundada dos principais \textit{framework} ESG, o GRI e o SASB. A decisão de utilizar o SASB foi acertada, tendo em conta o facto de ser o padrão já utilizado pela empresa, mas a plataforma poderia ter sido concebida desde o início com mais abstração para suportar várias \textit{framework}, o que lhe daria maior escalabilidade e reutilização por outras empresas.
+
+A investigação de ferramentas de mercado como a \textit{Workiva, IBM ESG Suite} e \textit{SAP Sustainability Control Tower} permitiu apoiar decisões funcionais, mas uma análise técnica mais aprofundada das suas API, fluxos de dados ou práticas de integração poderia ter enriquecido ainda mais a arquitetura da aplicação, nomeadamente ao nível da gestão de objectivos.
+
+Por último, apesar de dispor de testes unitários e de integração, o projeto beneficiaria de uma \textit{pipeline} de integração contínua (CI/CD) mais robusta, como a execução automática de testes e implementações. Esta melhoria permitiria uma simulação mais realista do ambiente de produção e alinharia a prática de desenvolvimento com as práticas modernas de \textit{DevOps}. 
+
+Em suma, a aplicação desenvolvida serve bastante bem os objectivos definidos. No entanto, a sua proposta e realização podem ser melhoradas se forem tomadas algumas decisões estratégicas e tecnológicas numa perspetiva mais coerente com o contexto empresarial, juntamente com as necessidades de escalabilidade e manutenção a longo prazo.
+
 A nível pessoal, a experiência foi especialmente gratificante. O tema do projeto desperta um grande interesse por parte do autor, o que aumentou o envolvimento. Além disso, o desafio foi uma oportunidade de resiliência e crescimento, incluindo interações com profissionais experientes do setor.
 
-A empresa forneceu um estímulo constante e feedback pertinente, inclusive na redação do relatório.
+A empresa forneceu um estímulo constante e \textit{feedback} pertinente, inclusive na redação do relatório.
 
-Em suma, o projeto foi uma experiência muito enriquecedora, tanto do ponto de vista técnico como humano, que abriu portas para futuras possibilidades profissionais e reforçou competências básicas para a integração no mercado de trabalho.
+Para concluir, o projeto foi uma experiência muito enriquecedora, tanto do ponto de vista técnico como humano, que abriu portas para futuras possibilidades profissionais e reforçou competências básicas para a integração no mercado de trabalho.
