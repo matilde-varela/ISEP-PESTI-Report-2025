@@ -83,20 +83,25 @@ headsepline, % Uncomment to get a line under the header
   language=TypeScript,
   backgroundcolor=\color{white},
   extendedchars=true,
-  basicstyle=\footnotesize\ttfamily,
+  basicstyle=\scriptsize\ttfamily, % fonte menor
   showstringspaces=false,
   showspaces=false,
   numbers=left,
-  numberstyle=\tiny\color{gray},
-  numbersep=5pt,
+  numberstyle=\tiny\color{gray}, % números ainda menores
+  numbersep=4pt,
   tabsize=2,
   breaklines=true,
+  breakatwhitespace=true,
   showtabs=false,
   captionpos=b,
   keywordstyle=\color{blue}\bfseries,
   commentstyle=\color{gray}\ttfamily,
-  stringstyle=\color{orange}
+  stringstyle=\color{orange},
+  aboveskip=5pt, % espaço acima do listing
+  belowskip=5pt, % espaço abaixo
+  lineskip=-1pt % menor espaçamento entre linhas
 }
+
 
  
 \usepackage{pgfplots} % Required for drawing high--quality function plots (can be removed if not used)
@@ -175,7 +180,6 @@ headsepline, % Uncomment to get a line under the header
 % Include the chapters of the thesis as separate folder for each chapter
 % Uncomment the lines as you write the chapters
 
-\input{chapters/AI}
 \input{chapters/Introdução}
 \input{chapters/EA}
 \input{chapters/ADS}
@@ -203,6 +207,7 @@ headsepline, % Uncomment to get a line under the header
 \input{appendices/appendixA}
 \input{appendices/appendixB}
 \input{appendices/appendixC}
+\input{appendices/appendixD}
 
 %----------------------------------------------------------------------------------------
 

@@ -6,22 +6,24 @@ Neste último Capítulo, é apresentada uma síntese do trabalho efetuado, bem c
 \section{Objetivos concretizados} 
 \label{sec:ObjConc}
 
-Tal como referido no Capítulo \ref{chap:Intro}, os objetivos especificados e o grau de concretização desses objetivos estão resumidos na Tabela \ref{tab:objective_done_table}:
+Tal como referido no Capítulo \ref{chap:Intro}, os objetivos especificados e o estado de concretização desses objetivos estão resumidos na Tabela \ref{tab:objective_done_table}:
 
 \begin{table}[H]
-    \rowcolors{2}{purple!10}{white}
-    \renewcommand{\arraystretch}{1.2}
-    \setlength{\tabcolsep}{10pt}
     \centering
-    \begin{tabular}{>{\bfseries}p{11cm} p{4cm}}
-        \rowcolor{purple!40}
-        \textbf{Objetivo} & \textbf{Realização} \\
-        \textbf{Consolidar dados de múltiplas fontes} & Realizado \\
-        \textbf{Desenvolver uma aplicação configurável} & Realizado \\
-        \textbf{Visualização clara e interactiva dos dados ESG} & Realizado \\
-        \textbf{Definir e monitorizar objetivos baseados em métricas} & Realizado \\
+    \begin{tabular}{|>{\bfseries}p{11cm} |p{4cm}|}
+        \hline
+        \textbf{Objetivo} & \textbf{Estado} \\
+                \hline
+        Consolidar dados de múltiplas fontes & Realizado \\
+                \hline
+        Desenvolver uma aplicação configurável & Realizado \\
+                \hline
+        Visualização clara e interactiva dos dados ESG & Realizado \\
+                \hline
+        Definir e monitorizar objetivos baseados em métricas & Realizado \\
+                \hline
     \end{tabular}
-    \caption{Objetivos do Projeto e o seu Grau de Realização}
+    \caption{Objetivos do Projeto e o seu Estado de Concretização (autoria própria)}
     \label{tab:objective_done_table}
 \end{table}
 
@@ -35,6 +37,8 @@ Apesar do facto de a solução proposta ser eficiente e completa, foram descober
 
 Como consequência da limitação acima mencionada, a representação dos diagramas está igualmente limitada, pois a biblioteca usada, o \textit{ApexCharts} disponibiliza 20 diagramas diferentes, enquanto que a plataforma apenas usufrui de 5.
 
+Por último, apesar de dispor de testes unitários e de integração, o projeto beneficiaria de uma \textit{pipeline} de integração contínua (CI/CD) mais robusta, como a execução automática de testes e implementações. Esta melhoria permitiria uma simulação mais realista do ambiente de produção e alinharia a prática de desenvolvimento com as práticas modernas de \textit{DevOps}. 
+
 Como trabalho futuro, destaca-se a possibilidade de:
 
 \begin{itemize}
@@ -43,35 +47,38 @@ Como trabalho futuro, destaca-se a possibilidade de:
 \item Facilitar a intuitividade do processo de edição dos dados que foram importados 
 \item Implementar a criação automática de relatório com fluxos de recolha, tratamento e apresentação de dados
 \item Implementar um mecanismo de autenticação para limitar o acesso à plataforma apenas a utilizadores autorizados
+\item Impôr uma \textit{pipeline} de integração contínua (CI/CD), com a execução automática de testes e implementações
 \end{itemize}
 
 Estas futuras extensões acrescentariam um valor significativo à solução e ao posicionamento da empresa no domínio ESG.
 
 \section{Considerações Finais}
 
-O planeamento e desenvolvimento do projeto, no âmbito profissional da DevScope, foram extremamente proveitoso. O ambiente positivo de troca de conhecimento, apoio e consistência contribuiu significativamente para a efetiva realização e implementação bem sucedida das funcionalidades propostas.
+A presente Secção divide-se em duas partes: uma perspetiva crítica do problema apresentado pela empresa e das implicações no desenvolvimento da solução, e, por fim, considerações pessoais perante a experiência de estágio e o trabalho desenvolvido.
 
-O projeto ofereceu a possibilidade de aplicação de competências aprendidas durante a formação universitária e, simultaneamente, de aprender novos conhecimentos, tanto através do trabalho desenvolvido quanto pelas várias formações e \textit{workshops} que foram proporcionados pela DevScope.
+\subsection{Perspetiva Crítica do Problema definido e Solução proposta}
 
-Revendo o percurso percorrido existem certos aspetos que, caso a proposta do problema apresentado fosse feita novamente, poderiam ser melhorados.
+O projeto permitiu a utilização das capacidades adquiridas através da formação académica, desenvolvendo simultaneamente novas competências através do desenvolvimento prático e de vários \textit{workshops} promovidos pela DevScope.
 
-A propostas inicialmente apresentada para o estágio foi a criação de uma plataforma de apoio à avaliação ESG, com ênfase na vertente técnica de implementação e integração das respectivas funcionalidades, incluindo o acompanhamento das medidas. No entanto, no processo de desenvolvimento do projeto, tornou-se claro que a proposta inicial poderia ter sido mais precisa através de uma melhor definição dos objectivos estratégicos da aplicação, como por exemplo: o perfil do utilizador final, os fluxos de trabalho pretendidos e os requisitos organizacionais reais em termos de monitorização ESG. Uma melhor articulação inicial com a organização teria permitido um alinhamento mais cedo do foco da aplicação com as suas prioridades operacionais e tecnológicas.
+A propostas inicialmente apresentada foi a criação de uma plataforma de apoio à avaliação ESG, com ênfase na vertente técnica de implementação e integração das respectivas funcionalidades, incluindo o acompanhamento e gestão das medidas. 
 
-Ao longo do desenvolvimento, utilizou-se o \textit{React.js} para o \textit{frontend}, aliado ao \textit{template Vuexy}, que permitiu a criação rápida de interfaces modernas.
+Porém, caso se trate de um projeto de produção, os objetivos estratégicos poderiam ter sido formulados de forma mais clara em termos do perfil do utilizador final, dos fluxos de trabalho pretendidos e dos requisitos organizacionais reais em termos de monitorização ESG. Uma melhor articulação inicial com a organização teria permitido um alinhamento mais precoce no foco da aplicação com as suas prioridades operacionais e tecnológicas. 
 
-Apesar disso, desde o início, teria sido viável adotar uma abordagem mais modular, com o objetivo de simplificar as manutenções futuras e a adição de novas funcionalidades, particularmente num contexto empresarial em que as equipas trabalham remotamente. No projeto foi utilizada uma base de dados \textit{MySQL} com um esquema relacional bem definido.
+Durante o desenvolvimento, a utilização do \textit{React.js} para o \textit{frontend}, em conjunto com o \textit{template Vuexy}, revelou-se eficaz para permitir a rápida criação de interfaces modernas. No entanto, em ambientes de produção, uma abordagem mais modular teria sido benéfica para agilizar a manutenção futura e permitir a integração de novas funcionalidades.
 
-Apesar de eficaz, é possível observar que a utilização de um sistema de gestão de bases de dados como o \textit{PostgreSQL}, que tem suporte para campos dinâmicos, ou mesmo uma solução \textit{NoSQL}, poderia potencialmente proporcionar mais flexibilidade, especialmente no tratamento de grandes diferenças entre sectores ou empresas, normalmente observadas no caso das práticas ESG.
+A base de dados relacional \textit{MySQL} foi suficiente para o desenvolvimento da prova de conceito, mas para uma maior flexibilidade, particularmente com a diversidade das práticas ESG entre setores e empresas, sistemas como \textit{PostgreSQL} (com suporte a campos dinâmicos) ou soluções \textit{NoSQL} poderiam ser mais adequados.
 
-Do ponto de vista infraestrutural, foi configurado armazenamento na \textit{cloud} através do AWS S3. Esta escolha foi prática e facilitou o desenvolvimento local e a prototipagem, mas a utilização do \textit{Azure Blob Storage} teria sido mais integrada no ecossistema tecnológico que a empresa já possui, e a integração no futuro numa configuração real teria sido mais simples. Contudo, a escolha e exploração de uma tecnologia diferente ao ecossistema da empresa foi incentivada, por se tratar de uma prova de conceito e não de um projeto com vista a produção.
+No caso das infraestruturas, a utilização do \textit{AWS S3} facilitou o desenvolvimento local e prototipagem rápida. Apesar de esta solução ter sido adequada, numa implementação eficiente, a utilização do \textit{Azure Blob Storage} teria permitido uma integração mais natural com o ecossistema tecnológico já existente na empresa, facilitando futuras configurações e manutenções.
 
-Ao nível da investigação e fundamentação, foi efectuada uma comparação aprofundada dos principais \textit{framework} ESG, o GRI e o SASB. A decisão de utilizar o SASB foi acertada, tendo em conta o facto de ser o padrão já utilizado pela empresa, mas a plataforma poderia ter sido concebida desde o início com mais abstração para suportar várias \textit{framework}, o que lhe daria maior escalabilidade e reutilização por outras empresas.
+Em relação à fundamentação teórica, a comparação das principais \textit{frameworks} ESG, GRI e SASB, permitiu uma decisão acertada na adoção do SASB, que já é utilizado pela empresa. No entanto, a plataforma poderia ter sido concebida desde o início com mais abstração para suportar várias \textit{frameworks}, melhorando assim a escalabilidade e a reutilização em vários contextos empresariais.
 
-A investigação de ferramentas de mercado como a \textit{Workiva, IBM ESG Suite} e \textit{SAP Sustainability Control Tower} permitiu apoiar decisões funcionais, mas uma análise técnica mais aprofundada das suas API, fluxos de dados ou práticas de integração poderia ter enriquecido ainda mais a arquitetura da aplicação, nomeadamente ao nível da gestão de objectivos.
+Uma comparação de soluções empresariais como \textit{Workiva}, \textit{IBM ESG Suite} e \textit{SAP Sustainability Control Tower} contribuiu para a definição funcional da aplicação. Uma investigação técnica mais aprofundada das suas API, fluxos de dados e práticas de integração teria enriquecido ainda mais a arquitetura, nomeadamente na forma como os objectivos são geridos.
 
-Por último, apesar de dispor de testes unitários e de integração, o projeto beneficiaria de uma \textit{pipeline} de integração contínua (CI/CD) mais robusta, como a execução automática de testes e implementações. Esta melhoria permitiria uma simulação mais realista do ambiente de produção e alinharia a prática de desenvolvimento com as práticas modernas de \textit{DevOps}. 
+Em suma, a aplicação desenvolvida atingiu todos os objectivos para esta fase de prova de conceito. Melhorias estratégicas e tecnológicas adicionais, alinhadas com o contexto organizacional e as exigências de escalabilidade, poderiam também ajudar na sua manutenção e evolução a longo prazo.
 
-Em suma, a aplicação desenvolvida serve bastante bem os objectivos definidos. No entanto, a sua proposta e realização podem ser melhoradas se forem tomadas algumas decisões estratégicas e tecnológicas numa perspetiva mais coerente com o contexto empresarial, juntamente com as necessidades de escalabilidade e manutenção a longo prazo.
+\subsection{Considerações Pessoais}
+
+O planeamento e desenvolvimento do projeto, no âmbito profissional da DevScope, foram extremamente proveitosos. O ambiente positivo de troca de conhecimento, apoio e consistência contribuiu significativamente para a efetiva realização e implementação bem sucedida das funcionalidades propostas.
 
 A nível pessoal, a experiência foi especialmente gratificante. O tema do projeto desperta um grande interesse por parte do autor, o que aumentou o envolvimento. Além disso, o desafio foi uma oportunidade de resiliência e crescimento, incluindo interações com profissionais experientes do setor.
 

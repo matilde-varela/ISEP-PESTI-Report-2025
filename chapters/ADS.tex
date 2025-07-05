@@ -21,25 +21,31 @@ A presente secção visa descrever o domínio do problema através de vários ar
 A Tabela \ref{tab:glossario_dominio} apresenta os conceitos de domínio do problema e que serão usados ao longo do desenvolvimento.
 
 \begin{table}[H]
-    \rowcolors{2}{purple!10}{white}
-    \renewcommand{\arraystretch}{1.2}
-    \setlength{\tabcolsep}{10pt}
-    \centering
-    \begin{tabular}{>{\bfseries}p{4cm} p{11cm}}
-        \rowcolor{purple!40}
-        \textbf{Conceito (EN)} & \textbf{Descrição} \\
-        ESG & \textbf{ESG (Ambiente, Social e Governança)}: Conjunto de critérios que avaliam o desempenho ambiental, social e de governança de uma organização, com foco na sustentabilidade e responsabilidade corporativa. \\
-        \textit{Dashboard} & \textbf{Painel}: Resumo gráfico de várias informações importantes, normalmente utilizado para dar uma visão geral de um negócio. \\
-        \textit{Materiality Map} & \textbf{Mapa de Materialidade}: Ferramenta que destaca as métricas ESG mais relevantes para cada setor, segundo as normas da SASB. \\
-        \textit{Metric} & \textbf{Métrica}: Unidade de medida usada para quantificar aspetos específicos do desempenho ESG, como emissões de carbono, diversidade na força de trabalho ou políticas anticorrupção. \\
-        \textit{Dataset} & \textbf{Conjunto de Dados}: Coleção estruturada de dados ESG, normalmente em formato tabular, que contém informações como categorias, datas e valores associados. \\
-        URL & \textbf{Localizador Uniforme de Recursos (URL)}: Endereço que identifica e localiza um recurso na internet, como páginas \textit{web}, APIs ou arquivos. \\
-        API & \textbf{Interface de Programação de Aplicações (API)}: Conjunto de regras que permite a comunicação entre diferentes sistemas ou componentes de \textit{software}. Utilizada para integrar funcionalidades ou aceder a dados. \\
-        KPI & \textbf{Indicador-Chave de Desempenho (KPI)}: Métrica usada para avaliar o sucesso de uma organização ou de uma atividade específica na conquista de objetivos estratégicos ou operacionais. \\
-        SPA & \textbf{Aplicação de Página Única (SPA)}: Tipo de aplicação \textit{web} que carrega uma única página HTML e atualiza dinamicamente o conteúdo conforme o utilizador interage, sem recarregar completamente a página. \\
-    \end{tabular}
-    \caption{Glossário do domínio do problema}
-    \label{tab:glossario_dominio}
+\centering
+\begin{tabular}{|>{\bfseries}p{3cm}|p{11cm}|}
+        \hline
+    \textbf{Conceito (EN)} & \textbf{Descrição} \\
+        \hline
+    ESG & \textbf{ESG (Ambiente, Social e Governança):} Conjunto de critérios que avaliam o desempenho ambiental, social e de governança de uma organização, com foco na sustentabilidade e responsabilidade corporativa. \\
+        \hline
+    \textit{Dashboard} & \textbf{Painel :} Resumo gráfico de várias informações importantes, normalmente utilizado para dar uma visão geral de um negócio. \\
+        \hline
+    \textit{Materiality Map} & \textbf{Mapa de Materialidade :} Ferramenta que destaca as métricas ESG mais relevantes para cada setor, segundo as normas da SASB. \\
+        \hline
+    \textit{Metric} & \textbf{Métrica}: Unidade de medida usada para quantificar aspetos específicos do desempenho ESG, como emissões de carbono, diversidade na força de trabalho ou políticas anticorrupção. \\
+        \hline
+    \textit{Dataset} & \textbf{Conjunto de Dados :} Coleção estruturada de dados ESG, normalmente em formato tabular, que contém informações como categorias, datas e valores associados. \\
+        \hline
+    URL & \textbf{Localizador Uniforme de Recursos (URL):} Endereço que identifica e localiza um recurso na internet, como páginas \textit{web}, APIs ou arquivos. \\
+    API & \textbf{Interface de Programação de Aplicações (API)}: Conjunto de regras que permite a comunicação entre diferentes sistemas ou componentes de \textit{software}. Utilizada para integrar funcionalidades ou aceder a dados. \\
+        \hline
+    KPI & \textbf{Indicador-Chave de Desempenho (KPI):} Métrica usada para avaliar o sucesso de uma organização ou de uma atividade específica na conquista de objetivos estratégicos ou operacionais. \\
+        \hline
+    SPA & \textbf{Aplicação de Página Única (SPA):} Tipo de aplicação \textit{web} que carrega uma única página HTML e atualiza dinamicamente o conteúdo conforme o utilizador interage, sem recarregar completamente a página. \\
+        \hline
+\end{tabular}
+\caption{Glossário do domínio do problema (autoria própria)}
+\label{tab:glossario_dominio}
 \end{table}
 
 A Figura \ref{fig:domain_model} ilustra uma visualização do modelo de domínio, traçando as relações entre os principais conceitos da solução pretendida. Cada uma das entidades principais foi especificada como uma raiz agregada, uma escolha motivada por preocupações de consistência transnacional, concorrência, escalabilidade e clareza semântica.
@@ -87,22 +93,27 @@ Esta secção compila os requisitos obtidos com o cliente e categoriza-os entre 
 Os requisitos funcionais correspondem a funcionalidades presentes no \textit{software} a ser desenvolvido, normalmente representadas por casos de uso e acompanhados por diagramas. Os requisitos funcionais deste projeto estão organizados na Tabela \ref{tab:use_cases}, onde cada requisito é considerado um caso de uso e identificado por um código alfa-numérico.
 
 \begin{table}[H]
-    \rowcolors{2}{orange!20}{white}
-    \renewcommand{\arraystretch}{1.2}
-    \setlength{\tabcolsep}{10pt}
     \centering
-    \begin{tabular}{>{\bfseries}p{1.5cm} p{3.5cm} p{8cm}}
-        \rowcolor{orange!50}
+    \begin{tabular}{|>{\bfseries}p{1.5cm} |p{3.5cm} |p{8cm}|}
+            \hline
         Código & \textbf{Descrição Curta} & \textbf{Descrição} \\
+            \hline
         UC-01 & Visualização de KPI's & Como utilizador da plataforma, quero visualizar rapidamente os principais KPIs ambientais, sociais e de governação, para poder avaliar o desempenho da organização. \\
+            \hline
         UC-02 & Filtragem de Métricas & Como utilizador da plataforma, quero poder filtrar os dados por pilar, de modo a facilitar a navegação. \\
+            \hline
         UC-03 & Mapa de Materialidade & Como utilizador da plataforma, quero visualizar a matriz de materialidade dividida por categorias ESG com um sistema de cores intuitivo, para identificar rapidamente os temas mais críticos e, ao clicar em cada indicador, aceder a detalhes explicativos que me ajudem a compreender o seu progresso e evolução. \\
+            \hline
         UC-04 & Pontuação ESG & Como utilizador da plataforma, quero aceder a uma pontuação ESG agregada, para ter uma visão geral do desempenho da empresa em responsabilidade social, ambiental e de governança. \\
+            \hline
         UC-05 & Detalhes de Métricas & Como utilizador da plataforma, quero clicar numa métrica e ver mais detalhes, para compreender a progressão de cada indicador. \\
+            \hline
         UC-06 & Métricas Customizáveis & Como utilizador da plataforma, quero poder criar métricas ESG específicas à realidade da empresa e definir a sua fonte de dados, para garantir que o painel reflete os indicadores mais relevantes para a nossa estratégia. \\
-        UC-07 & Importação de Dados & Como utilizador da plataforma, quero poder importar dados para associar às métricas. \\      
+            \hline
+        UC-07 & Importação de Dados & Como utilizador da plataforma, quero poder importar dados para associar às métricas. \\   
+            \hline   
     \end{tabular}
-    \caption{Lista de Casos de Uso}
+    \caption{Lista de Casos de Uso (autoria própria)}
     \label{tab:use_cases}
 \end{table}
 
@@ -212,21 +223,25 @@ Requisitos não funcionais correspondem a todas as propriedades do sistema que n
 Uma forma amplamente utilizada de categorizar estes requisitos é através do modelo \textbf{FURPS+}, detalhado na Tabela \ref{tab:furps}, que cataloga os requisitos não funcionais em cinco categorias principais, com um grupo adicional representado pelo símbolo \texttt{+}.
 
 \begin{table}[H]
-    \rowcolors{2}{blue!30}{white}
-    \renewcommand{\arraystretch}{1.2}
-    \setlength{\tabcolsep}{10pt}
     \centering
-    \begin{tabular}{>{\bfseries}p{1cm} >{\bfseries}p{2.5cm} p{10cm}}
-        \rowcolor{blue!50}
-        Letra & Categoria & Descrição \\
+\begin{tabular}{|>{\bfseries}p{1cm}|>{\bfseries}p{2.5cm}|p{10cm}|}
+    \hline
+        Letra & Categoria & \textbf{Descrição} \\
+            \hline
         F & \textit{Functionality} & Funcionalidades esperadas, segurança, interoperabilidade e adequação funcional \\
+            \hline
         U & \textit{Usability} & Facilidade de uso, aparência, acessibilidade, e interação com o utilizador \\
+            \hline
         R & \textit{Reliability} & Confiabilidade, tolerância a falhas, disponibilidade, e recuperação \\
+            \hline
         P & \textit{Performance} & Tempo de resposta, eficiência de recursos e escalabilidade \\
+            \hline
         S & \textit{Supportability} & Facilidade de manutenção, extensibilidade, modularidade, e testabilidade \\
+            \hline
         + & \textit{Others} & Restrições de design, implementação, normas, tecnologias ou frameworks \\
+            \hline
     \end{tabular}
-    \caption{Categorias FURPS+}
+    \caption{Categorias FURPS+ (autoria própria)}
     \label{tab:furps}
 \end{table}
 
@@ -279,6 +294,8 @@ Este capítulo aborda a fase de \textit{design} no processo de desenvolvimento d
 
 
 \section{Arquitetura do Sistema} 
+
+As seguintes subsecções elaboram os diversos tipos de modelos usados para representar a arquitetura da solução desenvolvida, acompanhados com diagramas referentes à aplicação dos mesmos.
 
 \subsection{\textit{Clean Architecture}}
 
@@ -432,7 +449,6 @@ De forma semelhante, o caso de uso UC-07 também apresenta essa distinção, evi
 \caption{Vista de processo dos casos de uso de importação de dados (Nível 3) (autoria própria)}
 \label{fig:UC7-lvl3}
 \end{figure}
-
 
 \subsection{Vista de Cenários}
 

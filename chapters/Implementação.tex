@@ -19,14 +19,9 @@ Nesta subsecção são descritas as tecnologias usadas na implementação, categ
 
 No desenvolvimento dos diagramas da vista de progresso (Subsecção \ref{subsec:process_view}) que servem de guia para a implementação das funcionalidades foi usado o \textit{PlantUML}\footnote{Site do \textit{Plantuml}: \url{https://plantuml.com/}} compilado no \textit{Visual Studio Code}\footnote{Site do \textit{Visual Studio Code}: \url{https://code.visualstudio.com/}}. Os restantes diagramas foram feitos pelo programa \textit{Draw.io}\footnote{Site do \textit{Draw\.io}: \url{https://www.drawio.com/}}.
 
-O protótipo visual da plataforma \gls{ESG}, referido no Apêndice \ref{AppendixC}, foi realizado no \textit{Figma}\footnote{Site do \textit{Figma}: \url{https://www.figma.com/}}, a divisão de tarefas e planeamento do projeto foi realizado no \textit{Github Projects}\footnote{Página sobre o \textit{Github Projects}: \url{https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects}}, como ilustrado na Figura \ref{fig:kanbanBoard}, e o repositório foi alocado no \textit{Github}\footnote{Site do \textit{Github}: \url{https://github.com/}}. A aplicação tem como referência visual o \textit{kit} de marca da Devscope\footnote{Site do \textit{kit} de marca da Devscope: \url{https://brand.devscope.net/intro.html}}.
+O protótipo visual da plataforma \gls{ESG}, referido no Apêndice \ref{AppendixC}, foi realizado no \textit{Figma}\footnote{Site do \textit{Figma}: \url{https://www.figma.com/}}, a divisão de tarefas e planeamento do projeto foi realizado no \textit{Github Projects}\footnote{Página sobre o \textit{Github Projects}: \url{https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects}} e o repositório foi alocado no \textit{Github}\footnote{Site do \textit{Github}: \url{https://github.com/}}. A aplicação tem como referência visual o \textit{kit} de marca da Devscope\footnote{Site do \textit{kit} de marca da Devscope: \url{https://brand.devscope.net/intro.html}}.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth,keepaspectratio]{frontmatter/assets/github_projects.png}
-    \caption{Painel com quadro \textit{kanban} usado no planeamento do projeto (autoria própria)}
-    \label{fig:kanbanBoard}
-\end{figure}
+O Apêndice \ref{AppendixD} refere-se ao quadro \textit{kanban} usado durante o desenvolvimento da solução.
 
 \subsubsection{Tecnologias de Desenvolvimento}
 
@@ -63,6 +58,8 @@ A página inicial, Figura \ref{fig:homepage}, apresenta a informação mais rece
 
 O valor obtido na pontuação ESG surge de uma fórmula criada com base no artigo redigido por \cite{Berg2022}, que explora as divergências das várias metodologias para classificações ESG usadas pelas agências na classificação do desempenho ESG das empresas. Tendo em conta o conteúdo do artigo, uma nova fórmula foi desenvolvida. A pontuação ESG é calculada através de uma abordagem hierárquica que agrega métricas em subáreas, subáreas em pilares, e finalmente combina os pilares para obter a pontuação final. O processo segue as seguintes etapas:
 
+% \newpage
+
 \textbf{Normalização de Métricas}
 
 Cada métrica é normalizada para uma escala de 0 a 100 ao utilizar os seus valores mínimo e máximo definidos:
@@ -73,6 +70,8 @@ Cada métrica é normalizada para uma escala de 0 a 100 ao utilizar os seus valo
         \text{valor\_bruto} & \text{caso contrário}
     \end{cases}
 \end{equation}
+
+\newpage
 
 \textbf{Cálculo de Pontuação por Subárea}
 
@@ -104,6 +103,39 @@ A pontuação final ESG é obtida pela média ponderada dos pilares, limitada ao
 
 onde $p$ é o número total de pilares considerados (Ambiental, Social e Governança).
 
+A pontuação final é posteriormente classificada numa das categorias predefinidas, como indicado na Tabela \ref{tab:esg_categories}. Esta Tabela têm uma formatação diferente das restantes, uma vez que cada linha está colorida com a cor associada à respetiva categoria.
+
+\begin{table}[H]
+    \renewcommand{\arraystretch}{1.3}
+    \setlength{\tabcolsep}{10pt}
+    \centering
+    \begin{tabular}{|>{\bfseries}p{2cm} |p{1.5cm} |p{9cm}|}
+      \hline
+        \rowcolor{red!50} 
+        \textit{Very Low} & [0--20] & A empresa necessita de melhorias significativas nas suas práticas ESG. \\
+              \hline
+        \rowcolor{red!35} 
+        \textit{Low} & [21--40] & Há margem de progressão, especialmente nas áreas de responsabilidade social e sustentabilidade ambiental. \\
+              \hline
+        \rowcolor{yellow!55!orange!30} 
+        \textit{Medium} & [41--60] & A empresa está no caminho certo, mas ainda precisa de melhorias substanciais. \\
+              \hline
+        \rowcolor{green!25} 
+        \textit{Good} & [61--80] & A empresa apresenta um bom desempenho ESG, com espaço para ajustes menores. \\
+              \hline
+        \rowcolor{teal!30!green!50} 
+        \textit{Great} & [81--90] & A empresa destaca-se nas práticas ESG, estando próxima da excelência. \\
+              \hline
+        \rowcolor{teal!40!green!70} 
+        \textit{Very High} & [91--100] & A empresa é uma referência no desempenho ESG e serve como modelo de boas práticas. \\
+              \hline
+    \end{tabular}
+    \caption{Categorias de pontuação ESG (autoria própria)}
+    \label{tab:esg_categories}
+\end{table}
+
+Estas categorias não só representam a qualidade geral da performance ESG da empresa, como também in uenciam a forma como os dados são apresentados no \textit{frontend} da aplicação, através de diferentes cores, textos e recomendações visuais para cada cenário. Esta abordagem contribui para uma demonstração mais realista da plataforma, permitindo visualizar comportamentos distintos consoante o per l ESG simulado.
+
 No \textit{frontend}, os dados do \textit{dashboard} são obtidos dinamicamente através de uma chamada HTTP do tipo \texttt{GET}, utilizando a função \texttt{fetch} (Listagem~\ref{lst:fetch_dashboard}) para aceder à rota \texttt{/api/dashboard}. A resposta, em formato \textit{\gls{JSON}}, agrega todas as métricas necessárias, evitando múltiplas chamadas à API e melhorando a performance da aplicação.
 
 \begin{lstlisting}[style=customts, caption={Função responsável por obter os dados do ESG Score e do dashboard no carregamento do componente}, label={lst:fetch_dashboard}]
@@ -116,7 +148,6 @@ No \textit{frontend}, os dados do \textit{dashboard} são obtidos dinamicamente 
           throw new Error('Failed to fetch ESG score');
         }
         const dataScore = await responseScore.json();
-        console.log('data score esg ', dataScore)
         setEsgScore(dataScore);
         setCategory(classifyESGScore(dataScore));
         const responseData = await fetch('/api/dashboard');
@@ -298,6 +329,8 @@ Cada métrica tem o seu conjunto de dados associado, estando estes acessíveis n
 
 Após o preenchimento do formulário de importação de dados, é realizado um pedido HTTP do tipo \textit{POST} através da função \texttt{fetch}, com o objetivo de enviar a informação inserida para a rota da API correspondente. A informação submetida é convertida em formato \textit{JSON} e enviada no corpo do pedido, tal como ilustrado na Listagem \ref{lst:import_dataset_api}.
 
+\newpage
+
 \begin{lstlisting}[style=customts, caption={Chamada à API de Importação de um Conjunto de Dados}, label={lst:import_dataset_api}]
     const response = await fetch('/api/datasets', {
     method: 'POST',
@@ -378,12 +411,10 @@ const response = await fetch('/api/objectives', {
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(data),
 });
-
 if (!response.ok) {
   const errorText = await response.text();
   throw new Error(`Failed to create new objective: ${errorText}`);
 }
-
 const createdObjective = await response.json() as ObjectiveReadable;
 \end{lstlisting}
 
@@ -391,7 +422,7 @@ O formulário criado para a criação de novos objetivos é ilustrado pela Figur
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=3in,keepaspectratio]{frontmatter/assets/platform_prints/objetives/objective_creation.png}
+    \includegraphics[width=2.75in,keepaspectratio]{frontmatter/assets/platform_prints/objetives/objective_creation.png}
     \caption{Formulário de Criação de Objetivo (autoria própria)}
     \label{fig:objective_creation}
 \end{figure}
@@ -480,34 +511,7 @@ A Figura \ref{fig:bad_esg} demonstra a pontuação ESG resultante da execução 
     \label{fig:bad_esg}
 \end{figure}
 
-A pontuação ESG resultante da execução do \textit{script} \texttt{SeedRandom} varia significativamente, de forma a simular empresas com diferentes níveis de desempenho em cada um dos pilares ESG: \textit{Environment}, \textit{Social} e \textit{Governance}. Cada valor é atribuído aleatoriamente dentro de um intervalo entre 0 e 100, sendo posteriormente classificado numa das categorias predefinidas: \textit{Very Low} (0--20), \textit{Low} (21--40), \textit{Medium} (41--60), \textit{Good} (61--80), \textit{Great} (81--90) e \textit{Very High} (91--100).
-
-Estas categorias não só representam a qualidade geral da performance ESG da empresa, como também influenciam a forma como os dados são apresentados no \textit{frontend} da aplicação, através de diferentes cores, textos e recomendações visuais para cada cenário. Esta abordagem contribui para uma demonstração mais realista da plataforma, permitindo visualizar comportamentos distintos consoante o perfil ESG simulado.
-
-A Tabela~\ref{tab:esg_categories} resume os intervalos e significados associados a cada categoria.
-
-\begin{table}[H]
-    \renewcommand{\arraystretch}{1.3}
-    \setlength{\tabcolsep}{10pt}
-    \centering
-    \begin{tabular}{>{\bfseries}p{2.5cm} p{3cm} p{9cm}}
-        \rowcolor{red!30} 
-        \textit{Very Low} & [0--20] & A empresa necessita de melhorias significativas nas suas práticas ESG. \\
-        \rowcolor{orange!40} 
-        \textit{Low} & [21--40] & Há margem de progressão, especialmente nas áreas de responsabilidade social e sustentabilidade ambiental. \\
-        \rowcolor{yellow!40} 
-        \textit{Medium} & [41--60] & A empresa está no caminho certo, mas ainda precisa de melhorias substanciais. \\
-        \rowcolor{green!30} 
-        \textit{Good} & [61--80] & A empresa apresenta um bom desempenho ESG, com espaço para ajustes menores. \\
-        \rowcolor{green!45!blue!25} 
-        \textit{Great} & [81--90] & A empresa destaca-se nas práticas ESG, estando próxima da excelência. \\
-        \rowcolor{teal!40} 
-        \textit{Very High} & [91--100] & A empresa é uma referência no desempenho ESG e serve como modelo de boas práticas. \\
-    \end{tabular}
-    \caption{Categorias de pontuação ESG}
-    \label{tab:esg_categories}
-\end{table}
-
+A pontuação ESG resultante da execução do \textit{script} \texttt{SeedRandom} varia significativamente, de forma a simular empresas com diferentes níveis de desempenho em cada um dos pilares ESG. Cada valor é atribuído aleatoriamente dentro de um intervalo entre 0 e 100, sendo a pontuação final posteriormente classificada consoate as categorias predefinidas, previamente indicadas na Tabela \ref{tab:esg_categories}.
 
 \section{Testes}
 
@@ -546,18 +550,16 @@ describe('ChartErrorBoundary + ChartRenderer', () => {
         />
       </ChartErrorBoundary>
     );
-
     expect(screen.getByText(/missing required date field/i)).toBeInTheDocument();
   });
 });
 \end{lstlisting}
 
-
 Esta abordagem diversificada leva à criação de um elevado número de testes, Figura \ref{fig:test_number}, permite identificar falhas a vários níveis do sistema, o que contribui para melhorar a qualidade contínua e a qualidade do produto final.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=2.5in,keepaspectratio]{frontmatter/assets/tests/test_suits.png}
+    \includegraphics[width=3in,keepaspectratio]{frontmatter/assets/tests/test_suits.png}
     \caption{Testes desenvolvidos para a solução (autoria própria)}
     \label{fig:test_number}
 \end{figure}
@@ -579,12 +581,14 @@ A aplicação apresenta tempos de carregamento eficientes, não ultrapassando os
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=2.5in,keepaspectratio]{frontmatter/assets/compiling/pages_time.png}
+    \includegraphics[width=3in,keepaspectratio]{frontmatter/assets/compiling/pages_time.png}
     \caption{Compilação das páginas em menos de 30 segundos (autoria própria)}
     \label{fig:page_compiling}
 \end{figure}
 
 Para verificar se o tempo total de carregamento da solução idealizada, incluindo tanto o processo de \textit{seeding} da base de dados quanto a compilação da página inicial, estava dentro do intervalo de 3 minutos, foi criado um \textit{script} especial, como pode ser observado na Listagem \ref{lst:eval_script}.
+
+\newpage
 
 \begin{lstlisting}[style=customts, caption={\textit{Script} de avaliação de performance da iniciação da aplicação desenvolvida}, label={lst:eval_script}]
 #!/bin/bash
